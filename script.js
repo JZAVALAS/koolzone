@@ -5,6 +5,16 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🎤Micrófono Lavalier Inalámbrico ZealSound",
+      precio: "149.99",
+      precioAntes: "199.99",
+      imagenes: [
+        "fotos/productos/29.Microfonos-Zealsound.jpg",
+        "fotos/productos/29.2.Microfonos-Zealsound.jpg",
+        "fotos/productos/29.3.Microfonos-Zealsound.jpg",
+      ]
+    },
+    {
       nombre: "📷Tapa para Lente Nikon F Mount",
       precio: "19.99",
       precioAntes: "29.99",
@@ -535,6 +545,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 
 
 
