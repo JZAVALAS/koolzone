@@ -9,7 +9,7 @@ var PRODUCTOS = [
     precio: "49.99",
     precioAntes: "79.99",
     imagenes: [
-      "fotos/productos/26.Tripode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.Trípode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.2.Trípode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.3.Trípode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.4.Trípode-Expandible-de-3-Secciones.jpg",
@@ -32,9 +32,9 @@ var PRODUCTOS = [
     precio: "39.99",
     precioAntes: "59.99",
     imagenes: [
-      "/fotos/productos/24.Soporte-Giratorio-para-Celular.jpg",
-      "/fotos/productos/24.2.Soporte-Giratorio-para-Celular.jpg",
-      "/fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
+      "fotos/productos/24.Soporte-Giratorio-para-Celular.jpg",
+      "fotos/productos/24.2.Soporte-Giratorio-para-Celular.jpg",
+      "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
     ]
   },
   {
@@ -42,9 +42,9 @@ var PRODUCTOS = [
     precio: "49.99",
     precioAntes: "69.99",
     imagenes: [
-      "/fotos/productos/23.Soporte-Metálico-en-L.jpg",
-      "/fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
-      "/fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
+      "fotos/productos/23.Soporte-Metálico-en-L.jpg",
+      "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
+      "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
     ]
   },
   {
@@ -52,10 +52,10 @@ var PRODUCTOS = [
     precio: "19.99",
     precioAntes: "29.99",
     imagenes: [
-      "/fotos/productos/22.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
-      "/fotos/productos/22.2.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
-      "/fotos/productos/22.3.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
-      "/fotos/productos/22.4.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.2.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.3.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.4.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
     ]
   },
   {
@@ -63,10 +63,10 @@ var PRODUCTOS = [
     precio: "69.99",
     precioAntes: "79.99",
     imagenes: [
-      "/fotos/productos/21.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
-      "/fotos/productos/21.2.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
-      "/fotos/productos/21.3.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
-      "/fotos/productos/21.4.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.2.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.3.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.4.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
     ]
   },
   {
@@ -74,10 +74,10 @@ var PRODUCTOS = [
     precio: "49.99",
     precioAntes: "59.99",
     imagenes: [
-      "/fotos/productos/20.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
-      "/fotos/productos/20.2.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
-      "/fotos/productos/20.3.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
-      "/fotos/productos/20.4.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.2.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.3.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.4.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
     ]
   },
   {
@@ -85,9 +85,9 @@ var PRODUCTOS = [
     precio: "39.99",
     precioAntes: "59.99",
     imagenes: [
-      "/fotos/productos/19.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
-      "/fotos/productos/19.2.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
-      "/fotos/productos/19.3.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+      "fotos/productos/19.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+      "fotos/productos/19.2.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+      "fotos/productos/19.3.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
     ]
   },
   {
@@ -95,9 +95,9 @@ var PRODUCTOS = [
     precio: "129.99",
     precioAntes: "179.99",
     imagenes: [
-      "/fotos/productos/18.BARRA-EXTENSORA-HORIZONTAL.jpg",
-      "/fotos/productos/18.2.BARRA-EXTENSORA-HORIZONTAL.jpg",
-      "/fotos/productos/18.3.BARRA-EXTENSORA-HORIZONTAL.jpg",
+      "fotos/productos/18.BARRA-EXTENSORA-HORIZONTAL.jpg",
+      "fotos/productos/18.2.BARRA-EXTENSORA-HORIZONTAL.jpg",
+      "fotos/productos/18.3.BARRA-EXTENSORA-HORIZONTAL.jpg",
     ]
   },
   {
@@ -105,8 +105,8 @@ var PRODUCTOS = [
     precio: "59.99",
     precioAntes: "79.99",
     imagenes: [
-      "/fotos/productos/17.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
-      "/fotos/productos/17.2.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
+      "fotos/productos/17.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
+      "fotos/productos/17.2.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
     ]
   },
   {
@@ -114,10 +114,10 @@ var PRODUCTOS = [
     precio: "69.99",
     precioAntes: "89.99",
     imagenes: [
-      "/fotos/productos/16.BOLSA-PROTECTORA-PARA-LENTES.jpg",
-      "/fotos/productos/16.2.BOLSA-PROTECTORA-PARA-LENTES.jpg",
-      "/fotos/productos/16.3.BOLSA-PROTECTORA-PARA-LENTES.jpg",
-      "/fotos/productos/16.4.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.2.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.3.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.4.BOLSA-PROTECTORA-PARA-LENTES.jpg",
     ]
   },
   {
@@ -125,7 +125,7 @@ var PRODUCTOS = [
     precio: "94.99",
     precioAntes: "109.99",
     imagenes: [
-      "/fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg",
+      "fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg",
     ]
   },
   {
@@ -133,11 +133,11 @@ var PRODUCTOS = [
     precio: "69.99",
     precioAntes: "89.99",
     imagenes: [
-      "/fotos/productos/14.CORREA-DE-PECHO-PARA-CAMARA.jpg",
-      "/fotos/productos/14.2.CORREA-DE-PECHO-PARA-CAMARA.jpg",
-      "/fotos/productos/14.3.CORREA-DE-PECHO-PARA-CAMARA.jpg",
-      "/fotos/productos/14.4.CORREA-DE-PECHO-PARA-CAMARA.jpg",
-      "/fotos/productos/14.5.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.2.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.3.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.4.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.5.CORREA-DE-PECHO-PARA-CAMARA.jpg",
     ]
   },
   {
@@ -145,11 +145,11 @@ var PRODUCTOS = [
     precio: "59.99",
     precioAntes: "79.99",
     imagenes: [
-      "/fotos/productos/13.CORREA-DE-MANO.jpg",
-      "/fotos/productos/13.2.CORREA-DE-MANO.jpg",
-      "/fotos/productos/13.3.CORREA-DE-MANO.jpg",
-      "/fotos/productos/13.4.CORREA-DE-MANO.jpg",
-      "/fotos/productos/13.5.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.2.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.3.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.4.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.5.CORREA-DE-MANO.jpg",
     ]
   },
   {
@@ -157,11 +157,11 @@ var PRODUCTOS = [
     precio: "49.99",
     precioAntes: "59.99",
     imagenes: [
-      "/fotos/productos/12.SOPORTE-EN-L.jpg",
-      "/fotos/productos/12.2.SOPORTE-EN-L.jpg",
-      "/fotos/productos/12.3.SOPORTE-EN-L.jpg",
-      "/fotos/productos/12.4.SOPORTE-EN-L.jpg",
-      "/fotos/productos/12.5.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.2.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.3.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.4.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.5.SOPORTE-EN-L.jpg",
     ]
   },
   {
@@ -169,7 +169,7 @@ var PRODUCTOS = [
     precio: "59.99",
     precioAntes: "69.99",
     imagenes: [
-      "/fotos/productos/1.Memoria-RAM-4GB-DDR3L.jpg"
+      "fotos/productos/1.Memoria-RAM-4GB-DDR3L.jpg"
     ]
   },
   {
@@ -177,7 +177,7 @@ var PRODUCTOS = [
     precio: "89.99",
     precioAntes: "99.99",
     imagenes: [ 
-      "/fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.JPG"
+      "fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.JPG"
     ]
   },
   {
@@ -185,10 +185,10 @@ var PRODUCTOS = [
     precio: "14.99",
     precioAntes: "19.99",
     imagenes: [ 
-      "/fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
-      "/fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
-      "/fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
-      "/fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
     ]
   },
 
@@ -197,10 +197,10 @@ var PRODUCTOS = [
   //   precio: "14.99",
   //   precioAntes: "19.99",
   //   imagenes: [ 
-  //     "/fotos/productos/4.ADAPTADOR-ZAPATA-FRÍA.jpg",
-  //     "/fotos/productos/4.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
-  //     "/fotos/productos/4.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
-  //     "/fotos/productos/4.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+  //     "fotos/productos/4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+  //     "fotos/productos/4.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
+  //     "fotos/productos/4.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
+  //     "fotos/productos/4.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
   //   ]
   // },
   
@@ -209,10 +209,10 @@ var PRODUCTOS = [
     precio: "14.99",
     precioAntes: "19.99",
     imagenes: [ 
-      "/fotos/productos/5.ADAPTADOR-ZAPATA-FRÍA.jpg",
-      "/fotos/productos/5.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
-      "/fotos/productos/5.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
-      "/fotos/productos/5.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
     ]
   },
   {
@@ -220,10 +220,10 @@ var PRODUCTOS = [
     precio: "19.99",
     precioAntes: "29.99",
     imagenes: [ 
-      "/fotos/productos/6.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
-      "/fotos/productos/6.2.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
-      "/fotos/productos/6.3.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
-      "/fotos/productos/6.4.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.2.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.3.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.4.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
     ]
   },
   {
@@ -231,11 +231,11 @@ var PRODUCTOS = [
     precio: "119.99",
     precioAntes: "149.99",
     imagenes: [ 
-      "/fotos/productos/7.BARRA-LED-RGB.jpg",
-      "/fotos/productos/7.2.BARRA-LED-RGB.jpg",
-      "/fotos/productos/7.3.BARRA-LED-RGB.jpg",
-      "/fotos/productos/7.4.BARRA-LED-RGB.jpg",
-      "/fotos/productos/7.5.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.2.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.3.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.4.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.5.BARRA-LED-RGB.jpg",
     ]
   },
   {
@@ -243,10 +243,10 @@ var PRODUCTOS = [
     precio: "149.99",
     precioAntes: "179.99",
     imagenes: [ 
-      "/fotos/productos/8.MONITOR-MAGNETICO.jpg",
-      "/fotos/productos/8.2.MONITOR-MAGNETICO.jpg",
-      "/fotos/productos/8.3.MONITOR-MAGNETICO.jpg",
-      "/fotos/productos/8.4.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.2.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.3.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.4.MONITOR-MAGNETICO.jpg",
     ]
   },
   {
@@ -254,10 +254,10 @@ var PRODUCTOS = [
     precio: "34.99",
     precioAntes: "44.99",
     imagenes: [ 
-      "/fotos/productos/9.HUB-USB-5-EN-1.jpg",
-      "/fotos/productos/9.2.HUB-USB-5-EN-1.jpg",
-      "/fotos/productos/9.3.HUB-USB-5-EN-1.jpg",
-      "/fotos/productos/9.4.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.2.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.3.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.4.HUB-USB-5-EN-1.jpg",
     ]
   },
   {
@@ -265,7 +265,7 @@ var PRODUCTOS = [
     precio: "79.99",
     precioAntes: "99.99",
     imagenes: [ 
-      "/fotos/productos/10.PACK-SHORES.jpg",
+      "fotos/productos/10.PACK-SHORES.jpg",
     ]
   },
 ];
@@ -516,9 +516,4 @@ document.addEventListener("DOMContentLoaded", function() {
     renderProductos(filtrados);
   });
 
-
 });
-
-
-
-
