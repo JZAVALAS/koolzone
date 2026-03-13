@@ -5,6 +5,16 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "📷Tapa para Lente Nikon F Mount",
+      precio: "19.99",
+      precioAntes: "29.99",
+      imagenes: [
+        "fotos/productos/28.Tapa-de-cuerpo-nikon-monturaF.jpg",
+        "fotos/productos/28.2.Tapa-de-cuerpo-nikon-monturaF.jpg",
+        "fotos/productos/28.3.Tapa-de-cuerpo-nikon-monturaF.jpg",
+      ]
+    },
+    {
       nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
       precio: "69.99",
       precioAntes: "79.99",
@@ -525,6 +535,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 
 
 
