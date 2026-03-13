@@ -169,7 +169,7 @@ var PRODUCTOS = [
     precio: "59.99",
     precioAntes: "69.99",
     imagenes: [
-      "fotos/productos/1.Memoria-RAM-4GB-DDR3L.jpg"
+      "fotos/productos/1.MEMORIA-RAM-4GB-DDR3L.jpg"
     ]
   },
   {
@@ -517,3 +517,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
