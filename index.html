@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiTienda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ CABECERA ══ -->
+<header>
+  <div class="logo">KOOLZONE<span class="logo-ciudad">PAITA</span></div>
+  <div class="search-wrap">
+    <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input class="search-input" type="text" placeholder="Buscar productos..."/>
+  </div>
+  <div class="header-icons">
+    <button class="icon-btn" aria-label="Carrito">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <span class="badge">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ══ SLIDER BANNER ══ -->
+<section class="slider-section" id="sliderSection">
+  <div class="slides-track" id="slidesTrack">
+
+    <!-- SLIDE 1 — pon tu imagen: <img src="./slider/banner1.jpg" alt=""/> -->
+    <div class="slide slide-1">
+      <img src="./Fotos/Slider/banner1.jpg" alt=""/>
+      <div class="slide-content">
+        <span class="slide-tag">🔥 Accesorios</span>
+        <h2 class="slide-title"><br/>FilMaker y Fotografos</h2>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide slide-2">
+      <img src="./Fotos/Slider/banner2.jpg" alt=""/>
+      <div class="slide-content">
+        <span class="slide-tag">✨ Accesorios</span>
+        <h2 class="slide-title"><br/>Gopro</h2>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide slide-3">
+      <img src="./Fotos/Slider/banner3.jpg" alt=""/>
+      <div class="slide-content">
+        <span class="slide-tag">📦 Envíos</span>
+        <h2 class="slide-title"><br/>a todo el Perú</h2>
+      </div>
+    </div>
+
+  </div>
+  <div class="slider-dots" id="sliderDots"></div>
+  <div class="progress-bar" id="progressBar"></div>
+</section>
+
+<!-- ══ PRODUCTOS ══ -->
+<section class="productos-section">
+  <p class="section-titulo">Productos destacados</p>
+  <div class="productos-grid" id="productosGrid"></div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-cerrar" id="lbCerrar">&times;</button>
+  <span class="lightbox-contador" id="lbContador"></span>
+  <img class="lightbox-img" id="lbImg" src="" alt=""/>
+  <button class="lightbox-arrow prev" id="lbPrev">&#8249;</button>
+  <button class="lightbox-arrow next" id="lbNext">&#8250;</button>
+  <div class="lightbox-dots" id="lbDots"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
