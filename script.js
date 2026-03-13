@@ -5,6 +5,15 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "📷Protector de Pantalla para GoPro Hero 8",
+      precio: "9.99",
+      precioAntes: "19.99",
+      imagenes: [
+        "fotos/productos/30.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
+        "fotos/productos/30.2.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
+      ]
+    },
+    {
       nombre: "🎤Micrófono Lavalier Inalámbrico ZealSound",
       precio: "149.99",
       precioAntes: "199.99",
