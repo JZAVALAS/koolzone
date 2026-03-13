@@ -9,7 +9,7 @@ var PRODUCTOS = [
     precio: "49.99",
     precioAntes: "79.99",
     imagenes: [
-      "fotos/productos/26.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.Tripode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.2.Trípode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.3.Trípode-Expandible-de-3-Secciones.jpg",
       "fotos/productos/26.4.Trípode-Expandible-de-3-Secciones.jpg",
@@ -518,5 +518,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
 
 
