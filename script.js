@@ -5,6 +5,17 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
+      precio: "149.99",
+      precioAntes: "179.99",
+      imagenes: [
+        "fotos/productos/31.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+        "fotos/productos/31.2.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+        "fotos/productos/31.3.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+        "fotos/productos/31.4.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+      ]
+    },
+    {
       nombre: "📷Protector de Pantalla para GoPro Hero 8",
       precio: "9.99",
       precioAntes: "19.99",
