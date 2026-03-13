@@ -15,7 +15,7 @@ var PRODUCTOS = [
       ]
     },
     {
-      nombre: "📷Tapa para Lente Nikon F Mount",
+      nombre: "📷Tapa para Cuerpo Nikon F Mount",
       precio: "19.99",
       precioAntes: "29.99",
       imagenes: [
