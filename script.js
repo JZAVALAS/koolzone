@@ -22,9 +22,9 @@ var PRODUCTOS = [
     precio: "89.99",
     precioAntes: "109.99",
     imagenes: [
-      "/fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-      "/fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-      "/fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
     ]
   },
   {
@@ -518,6 +518,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
 
 
 
