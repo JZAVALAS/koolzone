@@ -4,6 +4,14 @@
 var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
+    {
+      nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
+      precio: "69.99",
+      precioAntes: "79.99",
+      imagenes: [
+        "fotos/productos/27.Memoria-RAM-4GB-DDR4-para-Laptop.jpg",
+      ]
+   },
   {
     nombre: "📸Trípode Expandible de 3 Secciones – Compacto y Estable🔥",
     precio: "49.99",
@@ -517,5 +525,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 
 
