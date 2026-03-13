@@ -177,7 +177,7 @@ var PRODUCTOS = [
     precio: "89.99",
     precioAntes: "99.99",
     imagenes: [ 
-      "fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.JPG"
+      "fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.jpg"
     ]
   },
   {
@@ -517,4 +517,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 
