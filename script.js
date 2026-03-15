@@ -5,6 +5,20 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "📱Selfie Stick con Estabilizador Q31",
+      precio: "129.99",
+      precioAntes: "149.99",
+      imagenes: [
+        "fotos/productos/32.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.2.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.3.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.4.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.5.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.6.Selfie-Stick-con-Estabilizador-Q31.jpg",
+        "fotos/productos/32.7.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      ]
+    },
+    {
       nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
       precio: "149.99",
       precioAntes: "179.99",
