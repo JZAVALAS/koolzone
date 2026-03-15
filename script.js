@@ -5,6 +5,19 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "💻✨ Soporte Plegable para Laptop con Enfriamiento y Puertos USB🔥",
+      precio: "69.99",
+      precioAntes: "89.99",
+      imagenes: [
+        "fotos/productos/35.Soporte-Plegable-para-Laptop.jpg",
+        "fotos/productos/35.2.Soporte-Plegable-para-Laptop.jpg",
+        "fotos/productos/35.3.Soporte-Plegable-para-Laptop.jpg",
+        "fotos/productos/35.4.Soporte-Plegable-para-Laptop.jpg",
+        "fotos/productos/35.5.Soporte-Plegable-para-Laptop.jpg",
+        "fotos/productos/35.6.Soporte-Plegable-para-Laptop.jpg",
+      ]
+    },
+    {
       nombre: "✨LUZ DE ANILLO PORTÁTIL PARA CELULAR",
       precio: "49.99",
       precioAntes: "59.99",
