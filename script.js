@@ -5,6 +5,19 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "✨LUZ DE ANILLO PORTÁTIL PARA CELULAR",
+      precio: "49.99",
+      precioAntes: "59.99",
+      imagenes: [
+        "fotos/productos/34.Luz-de-anillo-portatil.jpg",
+        "fotos/productos/34.2.Luz-de-anillo-portatil.jpg",
+        "fotos/productos/34.3.Luz-de-anillo-portatil.jpg",
+        "fotos/productos/34.4.Luz-de-anillo-portatil.jpg",
+        "fotos/productos/34.5.Luz-de-anillo-portatil.jpg",
+        "fotos/productos/34.6.Luz-de-anillo-portatil.jpg",
+      ]
+    },
+    {
       nombre: "📸 Flash Godox TT600S",
       precio: "339.99",
       precioAntes: "369.99",
