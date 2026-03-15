@@ -5,6 +5,17 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "📸 Flash Godox TT600S",
+      precio: "339.99",
+      precioAntes: "369.99",
+      imagenes: [
+        "fotos/productos/33.Flash-Godox-TT600S.jpg",
+        "fotos/productos/33.2.Flash-Godox-TT600S.jpg",
+        "fotos/productos/33.3.Flash-Godox-TT600S.jpg",
+        "fotos/productos/33.4.Flash-Godox-TT600S.jpg",
+      ]
+    },
+    {
       nombre: "📱Selfie Stick con Estabilizador Q31",
       precio: "129.99",
       precioAntes: "149.99",
