@@ -5,6 +5,18 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🚗Cámara Dash Cam para Auto – Doble Lente",
+      precio: "119.99",
+      precioAntes: "159.99",
+      imagenes: [
+        "fotos/productos/36.Cámara-Dash-Cam-para-Auto.jpg",
+        "fotos/productos/36.2.Cámara-Dash-Cam-para-Auto.jpg",
+        "fotos/productos/36.3.Cámara-Dash-Cam-para-Auto.jpg",
+        "fotos/productos/36.4.Cámara-Dash-Cam-para-Auto.jpg",
+        "fotos/productos/36.5.Cámara-Dash-Cam-para-Auto.jpg",
+      ]
+    },
+    {
       nombre: "💻✨ Soporte Plegable para Laptop con Enfriamiento y Puertos USB🔥",
       precio: "69.99",
       precioAntes: "89.99",
