@@ -5,6 +5,17 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🎥 Soporte de Cabeza para GoPro – Toma POV Real",
+      precio: "79.99",
+      precioAntes: "99.99",
+      imagenes: [
+        "fotos/productos/38.Soporte-de-Cabeza-para-GoPro.jpg",
+        "fotos/productos/38.2.Soporte-de-Cabeza-para-GoPro.jpg",
+        "fotos/productos/38.3.Soporte-de-Cabeza-para-GoPro.jpg",
+        "fotos/productos/38.4.Soporte-de-Cabeza-para-GoPro.jpg",
+      ]
+    },
+    {
       nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
       precio: "9.99",
       precioAntes: "29.99",
