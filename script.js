@@ -5,6 +5,16 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
+      precio: "9.99",
+      precioAntes: "29.99",
+      imagenes: [
+        "fotos/productos/37.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+        "fotos/productos/37.2.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+        "fotos/productos/37.3.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+      ]
+    },
+    {
       nombre: "🚗Cámara Dash Cam para Auto – Doble Lente",
       precio: "119.99",
       precioAntes: "159.99",
