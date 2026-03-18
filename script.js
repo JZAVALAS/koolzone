@@ -5,6 +5,20 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🎬Proyector 4K HY320 con Android y WiFi",
+      precio: "219.99",
+      precioAntes: "249.99",
+      imagenes: [
+        "fotos/productos/39.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.2.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.3.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.4.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.5.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.6.Proyector-4K-HY320.jpg",
+        "fotos/productos/39.7.Proyector-4K-HY320.jpg",
+      ]
+    },
+    {
       nombre: "🎥 Soporte de Cabeza para GoPro – Toma POV Real",
       precio: "79.99",
       precioAntes: "99.99",
