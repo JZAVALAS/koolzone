@@ -5,7 +5,7 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
-      nombre: "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
+      nombre: "⚙️MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY⚙️",
       precio: "129.99",
       precioAntes: "149.99",
       imagenes: [
