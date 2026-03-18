@@ -6,8 +6,8 @@ var WA_NUMBER = "51964774354";
 var PRODUCTOS = [
     {
       nombre: "🎬Proyector 4K HY320 con Android y WiFi",
-      precio: "219.99",
-      precioAntes: "249.99",
+      precio: "279.99",
+      precioAntes: "299.99",
       imagenes: [
         "fotos/productos/39.Proyector-4K-HY320.jpg",
         "fotos/productos/39.2.Proyector-4K-HY320.jpg",
