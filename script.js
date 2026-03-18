@@ -5,6 +5,19 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
+      precio: "129.99",
+      precioAntes: "149.99",
+      imagenes: [
+        "fotos/productos/40.Mini-amoladora.jpg",
+        "fotos/productos/40.2.Mini-amoladora.jpg",
+        "fotos/productos/40.3.Mini-amoladora.jpg",
+        "fotos/productos/40.4.Mini-amoladora.jpg",
+        "fotos/productos/40.5.Mini-amoladora.jpg",
+        "fotos/productos/40.6.Mini-amoladora.jpg",
+      ]
+    },
+    {
       nombre: "🎬Proyector 4K HY320 con Android y WiFi",
       precio: "279.99",
       precioAntes: "299.99",
