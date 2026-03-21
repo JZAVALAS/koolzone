@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KOOOLZONE</title>
+  <title>KOOLZONE</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
@@ -36,7 +36,7 @@
 
     <!-- SLIDE 1 — pon tu imagen: <img src="./slider/banner1.jpg" alt=""/> -->
     <div class="slide slide-1">
-      <img src="fotos/Slider/banner1.jpg" alt=""/>
+      <img src="./Fotos/Slider/banner1.jpg" alt=""/>
       <div class="slide-content">
         <span class="slide-tag">🔥 Accesorios</span>
         <h2 class="slide-title"><br/>FilMaker y Fotografos</h2>
@@ -45,7 +45,7 @@
 
     <!-- SLIDE 2 -->
     <div class="slide slide-2">
-      <img src="./fotos/Slider/banner2.jpg" alt=""/>
+      <img src="./Fotos/Slider/banner2.jpg" alt=""/>
       <div class="slide-content">
         <span class="slide-tag">✨ Accesorios</span>
         <h2 class="slide-title"><br/>Gopro</h2>
@@ -54,7 +54,7 @@
 
     <!-- SLIDE 3 -->
     <div class="slide slide-3">
-      <img src="./fotos/Slider/banner3.jpg" alt=""/>
+      <img src="./Fotos/Slider/banner3.jpg" alt=""/>
       <div class="slide-content">
         <span class="slide-tag">📦 Envíos</span>
         <h2 class="slide-title"><br/>a todo el Perú</h2>
@@ -68,7 +68,15 @@
 
 <!-- ══ PRODUCTOS ══ -->
 <section class="productos-section">
-  <p class="section-titulo">Productos destacados</p>
+  <div class="categorias-wrap">
+  <button class="cat-btn activo" data-cat="Todos">Todos</button>
+  <button class="cat-btn" data-cat="Cámara y Foto">📷 Cámara y Foto</button>
+  <button class="cat-btn" data-cat="Computación">💻 Computación</button>
+  <button class="cat-btn" data-cat="Video y Audio">🎬 Video y Audio</button>
+  <button class="cat-btn" data-cat="Almacenamiento">💾 Almacenamiento</button>
+  <button class="cat-btn" data-cat="Accesorios">⚙️ Accesorios</button>
+</div>
+<p class="section-titulo">Productos destacados</p>
   <div class="productos-grid" id="productosGrid"></div>
 </section>
 
@@ -82,9 +90,13 @@
   <div class="lightbox-dots" id="lbDots"></div>
 </div>
 
+<!-- BOTÓN IR ARRIBA -->
+<button class="btn-arriba" id="btnArriba">
+  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
 <script src="script.js"></script>
 </body>
-
 </html>
-
-
