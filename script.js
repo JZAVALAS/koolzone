@@ -5,6 +5,16 @@ var WA_NUMBER = "51964774354";
 
 var PRODUCTOS = [
     {
+      nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
+      precio: "329.99",
+      precioAntes: "359.99",
+      imagenes: [
+        "fotos/productos/41.DJI-Mic-Mini.jpg",
+        "fotos/productos/41.2.DJI-Mic-Mini.jpg",
+        "fotos/productos/41.3.DJI-Mic-Mini.jpg",
+      ]
+    },
+    {
       nombre: "⚙️MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY⚙️",
       precio: "129.99",
       precioAntes: "149.99",
