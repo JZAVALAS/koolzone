@@ -7,8 +7,8 @@ var categoriaActiva = "Todos";
 var PRODUCTOS = [
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
-    precio: "329.99",
-    precioAntes: "359.99",
+    precio: "529.99",
+    precioAntes: "559.99",
     categoria: "Video y Audio",
     imagenes: [
       "fotos/productos/41.DJI-Mic-Mini.jpg",
