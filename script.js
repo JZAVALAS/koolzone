@@ -6,6 +6,18 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
   {
+    nombre: "🔋Cargador Triple para GoPro + Caja de Almacenamiento",
+    precio: "69.99",
+    precioAntes: "89.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/42.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.2.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.3.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.4.Cargador-Triple-para-GoPro.jpg",
+    ],
+  },
+  {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
     precio: "529.99",
     precioAntes: "559.99",
