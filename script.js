@@ -6,6 +6,18 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
   {
+    nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
+    precio: "54.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/43.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.2.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.3.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.4.Soporte-para-Manillar-360°-para-GoPro.jpg",
+    ],
+  },
+  {
     nombre: "🔋Cargador Triple para GoPro + Caja de Almacenamiento",
     precio: "69.99",
     precioAntes: "89.99",
