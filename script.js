@@ -1,527 +1,892 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ══════════════════════════════════════════════════
+   CONFIGURACIÓN
+══════════════════════════════════════════════════ */
+var WA_NUMBER = "51964774354";
+var categoriaActiva = "Todos";
 
-:root {
-  --acento: #00d4ff;
-  --acento-dark: #00b8e0;
-  --fondo: #0f0f0f;
-  --fondo-card: #1e1e2e;
-  --fondo-nav: #1a1a2e;
-  --texto: #ffffff;
-  --texto-suave: #aaaaaa;
-  --borde: #2a2a3e;
+var PRODUCTOS = [
+  {
+    nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
+    precio: "54.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/43.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.2.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.3.Soporte-para-Manillar-360°-para-GoPro.jpg",
+      "fotos/productos/43.4.Soporte-para-Manillar-360°-para-GoPro.jpg",
+    ],
+  },
+  {
+    nombre: "🔋Cargador Triple para GoPro + Caja de Almacenamiento",
+    precio: "69.99",
+    precioAntes: "89.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/42.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.2.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.3.Cargador-Triple-para-GoPro.jpg",
+      "fotos/productos/42.4.Cargador-Triple-para-GoPro.jpg",
+    ],
+  },
+  {
+    nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
+    precio: "529.99",
+    precioAntes: "559.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/41.DJI-Mic-Mini.jpg",
+      "fotos/productos/41.2.DJI-Mic-Mini.jpg",
+      "fotos/productos/41.3.DJI-Mic-Mini.jpg",
+    ],
+  },
+  {
+    nombre:
+      "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
+    precio: "129.99",
+    precioAntes: "149.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/40.Mini-amoladora.jpg",
+      "fotos/productos/40.2.Mini-amoladora.jpg",
+      "fotos/productos/40.3.Mini-amoladora.jpg",
+      "fotos/productos/40.4.Mini-amoladora.jpg",
+      "fotos/productos/40.5.Mini-amoladora.jpg",
+      "fotos/productos/40.6.Mini-amoladora.jpg",
+    ],
+  },
+  {
+    nombre: "🎬Proyector 4K HY320 con Android y WiFi",
+    precio: "279.99",
+    precioAntes: "299.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/39.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.2.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.3.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.4.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.5.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.6.Proyector-4K-HY320.jpg",
+      "fotos/productos/39.7.Proyector-4K-HY320.jpg",
+    ],
+  },
+  {
+    nombre: "🎥 Soporte de Cabeza para GoPro – Toma POV Real",
+    precio: "79.99",
+    precioAntes: "99.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/38.Soporte-de-Cabeza-para-GoPro.jpg",
+      "fotos/productos/38.2.Soporte-de-Cabeza-para-GoPro.jpg",
+      "fotos/productos/38.3.Soporte-de-Cabeza-para-GoPro.jpg",
+      "fotos/productos/38.4.Soporte-de-Cabeza-para-GoPro.jpg",
+    ],
+  },
+  {
+    nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
+    precio: "9.99",
+    precioAntes: "29.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/37.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+      "fotos/productos/37.2.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+      "fotos/productos/37.3.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
+    ],
+  },
+  {
+    nombre: "🚗 Cámara Dash Cam para Auto – Doble Lente",
+    precio: "119.99",
+    precioAntes: "159.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/36.Cámara-Dash-Cam-para-Auto.jpg",
+      "fotos/productos/36.2.Cámara-Dash-Cam-para-Auto.jpg",
+      "fotos/productos/36.3.Cámara-Dash-Cam-para-Auto.jpg",
+      "fotos/productos/36.4.Cámara-Dash-Cam-para-Auto.jpg",
+      "fotos/productos/36.5.Cámara-Dash-Cam-para-Auto.jpg",
+    ],
+  },
+  {
+    nombre:
+      "💻✨ Soporte Plegable para Laptop con Enfriamiento y Puertos USB🔥",
+    precio: "69.99",
+    precioAntes: "89.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/35.Soporte-Plegable-para-Laptop.jpg",
+      "fotos/productos/35.2.Soporte-Plegable-para-Laptop.jpg",
+      "fotos/productos/35.3.Soporte-Plegable-para-Laptop.jpg",
+      "fotos/productos/35.4.Soporte-Plegable-para-Laptop.jpg",
+      "fotos/productos/35.5.Soporte-Plegable-para-Laptop.jpg",
+      "fotos/productos/35.6.Soporte-Plegable-para-Laptop.jpg",
+    ],
+  },
+  {
+    nombre: "✨ LUZ DE ANILLO PORTÁTIL PARA CELULAR",
+    precio: "49.99",
+    precioAntes: "59.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/34.Luz-de-anillo-portatil.jpg",
+      "fotos/productos/34.2.Luz-de-anillo-portatil.jpg",
+      "fotos/productos/34.3.Luz-de-anillo-portatil.jpg",
+      "fotos/productos/34.4.Luz-de-anillo-portatil.jpg",
+      "fotos/productos/34.5.Luz-de-anillo-portatil.jpg",
+      "fotos/productos/34.6.Luz-de-anillo-portatil.jpg",
+    ],
+  },
+  {
+    nombre: "📸 Flash Godox TT600S",
+    precio: "339.99",
+    precioAntes: "369.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/33.Flash-Godox-TT600S.jpg",
+      "fotos/productos/33.2.Flash-Godox-TT600S.jpg",
+      "fotos/productos/33.3.Flash-Godox-TT600S.jpg",
+      "fotos/productos/33.4.Flash-Godox-TT600S.jpg",
+    ],
+  },
+  {
+    nombre: "📱Selfie Stick con Estabilizador Q31",
+    precio: "129.99",
+    precioAntes: "149.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/32.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.2.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.3.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.4.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.5.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.6.Selfie-Stick-con-Estabilizador-Q31.jpg",
+      "fotos/productos/32.7.Selfie-Stick-con-Estabilizador-Q31.jpg",
+    ],
+  },
+  {
+    nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
+    precio: "149.99",
+    precioAntes: "179.99",
+    categoria: "Almacenamiento",
+    imagenes: [
+      "fotos/productos/31.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+      "fotos/productos/31.2.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+      "fotos/productos/31.3.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+      "fotos/productos/31.4.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
+    ],
+  },
+  {
+    nombre: "📷Protector de Pantalla para GoPro Hero 8",
+    precio: "9.99",
+    precioAntes: "19.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/30.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
+      "fotos/productos/30.2.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
+    ],
+  },
+  {
+    nombre: "🎤Micrófono Lavalier Inalámbrico ZealSound",
+    precio: "149.99",
+    precioAntes: "199.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/29.Microfonos-Zealsound.jpg",
+      "fotos/productos/29.2.Microfonos-Zealsound.jpg",
+      "fotos/productos/29.3.Microfonos-Zealsound.jpg",
+    ],
+  },
+  {
+    nombre: "📷Tapa para Lente Nikon F Mount",
+    precio: "19.99",
+    precioAntes: "29.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/28.Tapa-de-cuerpo-nikon-monturaF.jpg",
+      "fotos/productos/28.2.Tapa-de-cuerpo-nikon-monturaF.jpg",
+      "fotos/productos/28.3.Tapa-de-cuerpo-nikon-monturaF.jpg",
+    ],
+  },
+  {
+    nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
+    precio: "69.99",
+    precioAntes: "79.99",
+    categoria: "Computación",
+    imagenes: ["fotos/productos/27.Memoria-RAM-4GB-DDR4-para-Laptop.jpg"],
+  },
+  {
+    nombre: "📸Trípode Expandible de 3 Secciones – Compacto y Estable🔥",
+    precio: "49.99",
+    precioAntes: "79.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/26.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.2.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.3.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.4.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.5.Trípode-Expandible-de-3-Secciones.jpg",
+      "fotos/productos/26.6.Trípode-Expandible-de-3-Secciones.jpg",
+    ],
+  },
+  {
+    nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
+    precio: "89.99",
+    precioAntes: "109.99",
+    categoria: "Almacenamiento",
+    imagenes: [
+      "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+    ],
+  },
+  {
+    nombre: "📱Soporte Giratorio para Celular con Doble Zapata Fría",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/24.Soporte-Giratorio-para-Celular.jpg",
+      "fotos/productos/24.2.Soporte-Giratorio-para-Celular.jpg",
+      "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
+    ],
+  },
+  {
+    nombre: "🎥📸Soporte Metálico en L para Cámara de Acción",
+    precio: "49.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/23.Soporte-Metálico-en-L.jpg",
+      "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
+      "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
+    ],
+  },
+  {
+    nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
+    precio: "19.99",
+    precioAntes: "29.99",
+    categoria: "Almacenamiento",
+    imagenes: [
+      "fotos/productos/22.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.2.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.3.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+      "fotos/productos/22.4.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
+    ],
+  },
+  {
+    nombre: "📸Carcasa Impermeable para GoPro Hero 8",
+    precio: "69.99",
+    precioAntes: "79.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/21.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.2.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.3.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+      "fotos/productos/21.4.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
+    ],
+  },
+  {
+    nombre: "✨HUB USB-C multipuerto 8 en 1 (USB 3.0)",
+    precio: "49.99",
+    precioAntes: "59.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/20.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.2.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.3.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+      "fotos/productos/20.4.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
+    ],
+  },
+  {
+    nombre: "🔧Kit de destornilladores de precisión",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/19.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+      "fotos/productos/19.2.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+      "fotos/productos/19.3.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
+    ],
+  },
+  {
+    nombre: "📸Barra Extensora Horizontal para Trípode",
+    precio: "129.99",
+    precioAntes: "179.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/18.BARRA-EXTENSORA-HORIZONTAL.jpg",
+      "fotos/productos/18.2.BARRA-EXTENSORA-HORIZONTAL.jpg",
+      "fotos/productos/18.3.BARRA-EXTENSORA-HORIZONTAL.jpg",
+    ],
+  },
+  {
+    nombre: "📷Bolso para Cámara Fotográfica",
+    precio: "59.99",
+    precioAntes: "79.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/17.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
+      "fotos/productos/17.2.BOLSO-PROTECTOR-PARA-CAMARAjpg.jpg",
+    ],
+  },
+  {
+    nombre: "📷Bolsa Protectora de Neopreno para Lentes de Cámara",
+    precio: "69.99",
+    precioAntes: "89.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/16.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.2.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.3.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+      "fotos/productos/16.4.BOLSA-PROTECTORA-PARA-LENTES.jpg",
+    ],
+  },
+  {
+    nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
+    precio: "94.99",
+    precioAntes: "109.99",
+    categoria: "Accesorios",
+    imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
+  },
+  {
+    nombre: "📸Correa Profesional para Cámara DSLR",
+    precio: "69.99",
+    precioAntes: "89.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/14.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.2.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.3.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.4.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+      "fotos/productos/14.5.CORREA-DE-PECHO-PARA-CAMARA.jpg",
+    ],
+  },
+  {
+    nombre: "📸Correa de Mano para Cámara",
+    precio: "59.99",
+    precioAntes: "79.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/13.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.2.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.3.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.4.CORREA-DE-MANO.jpg",
+      "fotos/productos/13.5.CORREA-DE-MANO.jpg",
+    ],
+  },
+  {
+    nombre: "📸 Soporte en L para Cámara – Placa de Liberación Rápida",
+    precio: "49.99",
+    precioAntes: "59.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/12.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.2.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.3.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.4.SOPORTE-EN-L.jpg",
+      "fotos/productos/12.5.SOPORTE-EN-L.jpg",
+    ],
+  },
+  {
+    nombre: "💻Memoria RAM 4GB DDR3L SK Hynix para Laptop – 1600 MHz",
+    precio: "59.99",
+    precioAntes: "69.99",
+    categoria: "Computación",
+    imagenes: ["fotos/productos/1.MEMORIA-RAM-4GB-DDR3L.jpg"],
+  },
+  {
+    nombre: "💻⚡Memoria RAM Crucial 4gb para laptop⚡💻",
+    precio: "89.99",
+    precioAntes: "99.99",
+    categoria: "Computación",
+    imagenes: ["fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.jpg"],
+  },
+  {
+    nombre: "📸✨Mini trípode portátil - Estabilidad en cualquier lugar✨📸",
+    precio: "14.99",
+    precioAntes: "19.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
+      "fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
+    ],
+  },
+  {
+    nombre: "📸🔌Adaptador de montaje con 3 zapatas frías🔌📸",
+    precio: "14.99",
+    precioAntes: "19.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/5.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/5.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+    ],
+  },
+  {
+    nombre: "🔌✨Convertidor HDMI a VGA con audio✨🔌",
+    precio: "19.99",
+    precioAntes: "29.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/6.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.2.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.3.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+      "fotos/productos/6.4.CONVERTIDOR-DE-HDMI-A-VGA.jpg",
+    ],
+  },
+  {
+    nombre: "🌈✨Barra led RGB 30cm - iluminación profesional✨🌈",
+    precio: "119.99",
+    precioAntes: "149.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/7.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.2.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.3.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.4.BARRA-LED-RGB.jpg",
+      "fotos/productos/7.5.BARRA-LED-RGB.jpg",
+    ],
+  },
+  {
+    nombre: "📱✨Monitor Magnético para Selfies y Vlogging✨📱",
+    precio: "149.99",
+    precioAntes: "179.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/8.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.2.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.3.MONITOR-MAGNETICO.jpg",
+      "fotos/productos/8.4.MONITOR-MAGNETICO.jpg",
+    ],
+  },
+  {
+    nombre: "🔌✨Hub Usb 5 en 1 de aluminio - compacto y potente✨🔌",
+    precio: "34.99",
+    precioAntes: "44.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/9.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.2.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.3.HUB-USB-5-EN-1.jpg",
+      "fotos/productos/9.4.HUB-USB-5-EN-1.jpg",
+    ],
+  },
+  {
+    nombre: "👕🔥Pack de 3 Shorts deportivos para Hombre - Talla L🔥👕",
+    precio: "79.99",
+    precioAntes: "99.99",
+    categoria: "Accesorios",
+    imagenes: ["fotos/productos/10.PACK-SHORES.jpg"],
+  },
+];
+
+/* ══════════════════════════════════════════════════
+   SVGs
+══════════════════════════════════════════════════ */
+var WA_SVG =
+  '<svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.61 1.832 6.51L4 29l7.695-1.806A12.94 12.94 0 0 0 16 28c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.523 0 10 4.477 10 10S21.523 25 16 25a10.94 10.94 0 0 1-5.51-1.487l-.39-.23-4.567 1.073 1.1-4.453-.254-.405A9.958 9.958 0 0 1 6 15c0-5.523 4.477-10 10-10zm-3.122 4.82c-.22-.003-.444.004-.637.012-.28.012-.696.105-1.063.504-.366.4-1.4 1.37-1.4 3.34s1.432 3.873 1.633 4.141c.2.267 2.79 4.44 6.888 6.045 3.41 1.343 4.104.876 4.845.82.74-.054 2.388-.977 2.727-1.92.34-.944.34-1.754.238-1.922-.1-.167-.367-.267-.768-.467s-2.372-1.17-2.74-1.303c-.367-.133-.634-.2-.9.2-.267.4-1.033 1.303-1.267 1.57-.233.267-.467.3-.867.1-.4-.2-1.688-.623-3.217-1.985-1.188-1.06-1.99-2.37-2.223-2.77-.233-.4-.025-.617.175-.817.18-.18.4-.467.6-.7.2-.234.267-.4.4-.667.134-.267.067-.5-.033-.7-.1-.2-.88-2.18-1.22-2.98-.3-.72-.608-.72-.835-.727z"/></svg>';
+var IMG_SVG =
+  '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';
+
+/* ══════════════════════════════════════════════════
+   LIGHTBOX
+══════════════════════════════════════════════════ */
+var lightbox = null;
+var lbImg = null;
+var lbContador = null;
+var lbDots = null;
+var lbImagenes = [];
+var lbActual = 0;
+
+function lbMostrar(imgs, index) {
+  lbImagenes = imgs.filter(function (s) {
+    return s && s !== "";
+  });
+  if (lbImagenes.length === 0) return;
+  lbActual = index < lbImagenes.length ? index : 0;
+  lightbox.classList.add("activo");
+  lbDots.innerHTML = lbImagenes
+    .map(function (_, i) {
+      return (
+        '<button class="lightbox-dot' +
+        (i === lbActual ? " active" : "") +
+        '" data-i="' +
+        i +
+        '"></button>'
+      );
+    })
+    .join("");
+  lbDots.querySelectorAll(".lightbox-dot").forEach(function (d) {
+    d.addEventListener("click", function () {
+      lbIr(parseInt(this.getAttribute("data-i")));
+    });
+  });
+  lbActualizar();
 }
 
-body {
-  font-family: 'Nunito Sans', sans-serif;
-  background: var(--fondo);
-  color: var(--texto);
+function lbActualizar() {
+  lbImg.src = lbImagenes[lbActual];
+  lbContador.textContent =
+    lbImagenes.length > 1 ? lbActual + 1 + " / " + lbImagenes.length : "";
+  lbDots.querySelectorAll(".lightbox-dot").forEach(function (d, i) {
+    d.classList.toggle("active", i === lbActual);
+  });
 }
 
-/* ══ CABECERA ══ */
-header {
-  background: var(--fondo-nav);
-  padding: 0 20px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 20px rgba(0, 212, 255, 0.15);
-  border-bottom: 1px solid var(--borde);
+function lbIr(n) {
+  lbActual = (n + lbImagenes.length) % lbImagenes.length;
+  lbActualizar();
 }
 
-.logo {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900;
-  font-size: 24px;
-  color: var(--acento);
-  letter-spacing: -0.5px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1;
+/* ══════════════════════════════════════════════════
+   HELPERS
+══════════════════════════════════════════════════ */
+function buildSlide(src) {
+  return src
+    ? '<div class="pcard-slide"><img src="' +
+        src +
+        '" alt="producto" loading="lazy"></div>'
+    : '<div class="pcard-slide"><div class="pcard-placeholder">' +
+        IMG_SVG +
+        "<span>IMAGEN</span></div></div>";
 }
 
-.logo-ciudad {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: rgba(255,255,255,0.5);
-  text-shadow: none;
-  margin-top: 2px;
-}
-.logo span { color: rgba(255,255,255,0.6); }
-
-.search-wrap {
-  flex: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
+function buildDots(n) {
+  var h = "";
+  for (var i = 0; i < n; i++) {
+    h +=
+      '<button class="pcard-dot' +
+      (i === 0 ? " active" : "") +
+      '" data-i="' +
+      i +
+      '"></button>';
+  }
+  return h;
 }
 
-.search-icon {
-  position: absolute;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  color: var(--acento);
-  pointer-events: none;
+function buildPrecio(p, pAntes) {
+  var pts = p.split(".");
+  var actual = "S/ " + pts[0] + (pts[1] ? "<sup>." + pts[1] + "</sup>" : "");
+  if (pAntes && pAntes !== "") {
+    var ptsA = pAntes.split(".");
+    var antes =
+      "S/ " + ptsA[0] + (ptsA[1] ? "<sup>." + ptsA[1] + "</sup>" : "");
+    return '<span class="precio-antes">' + antes + "</span> " + actual;
+  }
+  return actual;
 }
 
-.search-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--borde);
-  border-radius: 22px;
-  padding: 0 44px 0 40px;
-  font-size: 14px;
-  font-family: 'Nunito Sans', sans-serif;
-  outline: none;
-  background: rgba(255,255,255,0.05);
-  color: var(--texto);
-  transition: box-shadow 0.2s, border-color 0.2s;
-}
-.search-input::placeholder { color: #555; }
-.search-input:focus {
-  border-color: var(--acento);
-  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
-}
-
-.header-icons { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
-
-.icon-btn {
-  position: relative;
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--borde);
-  background: rgba(255,255,255,0.05);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s, border-color 0.2s;
-  color: var(--texto);
-}
-.icon-btn:hover {
-  background: rgba(0, 212, 255, 0.15);
-  border-color: var(--acento);
-  transform: scale(1.07);
-}
-.icon-btn svg { width: 22px; height: 22px; }
-
-.badge {
-  position: absolute;
-  top: 1px; right: 1px;
-  background: var(--acento);
-  color: #000;
-  font-size: 10px;
-  font-weight: 800;
-  font-family: 'Nunito', sans-serif;
-  width: 17px; height: 17px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  border: 2px solid var(--fondo-nav);
+/* ══════════════════════════════════════════════════
+   FILTROS
+══════════════════════════════════════════════════ */
+function aplicarFiltros() {
+  var q = document.querySelector(".search-input").value.toLowerCase().trim();
+  var lista = PRODUCTOS;
+  if (categoriaActiva !== "Todos") {
+    lista = lista.filter(function (p) {
+      return p.categoria === categoriaActiva;
+    });
+  }
+  if (q) {
+    lista = lista.filter(function (p) {
+      return p.nombre.toLowerCase().includes(q);
+    });
+  }
+  renderProductos(lista);
 }
 
-/* ══ SLIDER BANNER ══ */
-.slider-section {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: #000;
-  user-select: none;
+/* ══════════════════════════════════════════════════
+   RENDER DE PRODUCTOS
+══════════════════════════════════════════════════ */
+function renderProductos(lista) {
+  var grid = document.getElementById("productosGrid");
+  if (lista.length === 0) {
+    grid.innerHTML =
+      '<p style="grid-column:1/-1;text-align:center;padding:40px;color:#bbb;font-style:italic;">No se encontraron productos.</p>';
+    return;
+  }
+  grid.innerHTML = lista
+    .map(function (p) {
+      var imgs = p.imagenes || [""];
+      var n = imgs.length;
+      var multi = n > 1;
+      var msg = encodeURIComponent(
+        "Hola! Me interesa: " + p.nombre + " — S/ " + p.precio,
+      );
+      var waUrl = "https://wa.me/" + WA_NUMBER + "?text=" + msg;
+      return (
+        '<div class="pcard">' +
+        '<div class="pcard-slider-wrap">' +
+        '<div class="pcard-track">' +
+        imgs.map(buildSlide).join("") +
+        "</div>" +
+        (multi
+          ? '<button class="pcard-arrow prev">&#8249;</button><button class="pcard-arrow next">&#8250;</button>'
+          : "") +
+        (multi ? '<div class="pcard-dots">' + buildDots(n) + "</div>" : "") +
+        (multi ? '<span class="pcard-counter">1 / ' + n + "</span>" : "") +
+        "</div>" +
+        '<div class="pcard-body">' +
+        '<p class="pcard-nombre">' +
+        p.nombre +
+        "</p>" +
+        '<p class="pcard-precio">' +
+        buildPrecio(p.precio, p.precioAntes) +
+        "</p>" +
+        '<div class="card-btns">' +
+          '<a class="btn-wa" href="' + waUrl + '" target="_blank" rel="noopener">' + WA_SVG + ' Consultar</a>' +
+          '<button class="btn-compartir" onclick="compartir(\'' + encodeURIComponent(p.nombre) + '\', \'' + encodeURIComponent(p.precio) + '\')">' +
+          '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>' +
+          '</button>' +
+        '</div>' +
+        "</div>" +
+        "</div>"
+      );
+    })
+    .join("");
+
+  document.querySelectorAll(".pcard").forEach(function (card) {
+    var track = card.querySelector(".pcard-track");
+    var dotBtns = card.querySelectorAll(".pcard-dot");
+    var counter = card.querySelector(".pcard-counter");
+    var total = card.querySelectorAll(".pcard-slide").length;
+    var cur = 0;
+
+    function goTo(n) {
+      cur = (n + total) % total;
+      track.style.transform = "translateX(-" + cur * 100 + "%)";
+      dotBtns.forEach(function (d, i) {
+        d.classList.toggle("active", i === cur);
+      });
+      if (counter) counter.textContent = cur + 1 + " / " + total;
+    }
+
+    if (total > 1) {
+      card
+        .querySelector(".pcard-arrow.next")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          goTo(cur + 1);
+        });
+      card
+        .querySelector(".pcard-arrow.prev")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          goTo(cur - 1);
+        });
+      dotBtns.forEach(function (d) {
+        d.addEventListener("click", function (e) {
+          e.preventDefault();
+          goTo(parseInt(this.getAttribute("data-i")));
+        });
+      });
+      var sx = 0;
+      track.addEventListener(
+        "touchstart",
+        function (e) {
+          sx = e.touches[0].clientX;
+        },
+        { passive: true },
+      );
+      track.addEventListener("touchend", function (e) {
+        var diff = sx - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 30) goTo(cur + (diff > 0 ? 1 : -1));
+      });
+    }
+
+    var todasLasImgs = card.querySelectorAll(".pcard-slide img");
+    todasLasImgs.forEach(function (img) {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", function () {
+        var srcs = Array.from(todasLasImgs).map(function (i) {
+          return i.src;
+        });
+        lbMostrar(srcs, cur);
+      });
+    });
+  });
 }
 
-.slides-track {
-  display: flex;
-  transition: transform 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+/* ══════════════════════════════════════════════════
+   INICIO
+══════════════════════════════════════════════════ */
+document.addEventListener("DOMContentLoaded", function () {
+  /* ── Slider banner ── */
+  var bannerTrack = document.getElementById("slidesTrack");
+  var dotsWrap = document.getElementById("sliderDots");
+  var bar = document.getElementById("progressBar");
+  var bannerTotal = bannerTrack.querySelectorAll(".slide").length;
+  var bannerCur = 0;
+  var INTERVAL = 3000;
+  var bannerTimer;
+
+  for (var i = 0; i < bannerTotal; i++) {
+    var d = document.createElement("button");
+    d.className = "dot" + (i === 0 ? " active" : "");
+    d.setAttribute("data-i", i);
+    d.addEventListener("click", function () {
+      bannerGoTo(parseInt(this.getAttribute("data-i")));
+      bannerReset();
+    });
+    dotsWrap.appendChild(d);
+  }
+
+  function bannerGoTo(n) {
+    bannerCur = (n + bannerTotal) % bannerTotal;
+    bannerTrack.style.transform = "translateX(-" + bannerCur * 100 + "%)";
+    dotsWrap.querySelectorAll(".dot").forEach(function (d, idx) {
+      d.classList.toggle("active", idx === bannerCur);
+    });
+    bar.style.transition = "none";
+    bar.style.width = "0%";
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        bar.style.transition = "width " + INTERVAL + "ms linear";
+        bar.style.width = "100%";
+      });
+    });
+  }
+
+  function bannerStart() {
+    bannerTimer = setInterval(function () {
+      bannerGoTo(bannerCur + 1);
+    }, INTERVAL);
+  }
+  function bannerReset() {
+    clearInterval(bannerTimer);
+    bannerStart();
+  }
+
+  var bx = 0;
+  bannerTrack.addEventListener(
+    "touchstart",
+    function (e) {
+      bx = e.touches[0].clientX;
+    },
+    { passive: true },
+  );
+  bannerTrack.addEventListener("touchend", function (e) {
+    var diff = bx - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      bannerGoTo(bannerCur + (diff > 0 ? 1 : -1));
+      bannerReset();
+    }
+  });
+
+  document
+    .getElementById("sliderSection")
+    .addEventListener("mouseenter", function () {
+      clearInterval(bannerTimer);
+    });
+  document
+    .getElementById("sliderSection")
+    .addEventListener("mouseleave", function () {
+      bannerReset();
+    });
+
+  bannerGoTo(0);
+  bannerStart();
+
+  /* ── Lightbox ── */
+  lightbox = document.getElementById("lightbox");
+  lbImg = document.getElementById("lbImg");
+  lbContador = document.getElementById("lbContador");
+  lbDots = document.getElementById("lbDots");
+
+  document.getElementById("lbCerrar").addEventListener("click", function () {
+    lightbox.classList.remove("activo");
+    lbImg.src = "";
+  });
+  document.getElementById("lbPrev").addEventListener("click", function () {
+    lbIr(lbActual - 1);
+  });
+  document.getElementById("lbNext").addEventListener("click", function () {
+    lbIr(lbActual + 1);
+  });
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("activo");
+      lbImg.src = "";
+    }
+  });
+
+  var lbTouchX = 0;
+  lightbox.addEventListener(
+    "touchstart",
+    function (e) {
+      lbTouchX = e.touches[0].clientX;
+    },
+    { passive: true },
+  );
+  lightbox.addEventListener("touchend", function (e) {
+    var diff = lbTouchX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) lbIr(lbActual + (diff > 0 ? 1 : -1));
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("activo");
+      lbImg.src = "";
+    }
+    if (e.key === "ArrowRight") lbIr(lbActual + 1);
+    if (e.key === "ArrowLeft") lbIr(lbActual - 1);
+  });
+
+  /* ── Render inicial ── */
+  renderProductos(PRODUCTOS);
+
+  /* ── Categorías ── */
+  document.querySelectorAll(".cat-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".cat-btn").forEach(function (b) {
+        b.classList.remove("activo");
+      });
+      this.classList.add("activo");
+      categoriaActiva = this.getAttribute("data-cat");
+      aplicarFiltros();
+    });
+  });
+
+  /* ── Buscador ── */
+  document
+    .querySelector(".search-input")
+    .addEventListener("input", function () {
+      aplicarFiltros();
+    });
+
+  /* ── Botón ir arriba ── */
+var btnArriba = document.getElementById("btnArriba");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 300) {
+    btnArriba.classList.add("visible");
+  } else {
+    btnArriba.classList.remove("visible");
+  }
+});
+
+btnArriba.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+});
+
+function compartir(nombre, precio) {
+  var nombreDecoded = decodeURIComponent(nombre);
+  var precioDecoded = decodeURIComponent(precio);
+  var texto = nombreDecoded + " — S/ " + precioDecoded + "\n" + window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "KoolZone Paita",
+      text: nombreDecoded + " — S/ " + precioDecoded,
+      url: window.location.href
+    });
+  } else {
+    navigator.clipboard.writeText(texto).then(function() {
+      alert("¡Enlace copiado al portapapeles!");
+    });
+  }
 }
 
-.slide {
-  min-width: 100%;
-  aspect-ratio: 2 / 1;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.slide-1 { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0d2137 100%); }
-.slide-2 { background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0f2027 100%); }
-.slide-3 { background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #2d1b69 100%); }
-
-.slide-content {
-  position: absolute; inset: 0;
-  display: flex; flex-direction: column;
-  align-items: flex-start; justify-content: center;
-  padding: 16px 20px;
-  background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
-}
-
-.slide-tag {
-  background: rgba(0, 212, 255, 0.15);
-  border: 1px solid rgba(0, 212, 255, 0.3);
-  color: var(--acento);
-  font-size: 9px; font-weight: 700;
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 1px; text-transform: uppercase;
-  padding: 3px 8px; border-radius: 20px;
-  margin-bottom: 6px;
-}
-
-.slide-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900;
-  font-size: clamp(14px, 3.5vw, 34px);
-  color: #fff; line-height: 1.2;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
-  margin-bottom: 10px;
-}
-
-.slide-btn {
-  background: var(--acento);
-  color: #000;
-  font-family: 'Nunito', sans-serif; font-weight: 800;
-  font-size: clamp(10px, 2.5vw, 13px);
-  padding: 7px 14px; border-radius: 22px; border: none; cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
-  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
-}
-
-.slide-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 212, 255, 0.6);
-}
-
-.slider-dots {
-  position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
-  display: flex; gap: 8px; z-index: 10;
-}
-
-.dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: rgba(255,255,255,0.25); border: none; cursor: pointer;
-  transition: background 0.25s, width 0.3s; padding: 0;
-}
-.dot.active { background: var(--acento); width: 24px; border-radius: 4px; }
-
-.progress-bar {
-  position: absolute; bottom: 0; left: 0;
-  height: 2px; background: var(--acento);
-  z-index: 10; width: 0%;
-  transition: width linear;
-  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
-}
-
-/* ══ PRODUCTOS ══ */
-.productos-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 18px 12px 80px;
-}
-
-.section-titulo {
-  font-size: 13px; font-style: italic;
-  color: var(--texto-suave); margin-bottom: 14px;
-}
-
-.productos-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.pcard {
-  background: var(--fondo-card);
-  border-radius: 12px; overflow: hidden;
-  border: 1px solid var(--borde);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
-}
-.pcard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
-  border-color: rgba(0, 212, 255, 0.3);
-}
-
-.pcard-slider-wrap {
-  position: relative; width: 100%;
-  aspect-ratio: 1 / 1; overflow: hidden;
-  background: #111;
-}
-.pcard-track { display: flex; height: 100%; transition: transform 0.38s ease; }
-.pcard-slide { min-width: 100%; height: 100%; flex-shrink: 0; }
-.pcard-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-.pcard-placeholder {
-  width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 6px;
-  color: #444; font-size: 12px; font-style: italic;
-  letter-spacing: 1px; background: #111;
-}
-.pcard-placeholder svg { width: 32px; height: 32px; opacity: 0.2; }
-
-.pcard-arrow {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  width: 26px; height: 40px; border: none;
-  background: rgba(0,0,0,0.5); color: #fff; font-size: 18px;
-  border-radius: 4px; display: flex; align-items: center; justify-content: center;
-  cursor: pointer; z-index: 5; transition: background 0.2s;
-  line-height: 1; padding: 0;
-}
-.pcard-arrow:hover { background: rgba(0, 212, 255, 0.6); }
-.pcard-arrow.prev { left: 4px; }
-.pcard-arrow.next { right: 4px; }
-
-.pcard-dots {
-  position: absolute; bottom: 7px; left: 50%;
-  transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;
-}
-.pcard-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: rgba(255,255,255,0.3); border: none;
-  cursor: pointer; padding: 0; transition: background 0.2s, width 0.25s;
-}
-.pcard-dot.active { background: var(--acento); width: 16px; border-radius: 3px; }
-
-.pcard-counter {
-  position: absolute; top: 7px; right: 8px;
-  background: rgba(0,0,0,0.6); color: #fff;
-  font-size: 10px; font-family: 'Nunito', sans-serif; font-weight: 700;
-  padding: 2px 7px; border-radius: 10px; z-index: 5;
-}
-
-.pcard-body { padding: 10px 10px 12px; }
-
-.pcard-nombre {
-  font-size: 13px; color: var(--texto);
-  line-height: 1.4; margin-bottom: 5px;
-  display: -webkit-box; -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; overflow: hidden;
-  display: box; line-clamp: 2;
-  box-orient: vertical;
-}
-
-.pcard-precio {
-  font-size: 16px; font-weight: 800;
-  color: var(--acento); margin-bottom: 10px;
-}
-.pcard-precio sup { font-size: 11px; vertical-align: super; font-weight: 600; }
-
-.precio-antes {
-  font-size: 12px; font-weight: 500;
-  color: #555; text-decoration: line-through; margin-right: 4px;
-}
-.precio-antes sup { font-size: 9px; vertical-align: super; }
-
-.btn-wa {
-  display: flex; align-items: center; justify-content: center;
-  gap: 7px; width: 100%; padding: 9px 0;
-  background: #25D366; color: #fff;
-  font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 13px;
-  border: none; border-radius: 8px; cursor: pointer;
-  text-decoration: none; transition: background 0.2s, transform 0.15s;
-}
-.btn-wa:hover { background: #1cb858; transform: translateY(-1px); }
-.btn-wa svg { width: 17px; height: 17px; fill: #fff; flex-shrink: 0; }
-
-/* ══ LIGHTBOX ══ */
-.lightbox {
-  display: none;
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,0.95);
-  z-index: 999;
-  align-items: center; justify-content: center; flex-direction: column;
-}
-.lightbox.activo { display: flex; }
-
-.lightbox-img {
-  max-width: 95vw; max-height: 80vh;
-  object-fit: contain; border-radius: 8px;
-  user-select: none; touch-action: pinch-zoom;
-  box-shadow: 0 0 40px rgba(0, 212, 255, 0.2);
-}
-
-.lightbox-cerrar {
-  position: absolute; top: 16px; right: 20px;
-  background: none; border: none; color: #fff;
-  font-size: 36px; cursor: pointer; line-height: 1;
-  opacity: 0.7; transition: opacity 0.2s, color 0.2s;
-}
-.lightbox-cerrar:hover { opacity: 1; color: var(--acento); }
-
-.lightbox-arrow {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: #fff; font-size: 32px;
-  width: 44px; height: 64px; border-radius: 6px;
-  cursor: pointer; display: flex; align-items: center; justify-content: center;
-  transition: background 0.2s, border-color 0.2s; line-height: 1;
-}
-.lightbox-arrow:hover {
-  background: rgba(0, 212, 255, 0.2);
-  border-color: var(--acento);
-}
-.lightbox-arrow.prev { left: 10px; }
-.lightbox-arrow.next { right: 10px; }
-
-.lightbox-dots {
-  display: flex; gap: 8px;
-  position: absolute; bottom: 24px;
-  left: 50%; transform: translateX(-50%);
-}
-.lightbox-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: rgba(255,255,255,0.25); border: none;
-  cursor: pointer; padding: 0; transition: background 0.2s, width 0.25s;
-}
-.lightbox-dot.active { background: var(--acento); width: 22px; border-radius: 4px; }
-
-.lightbox-contador {
-  position: absolute; top: 18px; left: 20px;
-  color: rgba(255,255,255,0.5);
-  font-family: 'Nunito', sans-serif;
-  font-size: 13px; font-weight: 700;
-}
-
-/* ══ RESPONSIVE ══ */
-@media (max-width: 480px) {
-  header { padding: 0 12px; gap: 10px; height: 58px; }
-  .logo { font-size: 20px; }
-  .slide { aspect-ratio: 2 / 1; }  
-  .slide-content { padding: 18px 20px; }
-  .pcard-arrow { width: 22px; height: 34px; font-size: 15px; }
-}
-
-@media (min-width: 600px) {
-  .productos-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (min-width: 900px) {
-  .slide { aspect-ratio: 3.8 / 1; }
-  .productos-grid { grid-template-columns: repeat(4, 1fr); }
-}
-
-/* ══ CATEGORÍAS ══ */
-.categorias-wrap {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 12px;
-  margin-bottom: 14px;
-  scrollbar-width: none;
-}
-.categorias-wrap::-webkit-scrollbar { display: none; }
-
-.cat-btn {
-  flex-shrink: 0;
-  padding: 7px 14px;
-  border-radius: 20px;
-  border: 1px solid var(--borde);
-  background: var(--fondo-card);
-  color: var(--texto-suave);
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-.cat-btn:hover {
-  border-color: var(--acento);
-  color: var(--acento);
-}
-.cat-btn.activo {
-  background: var(--acento);
-  color: #000;
-  border-color: var(--acento);
-}
-
-/* ══ BOTÓN IR ARRIBA ══ */
-.btn-arriba {
-  position: fixed;
-  bottom: 24px;
-  right: 16px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--acento);
-  border: none;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 200;
-  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.4);
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.btn-arriba.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: all;
-}
-
-.btn-arriba svg {
-  width: 22px;
-  height: 22px;
-}
-
-.btn-arriba:hover {
-  background: var(--acento-dark);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
-}
-
-/* ══ BOTONES CARD ══ */
-.card-btns {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.card-btns .btn-wa {
-  flex: 1;
-}
-
-.btn-compartir {
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid var(--borde);
-  background: var(--fondo-card);
-  color: var(--acento);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.btn-compartir:hover {
-  background: rgba(0, 212, 255, 0.1);
-  border-color: var(--acento);
-}
-
-.btn-compartir svg {
-  width: 18px;
-  height: 18px;
-}
