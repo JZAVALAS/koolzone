@@ -227,17 +227,17 @@ var PRODUCTOS = [
       "fotos/productos/26.6.Trípode-Expandible-de-3-Secciones.jpg",
     ],
   },
-  {
-    nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
-    precio: "89.99",
-    precioAntes: "109.99",
-    categoria: "Almacenamiento",
-    imagenes: [
-      "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-      "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-      "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-    ],
-  },
+  // {
+  //   nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
+  //   precio: "89.99",
+  //   precioAntes: "109.99",
+  //   categoria: "Almacenamiento",
+  //   imagenes: [
+  //     "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+  //     "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+  //     "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+  //   ],
+  // },
   {
     nombre: "📱Soporte Giratorio para Celular con Doble Zapata Fría",
     precio: "39.99",
