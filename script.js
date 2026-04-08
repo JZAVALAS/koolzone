@@ -6,6 +6,16 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
   {
+    nombre: "⚡Baterías TELESIN para GoPro Hero 8 / 7 / 6 / 5 - ¡Nueva!",
+    precio: "99.99",
+    precioAntes: "119.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/44.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
+      "fotos/productos/44.2.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
+    ],
+  },
+  {
     nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
     precio: "54.99",
     precioAntes: "69.99",
