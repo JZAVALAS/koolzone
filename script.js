@@ -13,6 +13,8 @@ var PRODUCTOS = [
     imagenes: [
       "fotos/productos/44.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
       "fotos/productos/44.2.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
+      "fotos/productos/44.3.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
+      "fotos/productos/44.4.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
     ],
   },
   {
