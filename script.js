@@ -6,6 +6,18 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
   {
+    nombre: "🔋 Pilas Recargables PUJIMAX AAA",
+    precio: "59.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/45.Pilas-Recargables-PUJIMAX-AAA.jpg",
+      "fotos/productos/45.2.Pilas-Recargables-PUJIMAX-AAA.jpg",
+      "fotos/productos/45.3Pilas-Recargables-PUJIMAX-AAA.jpg",
+      "fotos/productos/45.4Pilas-Recargables-PUJIMAX-AAA.jpg",
+    ],
+  },
+  {
     nombre: "⚡Baterías TELESIN para GoPro Hero 8 / 7 / 6 / 5 - ¡Nueva!",
     precio: "99.99",
     precioAntes: "119.99",
@@ -239,17 +251,17 @@ var PRODUCTOS = [
       "fotos/productos/26.6.Trípode-Expandible-de-3-Secciones.jpg",
     ],
   },
-  // {
-  //   nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
-  //   precio: "89.99",
-  //   precioAntes: "109.99",
-  //   categoria: "Almacenamiento",
-  //   imagenes: [
-  //     "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-  //     "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-  //     "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
-  //   ],
-  // },
+  {
+    nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
+    precio: "89.99",
+    precioAntes: "109.99",
+    categoria: "Almacenamiento",
+    imagenes: [
+      "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.2.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+      "fotos/productos/25.3.Memoria-Micro-SD-PHILIPS-64GB.jpg",
+    ],
+  },
   {
     nombre: "📱Soporte Giratorio para Celular con Doble Zapata Fría",
     precio: "39.99",
