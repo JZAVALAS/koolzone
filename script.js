@@ -6,7 +6,18 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
   {
-    nombre: "🔋 Pilas Recargables PUJIMAX AAA",
+    nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
+    precio: "79.99",
+    precioAntes: "89.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/46.funda-impermeable-GPH-9-10-11-12-13.jpg",
+      "fotos/productos/46.2.funda-impermeable-GPH-9-10-11-12-13.jpg",
+      "fotos/productos/46.3.funda-impermeable-GPH-9-10-11-12-13.jpg",
+    ],
+  },
+  {
+    nombre: "🔋Pilas Recargables PUJIMAX AAA",
     precio: "59.99",
     precioAntes: "69.99",
     categoria: "Accesorios",
