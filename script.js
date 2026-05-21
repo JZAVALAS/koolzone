@@ -5,6 +5,18 @@ var WA_NUMBER = "51964774354";
 var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
+   {
+    nombre: "📸🔧 ADAPTADOR ZAPATA FRÍA/CALIENTE CON ROSCA 1/4”🔧📸",
+    precio: "19.99",
+    precioAntes: "29.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/4.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/4.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/4.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+    ],
+  },
   {
     nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
     precio: "79.99",
