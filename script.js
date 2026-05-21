@@ -15,6 +15,7 @@ var PRODUCTOS = [
       "fotos/productos/4.2.ADAPTADOR-ZAPATA-FRÍA.jpg",
       "fotos/productos/4.3.ADAPTADOR-ZAPATA-FRÍA.jpg",
       "fotos/productos/4.4.ADAPTADOR-ZAPATA-FRÍA.jpg",
+      "fotos/productos/4.5.ADAPTADOR-ZAPATA-FRÍA.jpg",
     ],
   },
   {
