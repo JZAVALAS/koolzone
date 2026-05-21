@@ -37,8 +37,8 @@ var PRODUCTOS = [
     imagenes: [
       "fotos/productos/45.Pilas-Recargables-PUJIMAX-AAA.jpg",
       "fotos/productos/45.2.Pilas-Recargables-PUJIMAX-AAA.jpg",
-      "fotos/productos/45.3Pilas-Recargables-PUJIMAX-AAA.jpg",
-      "fotos/productos/45.4Pilas-Recargables-PUJIMAX-AAA.jpg",
+      "fotos/productos/45.3.Pilas-Recargables-PUJIMAX-AAA.jpg",
+      "fotos/productos/45.4.Pilas-Recargables-PUJIMAX-AAA.jpg",
     ],
   },
   {
