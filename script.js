@@ -382,7 +382,7 @@ var PRODUCTOS = [
     categoria: "Accesorios",
     imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
   },
-  {
+/*  {
     nombre: "📸Correa Profesional para Cámara DSLR",
     precio: "69.99",
     precioAntes: "89.99",
@@ -407,7 +407,7 @@ var PRODUCTOS = [
       "fotos/productos/13.4.CORREA-DE-MANO.jpg",
       "fotos/productos/13.5.CORREA-DE-MANO.jpg",
     ],
-  },
+  },*/
   {
     nombre: "📸 Soporte en L para Cámara – Placa de Liberación Rápida",
     precio: "49.99",
