@@ -250,8 +250,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸Trípode Expandible de 3 Secciones – Compacto y Estable🔥",
-    precio: "49.99",
-    precioAntes: "79.99",
+    precio: "39.99",
+    precioAntes: "59.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/26.Trípode-Expandible-de-3-Secciones.jpg",
@@ -264,8 +264,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "💾Memoria Micro SD PHILIPS 64GB – Alta Velocidad⚡",
-    precio: "89.99",
-    precioAntes: "109.99",
+    precio: "79.99",
+    precioAntes: "89.99",
     categoria: "Almacenamiento",
     imagenes: [
       "fotos/productos/25.Memoria-Micro-SD-PHILIPS-64GB.jpg",
