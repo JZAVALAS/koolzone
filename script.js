@@ -297,8 +297,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
-    precio: "19.99",
-    precioAntes: "29.99",
+    precio: "24.99",
+    precioAntes: "34.99",
     categoria: "Almacenamiento",
     imagenes: [
       "fotos/productos/22.Adaptador-USB-C-OTG-+-Lector-MicroSD-(2-en-1).jpg",
