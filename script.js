@@ -497,7 +497,7 @@ var PRODUCTOS = [
       "fotos/productos/7.5.BARRA-LED-RGB.jpg",
     ],
   },
-  {
+/*  {
     nombre: "📱✨Monitor Magnético para Selfies y Vlogging✨📱",
     precio: "149.99",
     precioAntes: "179.99",
@@ -508,7 +508,7 @@ var PRODUCTOS = [
       "fotos/productos/8.3.MONITOR-MAGNETICO.jpg",
       "fotos/productos/8.4.MONITOR-MAGNETICO.jpg",
     ],
-  },
+  }, */
   {
     nombre: "🔌✨Hub Usb 5 en 1 de aluminio - compacto y potente✨🔌",
     precio: "34.99",
