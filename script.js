@@ -6,6 +6,30 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
    {
+    nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/48.soporte-magenitco.jpg",
+      "fotos/productos/48.2.soporte-magenitco.jpg",
+      "fotos/productos/48.3.soporte-magenitco.jpg",
+      "fotos/productos/48.4.soporte-magenitco.jpg",
+    ],
+  },
+   {
+    nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/47.soporte-magenitco.jpg",
+      "fotos/productos/47.2.soporte-magenitco.jpg",
+      "fotos/productos/47.3.soporte-magenitco.jpg",
+      "fotos/productos/47.4.soporte-magenitco.jpg",
+    ],
+  },
+   {
     nombre: "📸🔧 ADAPTADOR ZAPATA FRÍA/CALIENTE CON ROSCA 1/4”🔧📸",
     precio: "19.99",
     precioAntes: "29.99",
