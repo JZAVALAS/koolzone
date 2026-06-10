@@ -421,7 +421,7 @@ var PRODUCTOS = [
       "fotos/productos/13.5.CORREA-DE-MANO.jpg",
     ],
   },*/
-  {
+/*  {
     nombre: "📸 Soporte en L para Cámara – Placa de Liberación Rápida",
     precio: "49.99",
     precioAntes: "59.99",
@@ -433,7 +433,7 @@ var PRODUCTOS = [
       "fotos/productos/12.4.SOPORTE-EN-L.jpg",
       "fotos/productos/12.5.SOPORTE-EN-L.jpg",
     ],
-  },
+  },*/
   {
     nombre: "💻Memoria RAM 4GB DDR3L SK Hynix para Laptop – 1600 MHz",
     precio: "59.99",
