@@ -18,7 +18,7 @@ var PRODUCTOS = [
       "fotos/productos/4.5.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
     ],
   },
-  {
+/*  {
     nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
     precio: "79.99",
     precioAntes: "89.99",
@@ -28,7 +28,7 @@ var PRODUCTOS = [
       "fotos/productos/46.2.funda-impermeable-GPH-9-10-11-12-13.jpg",
       "fotos/productos/46.3.funda-impermeable-GPH-9-10-11-12-13.jpg",
     ],
-  },
+  },*/
   {
     nombre: "🔋Pilas Recargables PUJIMAX AAA",
     precio: "59.99",
