@@ -434,7 +434,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸Correa de Mano para Cámara",
-    precio: "59.99",
+    precio: "49.99",
     precioAntes: "79.99",
     categoria: "Cámara y Foto",
     imagenes: [
