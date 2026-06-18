@@ -368,7 +368,7 @@ var PRODUCTOS = [
       "fotos/productos/20.4.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
     ],
   },
-  {
+  /*{
     nombre: "🔧Kit de destornilladores de precisión",
     precio: "39.99",
     precioAntes: "59.99",
@@ -378,7 +378,7 @@ var PRODUCTOS = [
       "fotos/productos/19.2.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
       "fotos/productos/19.3.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
     ],
-  },
+  },*/
   {
     nombre: "📸Barra Extensora Horizontal para Trípode",
     precio: "129.99",
