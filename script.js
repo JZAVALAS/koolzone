@@ -361,17 +361,6 @@ var PRODUCTOS = [
       "fotos/productos/20.4.HUB-USB-C-MULTIPUERTO-8-EN-1-(USB-3.0).jpg",
     ],
   },
-  /*{
-    nombre: "🔧Kit de destornilladores de precisión",
-    precio: "39.99",
-    precioAntes: "59.99",
-    categoria: "Computación",
-    imagenes: [
-      "fotos/productos/19.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
-      "fotos/productos/19.2.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
-      "fotos/productos/19.3.KIT-DE-DESTORNILLADORES-DE-PRESICION.jpg",
-    ],
-  },*/
   {
     nombre: "📸Barra Extensora Horizontal para Trípode",
     precio: "129.99",
@@ -521,19 +510,7 @@ var PRODUCTOS = [
       "fotos/productos/7.5.BARRA-LED-RGB.jpg",
     ],
   },
-/*  {
-    nombre: "📱✨Monitor Magnético para Selfies y Vlogging✨📱",
-    precio: "149.99",
-    precioAntes: "179.99",
-    categoria: "Video y Audio",
-    imagenes: [
-      "fotos/productos/8.MONITOR-MAGNETICO.jpg",
-      "fotos/productos/8.2.MONITOR-MAGNETICO.jpg",
-      "fotos/productos/8.3.MONITOR-MAGNETICO.jpg",
-      "fotos/productos/8.4.MONITOR-MAGNETICO.jpg",
-    ],
-  }, */
-  {
+{
     nombre: "🔌✨Hub Usb 5 en 1 de aluminio - compacto y potente✨🔌",
     precio: "34.99",
     precioAntes: "44.99",
