@@ -279,13 +279,6 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
-    precio: "69.99",
-    precioAntes: "79.99",
-    categoria: "Computación",
-    imagenes: ["fotos/productos/27.Memoria-RAM-4GB-DDR4-para-Laptop.jpg"],
-  },
-  {
     nombre: "📸Trípode Expandible de 3 Secciones – Compacto y Estable🔥",
     precio: "39.99",
     precioAntes: "59.99",
@@ -458,6 +451,13 @@ var PRODUCTOS = [
       "fotos/productos/12.5.SOPORTE-EN-L.jpg",
     ],
   },*/
+  {
+    nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
+    precio: "69.99",
+    precioAntes: "79.99",
+    categoria: "Computación",
+    imagenes: ["fotos/productos/27.Memoria-RAM-4GB-DDR4-para-Laptop.jpg"],
+  },
   {
     nombre: "💻Memoria RAM 4GB DDR3L SK Hynix para Laptop – 1600 MHz",
     precio: "59.99",
