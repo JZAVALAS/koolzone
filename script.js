@@ -101,7 +101,7 @@ var PRODUCTOS = [
       "fotos/productos/42.4.Cargador-Triple-para-GoPro.jpg",
     ],
   },
-  {
+  /*{
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
     precio: "529.99",
     precioAntes: "559.99",
@@ -111,7 +111,7 @@ var PRODUCTOS = [
       "fotos/productos/41.2.DJI-Mic-Mini.jpg",
       "fotos/productos/41.3.DJI-Mic-Mini.jpg",
     ],
-  },
+  },*/
   {
     nombre:
       "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
