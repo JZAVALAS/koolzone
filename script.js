@@ -6,6 +6,87 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
    {
+    nombre: "🏍️SOPORTE DE CELULAR IMPERMEABLE REFORZADO PARA MOTO, BICI Y SCOOTER⛈️📱",
+    precio: "49.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/55.sosporte-para-celular-en-moto.jpg",
+      "fotos/productos/55.2.sosporte-para-celular-en-moto.jpg",
+      "fotos/productos/55.3.sosporte-para-celular-en-moto.jpg",
+      "fotos/productos/55.4.sosporte-para-celular-en-moto.jpg",
+      "fotos/productos/55.5.sosporte-para-celular-en-moto.jpg",
+    ],
+  },
+   {
+    nombre: "🚗SOPORTE MAGNÉTICO PREMIUM PARA AUTO CON VENTOSA DE VACÍO ULTRA FUERTE📱⚡",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/54.Soporte-magnetico-para-celular.jpg",
+      "fotos/productos/54.2.Soporte-magnetico-para-celular.jpg",
+      "fotos/productos/54.3.Soporte-magnetico-para-celular.jpg",
+    ],
+  },
+   {
+    nombre: "🚗SOPORTE DE CLIP RÁPIDO 360° PARA VISERA DE AUTO Y MULTIUSOS📹",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/53.Soporte-de-clip-rapido.jpg",
+      "fotos/productos/53.2.Soporte-de-clip-rapido.jpg",
+      "fotos/productos/53.3.Soporte-de-clip-rapido.jpg",
+      "fotos/productos/53.4.Soporte-de-clip-rapido.jpg",
+    ],
+  },
+   {
+    nombre: "🐕REPELENTE Y ENTRENADOR ULTRASÓNICO PARA PERROS - PREMIUM⚡",
+    precio: "49.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/52.repelente-para-perros.jpg",
+      "fotos/productos/52.2.repelente-para-perros.jpg",
+      "fotos/productos/52.3.repelente-para-perros.jpg",
+      "fotos/productos/52.4.repelente-para-perros.jpg",
+    ],
+  },
+   {
+    nombre: "🛡️KIT DE PROTECTORES DE VIDRIO TEMPLADO PARA GOPRO 9/10/11/12/13🎬",
+    precio: "24.99",
+    precioAntes: "39.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/51.protector-de-pantallas-para-GoPro.jpg",
+    ],
+  },
+   {
+    nombre: "📸PINZA CANGREJO CON BRAZO MÁGICO MULTIFUNCIÓN PULUZ🎬",
+    precio: "59.99",
+    precioAntes: "79.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/50.pinza-de-cangrejo.jpg",
+      "fotos/productos/50.2.pinza-de-cangrejo.jpg",
+      "fotos/productos/50.3.pinza-de-cangrejo.jpg",
+      "fotos/productos/50.4.pinza-de-cangrejo.jpg",
+    ],
+  },
+   {
+    nombre: "⚡ MINI CARGADOR PORTÁTIL TIPO C - 5000mAh PREMIUM 🔋",
+    precio: "49.99",
+    precioAntes: "79.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/49.mini-cargador-tipo-c.jpg",
+      "fotos/productos/49.2.mini-cargador-tipo-c.jpg",
+      "fotos/productos/49.3.mini-cargador-tipo-c.jpg",
+      "fotos/productos/49.4.mini-cargador-tipo-c.jpg",
+    ],
+  },
+   {
     nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
     precio: "39.99",
     precioAntes: "59.99",
