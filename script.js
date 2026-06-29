@@ -6,6 +6,54 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
    {
+    nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
+    precio: "59.99",
+    precioAntes: "89.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/59.soporte-magnetico-para-gopro.jpg",
+      "fotos/productos/59.2.soporte-magnetico-para-gopro.jpg",
+      "fotos/productos/59.3.soporte-magnetico-para-gopro.jpg",
+      "fotos/productos/59.4.soporte-magnetico-para-gopro.jpg",
+    ],
+  },
+   {
+    nombre: "🌊Mango Flotante para Cámara de Acción📷",
+    precio: "24.99",
+    precioAntes: "49.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/58.Mango-flotante-para-GoPro.jpg",
+      "fotos/productos/58.2.Mango-flotante-para-GoPro.jpg",
+      "fotos/productos/58.3.Mango-flotante-para-GoPro.jpg",
+    ],
+  },
+   {
+    nombre: "🔋Pack Baterías TELESIN p/ GoPro 9/10/11/12",
+    precio: "149.99",
+    precioAntes: "179.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
+      "fotos/productos/57.2.bateria-gopro-hero-9-10-11-12.jpg",
+      "fotos/productos/57.3.bateria-gopro-hero-9-10-11-12.jpg",
+      "fotos/productos/57.4.bateria-gopro-hero-9-10-11-12.jpg",
+    ],
+  },
+   {
+    nombre: "🎧Audífonos Inalámbricos con Pantalla LCD + Cancelación de ruido",
+    precio: "59.99",
+    precioAntes: "89.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/56.Audifonos.jpg",
+      "fotos/productos/56.2.Audifonos.jpg",
+      "fotos/productos/56.3.Audifonos.jpg",
+      "fotos/productos/56.4.Audifonos.jpg",
+      "fotos/productos/56.5.Audifonos.jpg",
+    ],
+  },
+   {
     nombre: "🏍️SOPORTE DE CELULAR IMPERMEABLE REFORZADO PARA MOTO, BICI Y SCOOTER⛈️📱",
     precio: "49.99",
     precioAntes: "59.99",
