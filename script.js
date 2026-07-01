@@ -77,7 +77,7 @@ var PRODUCTOS = [
       "fotos/productos/54.3.Soporte-magnetico-para-celular.jpg",
     ],
   },
-   {
+/*/   {
     nombre: "🚗SOPORTE DE CLIP RÁPIDO 360° PARA VISERA DE AUTO Y MULTIUSOS📹",
     precio: "39.99",
     precioAntes: "59.99",
@@ -88,7 +88,7 @@ var PRODUCTOS = [
       "fotos/productos/53.3.Soporte-de-clip-rapido.jpg",
       "fotos/productos/53.4.Soporte-de-clip-rapido.jpg",
     ],
-  },
+  }, */
    {
     nombre: "🐕REPELENTE Y ENTRENADOR ULTRASÓNICO PARA PERROS - PREMIUM⚡",
     precio: "49.99",
@@ -110,7 +110,7 @@ var PRODUCTOS = [
       "fotos/productos/51.protector-de-pantallas-para-GoPro.jpg",
     ],
   },
-   {
+/*   {
     nombre: "📸PINZA CANGREJO CON BRAZO MÁGICO MULTIFUNCIÓN PULUZ🎬",
     precio: "59.99",
     precioAntes: "79.99",
@@ -121,7 +121,7 @@ var PRODUCTOS = [
       "fotos/productos/50.3.pinza-de-cangrejo.jpg",
       "fotos/productos/50.4.pinza-de-cangrejo.jpg",
     ],
-  },
+  }, */
    {
     nombre: "⚡ MINI CARGADOR PORTÁTIL TIPO C - 5000mAh PREMIUM 🔋",
     precio: "49.99",
@@ -146,7 +146,7 @@ var PRODUCTOS = [
       "fotos/productos/48.4.soporte-magenitco.jpg",
     ],
   },
-   {
+/*   {
     nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
     precio: "39.99",
     precioAntes: "59.99",
@@ -157,8 +157,8 @@ var PRODUCTOS = [
       "fotos/productos/47.3.soporte-magenitco.jpg",
       "fotos/productos/47.4.soporte-magenitco.jpg",
     ],
-  },
-   {
+  }, */
+ /*  {
     nombre: "📸🔧 ADAPTADOR ZAPATA FRÍA/CALIENTE CON ROSCA 1/4”🔧📸",
     precio: "19.99",
     precioAntes: "29.99",
@@ -170,7 +170,7 @@ var PRODUCTOS = [
       "fotos/productos/4.4.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
       "fotos/productos/4.5.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
     ],
-  },
+  },  */
 {
     nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
     precio: "79.99",
@@ -271,7 +271,7 @@ var PRODUCTOS = [
       "fotos/productos/39.7.Proyector-4K-HY320.jpg",
     ],
   },
-  {
+/*  {
     nombre: "🎥 Soporte de Cabeza para GoPro – Toma POV Real",
     precio: "79.99",
     precioAntes: "99.99",
@@ -282,7 +282,7 @@ var PRODUCTOS = [
       "fotos/productos/38.3.Soporte-de-Cabeza-para-GoPro.jpg",
       "fotos/productos/38.4.Soporte-de-Cabeza-para-GoPro.jpg",
     ],
-  },
+  }, */
   {
     nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
     precio: "9.99",
@@ -443,7 +443,7 @@ var PRODUCTOS = [
       "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
     ],
   },
-  {
+/*  {
     nombre: "🎥📸Soporte Metálico en L para Cámara de Acción",
     precio: "49.99",
     precioAntes: "69.99",
@@ -453,7 +453,7 @@ var PRODUCTOS = [
       "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
       "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
     ],
-  },
+  }, */
   {
     nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
     precio: "24.99",
