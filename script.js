@@ -592,8 +592,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸🔌Adaptador de montaje con 3 zapatas frías🔌📸",
-    precio: "14.99",
-    precioAntes: "19.99",
+    precio: "19.99",
+    precioAntes: "29.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/5.ADAPTADOR-ZAPATA-FRÍA.jpg",
