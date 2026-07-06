@@ -77,18 +77,6 @@ var PRODUCTOS = [
       "fotos/productos/54.3.Soporte-magnetico-para-celular.jpg",
     ],
   },
-/*/   {
-    nombre: "🚗SOPORTE DE CLIP RÁPIDO 360° PARA VISERA DE AUTO Y MULTIUSOS📹",
-    precio: "39.99",
-    precioAntes: "59.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/53.Soporte-de-clip-rapido.jpg",
-      "fotos/productos/53.2.Soporte-de-clip-rapido.jpg",
-      "fotos/productos/53.3.Soporte-de-clip-rapido.jpg",
-      "fotos/productos/53.4.Soporte-de-clip-rapido.jpg",
-    ],
-  }, */
    {
     nombre: "🐕REPELENTE Y ENTRENADOR ULTRASÓNICO PARA PERROS - PREMIUM⚡",
     precio: "49.99",
@@ -158,7 +146,7 @@ var PRODUCTOS = [
       "fotos/productos/47.4.soporte-magenitco.jpg",
     ],
   }, */
- /*  {
+   {
     nombre: "📸🔧 ADAPTADOR ZAPATA FRÍA/CALIENTE CON ROSCA 1/4”🔧📸",
     precio: "19.99",
     precioAntes: "29.99",
@@ -170,7 +158,7 @@ var PRODUCTOS = [
       "fotos/productos/4.4.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
       "fotos/productos/4.5.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
     ],
-  },  */
+  },  
 {
     nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
     precio: "79.99",
@@ -230,7 +218,7 @@ var PRODUCTOS = [
       "fotos/productos/42.4.Cargador-Triple-para-GoPro.jpg",
     ],
   },
-  /*{
+  {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
     precio: "529.99",
     precioAntes: "559.99",
@@ -240,7 +228,7 @@ var PRODUCTOS = [
       "fotos/productos/41.2.DJI-Mic-Mini.jpg",
       "fotos/productos/41.3.DJI-Mic-Mini.jpg",
     ],
-  },*/
+  },
   {
     nombre:
       "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
@@ -556,7 +544,7 @@ var PRODUCTOS = [
       "fotos/productos/13.5.CORREA-DE-MANO.jpg",
     ],
   },
-/*  {
+ {
     nombre: "📸 Soporte en L para Cámara – Placa de Liberación Rápida",
     precio: "49.99",
     precioAntes: "59.99",
@@ -568,7 +556,7 @@ var PRODUCTOS = [
       "fotos/productos/12.4.SOPORTE-EN-L.jpg",
       "fotos/productos/12.5.SOPORTE-EN-L.jpg",
     ],
-  },*/
+  },
   {
     nombre: "💻Memoria RAM 4GB DDR4 para Laptop – SK Hynix",
     precio: "69.99",
