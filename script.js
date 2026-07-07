@@ -15,6 +15,7 @@ var PRODUCTOS = [
       "fotos/productos/65.2.soporte-giratorio-de-pulsera.jpg",
       "fotos/productos/65.3.soporte-giratorio-de-pulsera.jpg",
       "fotos/productos/65.4.soporte-giratorio-de-pulsera.jpg",
+      ],
   },
    {
     nombre: "📸Parasol Tipo Tulipán para Lente de Cámara",
