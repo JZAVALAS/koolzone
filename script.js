@@ -6,6 +6,42 @@ var categoriaActiva = "Todos";
 
 var PRODUCTOS = [
    {
+    nombre: "🏃‍♂️Soporte Giratorio 360° de Muñeca para Celular📱",
+    precio: "39.99",
+    precioAntes: "59.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/65.soporte-giratorio-de-pulsera.jpg",
+      "fotos/productos/65.2.soporte-giratorio-de-pulsera.jpg",
+      "fotos/productos/65.3.soporte-giratorio-de-pulsera.jpg",
+      "fotos/productos/65.4.soporte-giratorio-de-pulsera.jpg",
+  },
+   {
+    nombre: "📸Parasol Tipo Tulipán para Lente de Cámara",
+    precio: "24.99",
+    precioAntes: "59.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/61.parasol-de-tulipan-55mm.jpg",
+      "fotos/productos/61.2.parasol-de-tulipan-55mm.jpg",
+      "fotos/productos/61.3.parasol-de-tulipan-55mm.jpg",
+      "fotos/productos/61.4.parasol-de-tulipan-55mm.jpg",
+    ],
+  },
+   {
+    nombre: "📸Mini Softbox Octogonal PULUZ para Flash de Mano⚡",
+    precio: "44.99",
+    precioAntes: "69.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/60.difusor-oxagonal-de-flash.jpg",
+      "fotos/productos/60.2.difusor-oxagonal-de-flash.jpg",
+      "fotos/productos/60.3.difusor-oxagonal-de-flash.jpg",
+      "fotos/productos/60.4difusor-oxagonal-de-flash.jpg",
+      "fotos/productos/60.5.difusor-oxagonal-de-flash.jpg",
+    ],
+  },
+   {
     nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
     precio: "59.99",
     precioAntes: "89.99",
