@@ -38,7 +38,7 @@ var PRODUCTOS = [
       "fotos/productos/60.difusor-oxagonal-de-flash.jpg",
       "fotos/productos/60.2.difusor-oxagonal-de-flash.jpg",
       "fotos/productos/60.3.difusor-oxagonal-de-flash.jpg",
-      "fotos/productos/60.4difusor-oxagonal-de-flash.jpg",
+      "fotos/productos/60.4.difusor-oxagonal-de-flash.jpg",
       "fotos/productos/60.5.difusor-oxagonal-de-flash.jpg",
     ],
   },
