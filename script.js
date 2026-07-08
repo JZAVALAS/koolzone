@@ -76,6 +76,7 @@ var PRODUCTOS = [
     precio: "149.99",
     precioAntes: "179.99",
     categoria: "Cámara y Foto",
+    
     imagenes: [
       "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
       "fotos/productos/57.2.bateria-gopro-hero-9-10-11-12.jpg",
@@ -194,6 +195,7 @@ var PRODUCTOS = [
     precio: "19.99",
     precioAntes: "29.99",
     categoria: "Accesorios",
+    masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
       "fotos/productos/4.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
       "fotos/productos/4.2.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
@@ -207,6 +209,7 @@ var PRODUCTOS = [
     precio: "79.99",
     precioAntes: "89.99",
     categoria: "Accesorios",
+    masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
       "fotos/productos/46.funda-impermeable-GPH-9-10-11-12-13.jpg",
       "fotos/productos/46.2.funda-impermeable-GPH-9-10-11-12-13.jpg",
@@ -266,6 +269,7 @@ var PRODUCTOS = [
     precio: "529.99",
     precioAntes: "559.99",
     categoria: "Video y Audio",
+    masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
       "fotos/productos/41.DJI-Mic-Mini.jpg",
       "fotos/productos/41.2.DJI-Mic-Mini.jpg",
@@ -474,7 +478,7 @@ var PRODUCTOS = [
       "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
     ],
   },
-/* {
+ {
     nombre: "🎥📸Soporte Metálico en L para Cámara de Acción",
     precio: "49.99",
     precioAntes: "69.99",
@@ -484,7 +488,7 @@ var PRODUCTOS = [
       "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
       "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
     ],
-  },*/
+  },
   {
     nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
     precio: "24.99",
@@ -697,18 +701,27 @@ const SVG_SHARE = `<svg fill="none" stroke="currentColor" stroke-width="2" viewB
 // ==========================================
 // 2. RENDERIZADO DE PRODUCTOS (GRID)
 // ==========================================
-function renderProductos() {
-  const grid = document.getElementById("productosGrid");
+// 👇 REEMPLAZA LAS PRIMERAS LÍNEAS DE TU FUNCIÓN POR ESTAS 👇
+function renderProductos(lista = null, contenedor = "productosGrid") {
+  const grid = document.getElementById(contenedor);
   if (!grid) return;
+  grid.innerHTML = "";
 
-  const terminoBusqueda = document.querySelector(".search-input")?.value.toLowerCase() || "";
+  // 1. Decidimos qué lista usar: la personalizada o el catálogo completo
+  let arrayAUsar = lista ? lista : PRODUCTOS;
 
-  // Filtrado
-  const filtrados = PRODUCTOS.filter(p => {
-    const coincideCat = categoriaActiva === "Todos" || p.categoria === categoriaActiva;
-    const coincideBusqueda = p.nombre.toLowerCase().includes(terminoBusqueda);
-    return coincideCat && coincideBusqueda;
-  });
+  // 2. Aplicamos filtros de búsqueda y categoría SOLO si es el catálogo principal de abajo
+  let filtrados = arrayAUsar;
+  if (contenedor === "productosGrid") {
+    const input = document.querySelector(".search-input");
+    const termo = input ? input.value.toLowerCase() : "";
+    
+    filtrados = arrayAUsar.filter(p => {
+      const cumpleCat = (categoriaActiva === "Todos" || p.categoria === categoriaActiva);
+      const cumpleBuscador = p.nombre.toLowerCase().includes(termo);
+      return cumpleCat && cumpleBuscador;
+    });
+  }
 
   if (filtrados.length === 0) {
     grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px;">No se encontraron productos coincidentes.</p>`;
@@ -916,6 +929,13 @@ document.getElementById('lbPrev')?.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
   
   renderProductos();
+
+  // Filtramos solo los que tienen masVendido: true (máximo 3)
+  const masVendidos = PRODUCTOS.filter(p => p.masVendido === true).slice(0, 3);
+  
+  // Los pintamos en el contenedor de arriba
+  renderProductos(masVendidos, "masVendidosGrid");
+
   initHeroSlider();
 
   // Filtros de Categorías
