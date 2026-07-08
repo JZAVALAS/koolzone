@@ -263,6 +263,18 @@ body {
   width: 0%; transition: width linear;
 }
 
+/* ══ SECCIÓN MÁS VENDIDOS ══ */
+
+.section-titulo{
+  margin-bottom: 20px;
+}
+
+.mas-vendidos-section {
+  padding: 40px 20px 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* =========================================
    CATÁLOGO & FILTROS
 ========================================= */
@@ -277,7 +289,7 @@ body {
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   scrollbar-width: none; /* Firefox */
 }
 .categorias-nav::-webkit-scrollbar { display: none; } /* Chrome */
@@ -305,7 +317,8 @@ body {
 .section-title {
   font-size: 18px;
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10PX;
   font-weight: 600;
 }
 
@@ -548,4 +561,26 @@ body {
   .card-arrow { opacity: 1; width: 28px; height: 28px; background: rgba(0,0,0,0.3); }
   .btn-wa { font-size: 12px; padding: 0 10px; }
   .card-prices { flex-direction: column; gap: 0; }
+}
+
+/* ══ ESTILO PARA CARRUSEL DE MÁS VENDIDOS ══ */
+/* Contenedor del carrusel */
+.mas-vendidos-grid {
+  display: flex;        /* Pone las tarjetas en fila */
+  overflow-x: auto;     /* Activa el scroll horizontal */
+  gap: 20px;            /* Espacio entre tarjetas */
+  padding: 10px 10px;   /* Espacio interno para que no se corten las sombras */
+  scroll-snap-type: x mandatory; /* El scroll se siente "magnético" */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Esconder la barra de scroll para que se vea limpio */
+.mas-vendidos-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.mas-vendidos-grid .product-card {
+  flex: 0 0 300px; /* Esto forzará a que TODAS midan exactamente 300px */
+  scroll-snap-align: start;
+  margin-right: 15px;
 }
