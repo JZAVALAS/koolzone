@@ -474,7 +474,7 @@ var PRODUCTOS = [
       "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
     ],
   },
- {
+/* {
     nombre: "🎥📸Soporte Metálico en L para Cámara de Acción",
     precio: "49.99",
     precioAntes: "69.99",
@@ -484,7 +484,7 @@ var PRODUCTOS = [
       "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
       "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
     ],
-  },
+  },*/
   {
     nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
     precio: "24.99",
