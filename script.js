@@ -1,9 +1,15 @@
-/* ══════════════════════════════════════════════════
-   CONFIGURACIÓN
-══════════════════════════════════════════════════ */
-var WA_NUMBER = "51964774354";
-var categoriaActiva = "Todos";
+/**
+ * KOOLZONE PAITA - E-commerce Script
+ * Optimizado para rendimiento, UX y CRO.
+ */
 
+// ==========================================
+// 1. CONFIGURACIÓN Y BASE DE DATOS
+// ==========================================
+const WA_NUMBER = "51964774354";
+let categoriaActiva = "Todos";
+
+// He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
    {
     nombre: "🏃‍♂️Soporte Giratorio 360° de Muñeca para Celular📱",
@@ -685,411 +691,258 @@ var PRODUCTOS = [
   },
 ];
 
-/* ══════════════════════════════════════════════════
-   SVGs
-══════════════════════════════════════════════════ */
-var WA_SVG =
-  '<svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.61 1.832 6.51L4 29l7.695-1.806A12.94 12.94 0 0 0 16 28c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.523 0 10 4.477 10 10S21.523 25 16 25a10.94 10.94 0 0 1-5.51-1.487l-.39-.23-4.567 1.073 1.1-4.453-.254-.405A9.958 9.958 0 0 1 6 15c0-5.523 4.477-10 10-10zm-3.122 4.82c-.22-.003-.444.004-.637.012-.28.012-.696.105-1.063.504-.366.4-1.4 1.37-1.4 3.34s1.432 3.873 1.633 4.141c.2.267 2.79 4.44 6.888 6.045 3.41 1.343 4.104.876 4.845.82.74-.054 2.388-.977 2.727-1.92.34-.944.34-1.754.238-1.922-.1-.167-.367-.267-.768-.467s-2.372-1.17-2.74-1.303c-.367-.133-.634-.2-.9.2-.267.4-1.033 1.303-1.267 1.57-.233.267-.467.3-.867.1-.4-.2-1.688-.623-3.217-1.985-1.188-1.06-1.99-2.37-2.223-2.77-.233-.4-.025-.617.175-.817.18-.18.4-.467.6-.7.2-.234.267-.4.4-.667.134-.267.067-.5-.033-.7-.1-.2-.88-2.18-1.22-2.98-.3-.72-.608-.72-.835-.727z"/></svg>';
-var IMG_SVG =
-  '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';
+// Icono SVG para compartir
+const SVG_SHARE = `<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>`;
 
-/* ══════════════════════════════════════════════════
-   LIGHTBOX
-══════════════════════════════════════════════════ */
-var lightbox = null;
-var lbImg = null;
-var lbContador = null;
-var lbDots = null;
-var lbImagenes = [];
-var lbActual = 0;
+// ==========================================
+// 2. RENDERIZADO DE PRODUCTOS (GRID)
+// ==========================================
+function renderProductos() {
+  const grid = document.getElementById("productosGrid");
+  if (!grid) return;
 
-function lbMostrar(imgs, index) {
-  lbImagenes = imgs.filter(function (s) {
-    return s && s !== "";
+  const terminoBusqueda = document.querySelector(".search-input")?.value.toLowerCase() || "";
+
+  // Filtrado
+  const filtrados = PRODUCTOS.filter(p => {
+    const coincideCat = categoriaActiva === "Todos" || p.categoria === categoriaActiva;
+    const coincideBusqueda = p.nombre.toLowerCase().includes(terminoBusqueda);
+    return coincideCat && coincideBusqueda;
   });
-  if (lbImagenes.length === 0) return;
-  lbActual = index < lbImagenes.length ? index : 0;
-  lightbox.classList.add("activo");
-  lbDots.innerHTML = lbImagenes
-    .map(function (_, i) {
-      return (
-        '<button class="lightbox-dot' +
-        (i === lbActual ? " active" : "") +
-        '" data-i="' +
-        i +
-        '"></button>'
-      );
-    })
-    .join("");
-  lbDots.querySelectorAll(".lightbox-dot").forEach(function (d) {
-    d.addEventListener("click", function () {
-      lbIr(parseInt(this.getAttribute("data-i")));
-    });
-  });
-  lbActualizar();
-}
 
-function lbActualizar() {
-  lbImg.src = lbImagenes[lbActual];
-  lbContador.textContent =
-    lbImagenes.length > 1 ? lbActual + 1 + " / " + lbImagenes.length : "";
-  lbDots.querySelectorAll(".lightbox-dot").forEach(function (d, i) {
-    d.classList.toggle("active", i === lbActual);
-  });
-}
-
-function lbIr(n) {
-  lbActual = (n + lbImagenes.length) % lbImagenes.length;
-  lbActualizar();
-}
-
-/* ══════════════════════════════════════════════════
-   HELPERS
-══════════════════════════════════════════════════ */
-function buildSlide(src) {
-  return src
-    ? '<div class="pcard-slide"><img src="' +
-        src +
-        '" alt="producto" loading="lazy"></div>'
-    : '<div class="pcard-slide"><div class="pcard-placeholder">' +
-        IMG_SVG +
-        "<span>IMAGEN</span></div></div>";
-}
-
-function buildDots(n) {
-  var h = "";
-  for (var i = 0; i < n; i++) {
-    h +=
-      '<button class="pcard-dot' +
-      (i === 0 ? " active" : "") +
-      '" data-i="' +
-      i +
-      '"></button>';
-  }
-  return h;
-}
-
-function buildPrecio(p, pAntes) {
-  var pts = p.split(".");
-  var actual = "S/ " + pts[0] + (pts[1] ? "<sup>." + pts[1] + "</sup>" : "");
-  if (pAntes && pAntes !== "") {
-    var ptsA = pAntes.split(".");
-    var antes =
-      "S/ " + ptsA[0] + (ptsA[1] ? "<sup>." + ptsA[1] + "</sup>" : "");
-    return '<span class="precio-antes">' + antes + "</span> " + actual;
-  }
-  return actual;
-}
-
-/* ══════════════════════════════════════════════════
-   FILTROS
-══════════════════════════════════════════════════ */
-function aplicarFiltros() {
-  var q = document.querySelector(".search-input").value.toLowerCase().trim();
-  var lista = PRODUCTOS;
-  if (categoriaActiva !== "Todos") {
-    lista = lista.filter(function (p) {
-      return p.categoria === categoriaActiva;
-    });
-  }
-  if (q) {
-    lista = lista.filter(function (p) {
-      return p.nombre.toLowerCase().includes(q);
-    });
-  }
-  renderProductos(lista);
-}
-
-/* ══════════════════════════════════════════════════
-   RENDER DE PRODUCTOS
-══════════════════════════════════════════════════ */
-function renderProductos(lista) {
-  var grid = document.getElementById("productosGrid");
-  if (lista.length === 0) {
-    grid.innerHTML =
-      '<p style="grid-column:1/-1;text-align:center;padding:40px;color:#bbb;font-style:italic;">No se encontraron productos.</p>';
+  if (filtrados.length === 0) {
+    grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px;">No se encontraron productos coincidentes.</p>`;
     return;
   }
-  grid.innerHTML = lista
-    .map(function (p) {
-      var imgs = p.imagenes || [""];
-      var n = imgs.length;
-      var multi = n > 1;
-      var msg = encodeURIComponent(
-        "Hola! Me interesa: " + p.nombre + " — S/ " + p.precio,
-      );
-      var waUrl = "https://wa.me/" + WA_NUMBER + "?text=" + msg;
-      return (
-        '<div class="pcard">' +
-        '<div class="pcard-slider-wrap">' +
-        '<div class="pcard-track">' +
-        imgs.map(buildSlide).join("") +
-        "</div>" +
-        (multi
-          ? '<button class="pcard-arrow prev">&#8249;</button><button class="pcard-arrow next">&#8250;</button>'
-          : "") +
-        (multi ? '<div class="pcard-dots">' + buildDots(n) + "</div>" : "") +
-        (multi ? '<span class="pcard-counter">1 / ' + n + "</span>" : "") +
-        "</div>" +
-        '<div class="pcard-body">' +
-        '<p class="pcard-nombre">' +
-        p.nombre +
-        "</p>" +
-        '<p class="pcard-precio">' +
-        buildPrecio(p.precio, p.precioAntes) +
-        "</p>" +
-        '<div class="card-btns">' +
-          '<a class="btn-wa" href="' + waUrl + '" target="_blank" rel="noopener">' + WA_SVG + ' Consultar</a>' +
-          '<button class="btn-compartir" onclick="compartir(\'' + encodeURIComponent(p.nombre) + '\', \'' + encodeURIComponent(p.precio) + '\')">' +
-          '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>' +
-          '</button>' +
-        '</div>' +
-        "</div>" +
-        "</div>"
-      );
-    })
-    .join("");
 
-  document.querySelectorAll(".pcard").forEach(function (card) {
-    var track = card.querySelector(".pcard-track");
-    var dotBtns = card.querySelectorAll(".pcard-dot");
-    var counter = card.querySelector(".pcard-counter");
-    var total = card.querySelectorAll(".pcard-slide").length;
-    var cur = 0;
+  // Creación dinámica de HTML
+  grid.innerHTML = filtrados.map((p, index) => {
+    const hasMultipleImgs = p.imagenes.length > 1;
+    
+    // Generación de Slides
+    const slidesHTML = p.imagenes.map(img => 
+      `<div class="card-slide"><img src="${img}" alt="${p.nombre}" loading="lazy" onclick="abrirLightbox(${index}, this.src)"></div>`
+    ).join('');
 
-    function goTo(n) {
-      cur = (n + total) % total;
-      track.style.transform = "translateX(-" + cur * 100 + "%)";
-      dotBtns.forEach(function (d, i) {
-        d.classList.toggle("active", i === cur);
-      });
-      if (counter) counter.textContent = cur + 1 + " / " + total;
-    }
+    // Controles de Carrusel (Solo si hay más de 1 imagen)
+    const controlesHTML = hasMultipleImgs ? `
+      <button class="card-arrow prev" data-dir="-1" aria-label="Anterior">&#8249;</button>
+      <button class="card-arrow next" data-dir="1" aria-label="Siguiente">&#8250;</button>
+      <div class="card-dots">
+        ${p.imagenes.map((_, i) => `<div class="card-dot ${i === 0 ? 'activo' : ''}"></div>`).join('')}
+      </div>
+    ` : '';
 
-    if (total > 1) {
-      card
-        .querySelector(".pcard-arrow.next")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          goTo(cur + 1);
-        });
-      card
-        .querySelector(".pcard-arrow.prev")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          goTo(cur - 1);
-        });
-      dotBtns.forEach(function (d) {
-        d.addEventListener("click", function (e) {
-          e.preventDefault();
-          goTo(parseInt(this.getAttribute("data-i")));
-        });
-      });
-      var sx = 0;
-      track.addEventListener(
-        "touchstart",
-        function (e) {
-          sx = e.touches[0].clientX;
-        },
-        { passive: true },
-      );
-      track.addEventListener("touchend", function (e) {
-        var diff = sx - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 30) goTo(cur + (diff > 0 ? 1 : -1));
-      });
-    }
+    const ofertaHTML = p.precioAntes ? `<div class="badge-offer">OFERTA</div>` : '';
+    const precioViejoHTML = p.precioAntes ? `<span class="price-old">S/ ${p.precioAntes}</span>` : '';
 
-    var todasLasImgs = card.querySelectorAll(".pcard-slide img");
-    todasLasImgs.forEach(function (img) {
-      img.style.cursor = "zoom-in";
-      img.addEventListener("click", function () {
-        var srcs = Array.from(todasLasImgs).map(function (i) {
-          return i.src;
-        });
-        lbMostrar(srcs, cur);
-      });
-    });
-  });
+    // Armado de Tarjeta
+    return `
+      <article class="product-card" data-index="${index}">
+        <div class="card-slider-wrap">
+          ${ofertaHTML}
+          <div class="card-track" data-current="0" data-total="${p.imagenes.length}">
+            ${slidesHTML}
+          </div>
+          ${controlesHTML}
+        </div>
+        <div class="card-body">
+          <span class="card-cat">${p.categoria}</span>
+          <h4 class="card-title" title="${p.nombre}">${p.nombre}</h4>
+          <div class="card-prices">
+            ${precioViejoHTML}
+            <span class="price-current">S/ ${p.precio}</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-wa" onclick="pedirPorWhatsApp('${encodeURIComponent(p.nombre)}', '${p.precio}')">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+              Consultar
+            </button>
+            <button class="btn-share" onclick="compartirProducto('${encodeURIComponent(p.nombre)}', '${p.precio}')" aria-label="Compartir">
+              ${SVG_SHARE}
+            </button>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
-/* ══════════════════════════════════════════════════
-   INICIO
-══════════════════════════════════════════════════ */
-document.addEventListener("DOMContentLoaded", function () {
-  /* ── Slider banner ── */
-  var bannerTrack = document.getElementById("slidesTrack");
-  var dotsWrap = document.getElementById("sliderDots");
-  var bar = document.getElementById("progressBar");
-  var bannerTotal = bannerTrack.querySelectorAll(".slide").length;
-  var bannerCur = 0;
-  var INTERVAL = 3000;
-  var bannerTimer;
-
-  for (var i = 0; i < bannerTotal; i++) {
-    var d = document.createElement("button");
-    d.className = "dot" + (i === 0 ? " active" : "");
-    d.setAttribute("data-i", i);
-    d.addEventListener("click", function () {
-      bannerGoTo(parseInt(this.getAttribute("data-i")));
-      bannerReset();
-    });
-    dotsWrap.appendChild(d);
-  }
-
-  function bannerGoTo(n) {
-    bannerCur = (n + bannerTotal) % bannerTotal;
-    bannerTrack.style.transform = "translateX(-" + bannerCur * 100 + "%)";
-    dotsWrap.querySelectorAll(".dot").forEach(function (d, idx) {
-      d.classList.toggle("active", idx === bannerCur);
-    });
-    bar.style.transition = "none";
-    bar.style.width = "0%";
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        bar.style.transition = "width " + INTERVAL + "ms linear";
-        bar.style.width = "100%";
-      });
-    });
-  }
-
-  function bannerStart() {
-    bannerTimer = setInterval(function () {
-      bannerGoTo(bannerCur + 1);
-    }, INTERVAL);
-  }
-  function bannerReset() {
-    clearInterval(bannerTimer);
-    bannerStart();
-  }
-
-  var bx = 0;
-  bannerTrack.addEventListener(
-    "touchstart",
-    function (e) {
-      bx = e.touches[0].clientX;
-    },
-    { passive: true },
-  );
-  bannerTrack.addEventListener("touchend", function (e) {
-    var diff = bx - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) {
-      bannerGoTo(bannerCur + (diff > 0 ? 1 : -1));
-      bannerReset();
-    }
-  });
-
-  document
-    .getElementById("sliderSection")
-    .addEventListener("mouseenter", function () {
-      clearInterval(bannerTimer);
-    });
-  document
-    .getElementById("sliderSection")
-    .addEventListener("mouseleave", function () {
-      bannerReset();
-    });
-
-  bannerGoTo(0);
-  bannerStart();
-
-  /* ── Lightbox ── */
-  lightbox = document.getElementById("lightbox");
-  lbImg = document.getElementById("lbImg");
-  lbContador = document.getElementById("lbContador");
-  lbDots = document.getElementById("lbDots");
-
-  document.getElementById("lbCerrar").addEventListener("click", function () {
-    lightbox.classList.remove("activo");
-    lbImg.src = "";
-  });
-  document.getElementById("lbPrev").addEventListener("click", function () {
-    lbIr(lbActual - 1);
-  });
-  document.getElementById("lbNext").addEventListener("click", function () {
-    lbIr(lbActual + 1);
-  });
-  lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
-      lightbox.classList.remove("activo");
-      lbImg.src = "";
-    }
-  });
-
-  var lbTouchX = 0;
-  lightbox.addEventListener(
-    "touchstart",
-    function (e) {
-      lbTouchX = e.touches[0].clientX;
-    },
-    { passive: true },
-  );
-  lightbox.addEventListener("touchend", function (e) {
-    var diff = lbTouchX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) lbIr(lbActual + (diff > 0 ? 1 : -1));
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      lightbox.classList.remove("activo");
-      lbImg.src = "";
-    }
-    if (e.key === "ArrowRight") lbIr(lbActual + 1);
-    if (e.key === "ArrowLeft") lbIr(lbActual - 1);
-  });
-
-  /* ── Render inicial ── */
-  renderProductos(PRODUCTOS);
-
-  /* ── Categorías ── */
-  document.querySelectorAll(".cat-btn").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      document.querySelectorAll(".cat-btn").forEach(function (b) {
-        b.classList.remove("activo");
-      });
-      this.classList.add("activo");
-      categoriaActiva = this.getAttribute("data-cat");
-      aplicarFiltros();
-    });
-  });
-
-  /* ── Buscador ── */
-  document
-    .querySelector(".search-input")
-    .addEventListener("input", function () {
-      aplicarFiltros();
-    });
-
-  /* ── Botón ir arriba ── */
-var btnArriba = document.getElementById("btnArriba");
-
-window.addEventListener("scroll", function() {
-  if (window.scrollY > 300) {
-    btnArriba.classList.add("visible");
-  } else {
-    btnArriba.classList.remove("visible");
-  }
+// ==========================================
+// 3. DELEGACIÓN DE EVENTOS (CARRUSELES)
+// ==========================================
+// Al delegar eventos, ahorramos memoria evitando miles de eventListeners en tarjetas.
+document.getElementById('productosGrid')?.addEventListener('click', (e) => {
+  const btnArrow = e.target.closest('.card-arrow');
+  if (!btnArrow) return;
+  
+  const sliderWrap = btnArrow.closest('.card-slider-wrap');
+  const track = sliderWrap.querySelector('.card-track');
+  const dots = sliderWrap.querySelectorAll('.card-dot');
+  
+  const total = parseInt(track.dataset.total);
+  let current = parseInt(track.dataset.current);
+  const dir = parseInt(btnArrow.dataset.dir);
+  
+  current = (current + dir + total) % total;
+  
+  // Actualizar UI
+  track.dataset.current = current;
+  track.style.transform = `translateX(-${current * 100}%)`;
+  
+  dots.forEach(d => d.classList.remove('activo'));
+  if (dots[current]) dots[current].classList.add('activo');
 });
 
-btnArriba.addEventListener("click", function() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-});
+// ==========================================
+// 4. FUNCIONES DE ACCIÓN (WHATSAPP Y COMPARTIR)
+// ==========================================
+function pedirPorWhatsApp(nombreCodificado, precio) {
+  const nombre = decodeURIComponent(nombreCodificado);
+  const mensaje = `Hola KOOLZONE! 🚀\nMe interesa este producto:\n\n*${nombre}*\n💰 Precio: S/ ${precio}\n\n¿Tienen disponibilidad?`;
+  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+}
 
-function compartir(nombre, precio) {
-  var nombreDecoded = decodeURIComponent(nombre);
-  var precioDecoded = decodeURIComponent(precio);
-  var texto = nombreDecoded + " — S/ " + precioDecoded + "\n" + window.location.href;
+function compartirProducto(nombreCodificado, precio) {
+  const nombre = decodeURIComponent(nombreCodificado);
+  const texto = `${nombre} — S/ ${precio}`;
+  const url = window.location.href;
 
   if (navigator.share) {
     navigator.share({
-      title: "KoolZone Paita",
-      text: nombreDecoded + " — S/ " + precioDecoded,
-      url: window.location.href
-    });
+      title: "KOOLZONE Paita",
+      text: texto,
+      url: url
+    }).catch(err => console.log("Compartir cancelado"));
   } else {
-    navigator.clipboard.writeText(texto).then(function() {
+    // Fallback corregido sintácticamente
+    navigator.clipboard.writeText(`${texto}\n${url}`).then(() => {
       alert("¡Enlace copiado al portapapeles!");
     });
   }
 }
 
+// ==========================================
+// 5. HERO SLIDER AUTO-PLAY
+// ==========================================
+function initHeroSlider() {
+  const track = document.getElementById('heroTrack');
+  const dotsContainer = document.getElementById('heroDots');
+  const bar = document.getElementById('heroProgress');
+  
+  if (!track || !dotsContainer || !bar) return;
+
+  const slidesCount = track.children.length;
+  let currentSlide = 0;
+  const intervalTime = 4000;
+  let slideTimer;
+
+  // Crear dots
+  for (let i = 0; i < slidesCount; i++) {
+    const dot = document.createElement('button');
+    dot.className = `dot ${i === 0 ? 'active' : ''}`;
+    dot.addEventListener('click', () => {
+      goToSlide(i);
+      resetTimer();
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  function goToSlide(index) {
+    currentSlide = (index + slidesCount) % slidesCount;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    dots.forEach(d => d.classList.remove('active'));
+    if(dots[currentSlide]) dots[currentSlide].classList.add('active');
+    
+    // Reset ProgressBar
+    bar.style.transition = 'none';
+    bar.style.width = '0%';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        bar.style.transition = `width ${intervalTime}ms linear`;
+        bar.style.width = '100%';
+      });
+    });
+  }
+
+  function resetTimer() {
+    clearInterval(slideTimer);
+    slideTimer = setInterval(() => goToSlide(currentSlide + 1), intervalTime);
+  }
+
+  goToSlide(0);
+  resetTimer();
+}
+
+// ==========================================
+// 6. LIGHTBOX VISOR DE IMÁGENES
+// ==========================================
+let lbIndex = 0;
+let lbImgArray = [];
+
+function abrirLightbox(productoIndex, currentImgSrc) {
+  const lightbox = document.getElementById('lightbox');
+  const imgEl = document.getElementById('lbImg');
+  
+  lbImgArray = PRODUCTOS[productoIndex].imagenes;
+  lbIndex = lbImgArray.indexOf(currentImgSrc.replace(window.location.origin + '/', ''));
+  if (lbIndex === -1) lbIndex = 0; // fallback
+  
+  imgEl.src = lbImgArray[lbIndex];
+  lightbox.showModal();
+}
+
+document.getElementById('lbCerrar')?.addEventListener('click', () => {
+  document.getElementById('lightbox').close();
+});
+
+document.getElementById('lbNext')?.addEventListener('click', () => {
+  lbIndex = (lbIndex + 1) % lbImgArray.length;
+  document.getElementById('lbImg').src = lbImgArray[lbIndex];
+});
+
+document.getElementById('lbPrev')?.addEventListener('click', () => {
+  lbIndex = (lbIndex - 1 + lbImgArray.length) % lbImgArray.length;
+  document.getElementById('lbImg').src = lbImgArray[lbIndex];
+});
+
+// ==========================================
+// 7. INICIALIZACIÓN GLOBAL
+// ==========================================
+document.addEventListener("DOMContentLoaded", () => {
+  
+  renderProductos();
+  initHeroSlider();
+
+  // Filtros de Categorías
+  const btnCategorias = document.querySelectorAll(".cat-btn");
+  btnCategorias.forEach(btn => {
+    btn.addEventListener("click", function() {
+      btnCategorias.forEach(b => b.classList.remove("activo"));
+      this.classList.add("activo");
+      categoriaActiva = this.dataset.cat;
+      renderProductos();
+    });
+  });
+
+  // Buscador en vivo
+  document.querySelector(".search-input")?.addEventListener("input", renderProductos);
+
+  // Botón Scroll Top
+  const btnArriba = document.getElementById("btnArriba");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      btnArriba.classList.add("visible");
+    } else {
+      btnArriba.classList.remove("visible");
+    }
+  });
+
+  btnArriba?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
