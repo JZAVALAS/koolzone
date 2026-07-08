@@ -53,23 +53,39 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-.logo {
+/* Contenedor principal ajustado para centrar todo */
+.brand-container {
   display: flex;
   flex-direction: column;
+  align-items: center; /* 👈 Esto centra el eslogan justo debajo del logo */
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Eslogan rediseñado para que resalte */
+.brand-slogan {
+  font-size: 11px;
+  font-weight: 800; /* 👈 Lo hacemos más grueso (negrita) */
+  color: var(--acento); /* 👈 Usamos tu color celeste neón */
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1px; /* 👈 Espaciado para que se lea mejor y se vea elegante */
+  text-transform: uppercase; /* 👈 En mayúsculas le da mucha más fuerza visual */
+  margin-top: 2px;
+}
+
+/* Mantén las reglas de .logo y .logo-img que ya tenías */
+.logo {
+  display: flex;
   align-items: center;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 22px;
-  color: var(--neon-cyan);
-  line-height: 1;
-  text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+  gap: 6px;
 }
-.logo-ciudad {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: var(--text-muted);
-  text-shadow: none;
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
+
 
 .search-wrap {
   flex: 1;
