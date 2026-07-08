@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KOOLZONE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOOLZONE | Paita</title>
+  <meta name="description" content="Accesorios para Filmmakers, Fotógrafos y creadores de contenido.">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══ CABECERA ══ -->
-<header>
-  <div class="logo">KOOLZONE<span class="logo-ciudad">PAITA</span></div>
-  <div class="search-wrap">
-    <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-    </svg>
-    <input class="search-input" type="text" placeholder="Buscar productos..."/>
-  </div>
-  <div class="header-icons">
-    <button class="icon-btn" aria-label="Carrito">
-      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 0 1-8 0"/>
+  <header class="header">
+    <div class="logo">
+      KOOLZONE<span class="logo-ciudad">PAITA</span>
+    </div>
+    
+    <div class="search-wrap">
+      <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
       </svg>
-      <span class="badge">0</span>
-    </button>
-  </div>
-</header>
-
-<!-- ══ SLIDER BANNER ══ -->
-<section class="slider-section" id="sliderSection">
-  <div class="slides-track" id="slidesTrack">
-
-    <!-- SLIDE 1 — pon tu imagen: <img src="./slider/banner1.jpg" alt=""/> -->
-    <div class="slide slide-1">
-      <img src="fotos/Slider/banner1.jpg" alt=""/>
-      <div class="slide-content">
-        <span class="slide-tag">🔥 Accesorios</span>
-        <h2 class="slide-title"><br/>FilmMaker y Fotógrafos</h2>
-      </div>
+      <input type="text" class="search-input" placeholder="Buscar accesorios, cámaras..." aria-label="Buscar productos">
     </div>
 
-    <!-- SLIDE 2 -->
-    <div class="slide slide-2">
-      <img src="fotos/Slider/banner2.jpg" alt=""/>
-      <div class="slide-content">
-        <span class="slide-tag">✨ Accesorios</span>
-        <h2 class="slide-title"><br/>Gopro</h2>
-      </div>
+    <div class="header-icons">
+      <button class="icon-btn" aria-label="Ver carrito">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge">0</span>
+      </button>
     </div>
+  </header>
 
-    <!-- SLIDE 3 -->
-    <div class="slide slide-3">
-      <img src="fotos/Slider/banner3.jpg" alt=""/>
-      <div class="slide-content">
-        <span class="slide-tag">📦 Envíos</span>
-        <h2 class="slide-title"><br/>a todo el Perú</h2>
-      </div>
+  <section class="hero-slider" id="heroSlider" aria-label="Promociones principales">
+    <div class="hero-track" id="heroTrack">
+      <article class="hero-slide slide-bg-1">
+        <img src="fotos/Slider/banner1.jpg" alt="Equipos para Filmmakers" loading="eager">
+        <div class="hero-content">
+          <span class="hero-tag">🔥 Accesorios Pro</span>
+          <h2 class="hero-title">Filmmakers y<br>Fotógrafos</h2>
+          <button class="btn-primary" onclick="document.getElementById('catalogo').scrollIntoView({behavior: 'smooth'})">Ver Colección</button>
+        </div>
+      </article>
+      <article class="hero-slide slide-bg-2">
+        <img src="fotos/Slider/banner2.jpg" alt="Accesorios GoPro" loading="lazy">
+        <div class="hero-content">
+          <span class="hero-tag">✨ Acción</span>
+          <h2 class="hero-title">Todo para<br>tu GoPro</h2>
+        </div>
+      </article>
+      <article class="hero-slide slide-bg-3">
+        <img src="fotos/Slider/banner3.jpg" alt="Envíos a todo el Perú" loading="lazy">
+        <div class="hero-content">
+          <span class="hero-tag">📦 Logística</span>
+          <h2 class="hero-title">Envíos seguros<br>a todo el Perú</h2>
+        </div>
+      </article>
     </div>
+    
+    <div class="hero-dots" id="heroDots"></div>
+    <div class="hero-progress" id="heroProgress"></div>
+  </section>
 
-  </div>
-  <div class="slider-dots" id="sliderDots"></div>
-  <div class="progress-bar" id="progressBar"></div>
-</section>
+  <main class="catalogo-section" id="catalogo">
+    <nav class="categorias-nav" aria-label="Filtro de categorías">
+      <button class="cat-btn activo" data-cat="Todos">Todos</button>
+      <button class="cat-btn" data-cat="Cámara y Foto">📷 Cámara y Foto</button>
+      <button class="cat-btn" data-cat="Computación">💻 Computación</button>
+      <button class="cat-btn" data-cat="Video y Audio">🎬 Video y Audio</button>
+      <button class="cat-btn" data-cat="Almacenamiento">💾 Almacenamiento</button>
+      <button class="cat-btn" data-cat="Accesorios">⚙️ Accesorios</button>
+    </nav>
 
-<!-- ══ PRODUCTOS ══ -->
-<section class="productos-section">
-  <div class="categorias-wrap">
-  <button class="cat-btn activo" data-cat="Todos">Todos</button>
-  <button class="cat-btn" data-cat="Cámara y Foto">📷 Cámara y Foto</button>
-  <button class="cat-btn" data-cat="Computación">💻 Computación</button>
-  <button class="cat-btn" data-cat="Video y Audio">🎬 Video y Audio</button>
-  <button class="cat-btn" data-cat="Almacenamiento">💾 Almacenamiento</button>
-  <button class="cat-btn" data-cat="Accesorios">⚙️ Accesorios</button>
-</div>
-<p class="section-titulo">Productos destacados</p>
-  <div class="productos-grid" id="productosGrid"></div>
-</section>
+    <h3 class="section-title">Productos destacados</h3>
+    
+    <section class="productos-grid" id="productosGrid" aria-label="Lista de productos"></section>
+  </main>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-cerrar" id="lbCerrar">&times;</button>
-  <span class="lightbox-contador" id="lbContador"></span>
-  <img class="lightbox-img" id="lbImg" src="" alt=""/>
-  <button class="lightbox-arrow prev" id="lbPrev">&#8249;</button>
-  <button class="lightbox-arrow next" id="lbNext">&#8250;</button>
-  <div class="lightbox-dots" id="lbDots"></div>
-</div>
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbCerrar" aria-label="Cerrar visor">&times;</button>
+    <span class="lightbox-counter" id="lbContador"></span>
+    <img class="lightbox-img" id="lbImg" src="" alt="Imagen ampliada">
+    <button class="lightbox-nav prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+    <button class="lightbox-nav next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+    <div class="lightbox-dots" id="lbDots"></div>
+  </dialog>
 
-<!-- BOTÓN IR ARRIBA -->
-<button class="btn-arriba" id="btnArriba">
-  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-    <path d="M18 15l-6-6-6 6"/>
-  </svg>
-</button>
+  <button class="btn-scroll-top" id="btnArriba" aria-label="Volver arriba">
+    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path d="M18 15l-6-6-6 6"></path>
+    </svg>
+  </button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
