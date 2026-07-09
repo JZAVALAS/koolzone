@@ -584,3 +584,34 @@ body {
   scroll-snap-align: start;
   margin-right: 15px;
 }
+
+/* ══ ENCABEZADO Y ANIMACIÓN DE MÁS VENDIDOS ══ */
+
+/* Contenedor para alinear el título y la flecha en la misma línea */
+.header-mas-vendidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Estilo de la flecha indicadora */
+.swipe-hint {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: reboteHorizontal 1.5s infinite;
+  padding-right: 10px;
+}
+
+/* Animación de movimiento suave */
+@keyframes reboteHorizontal {
+  0%, 100% { 
+    transform: translateX(0); 
+  }
+  50% { 
+    transform: translateX(6px); 
+  }
+}
