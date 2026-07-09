@@ -731,10 +731,12 @@ function renderProductos(lista = null, contenedor = "productosGrid") {
   // Creación dinámica de HTML
   grid.innerHTML = filtrados.map((p, index) => {
     const hasMultipleImgs = p.imagenes.length > 1;
+
+      const indexReal = PRODUCTOS.indexOf(p);
     
     // Generación de Slides
     const slidesHTML = p.imagenes.map(img => 
-      `<div class="card-slide"><img src="${img}" alt="${p.nombre}" loading="lazy" onclick="abrirLightbox(${index}, this.src)"></div>`
+      `<div class="card-slide"><img src="${img}" alt="${p.nombre}" loading="lazy" onclick="abrirLightbox(${indexReal}, this.src)"></div>`
     ).join('');
 
     // Controles de Carrusel (Solo si hay más de 1 imagen)
