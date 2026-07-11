@@ -60,8 +60,8 @@ var PRODUCTOS = [
       "fotos/productos/59.4.soporte-magnetico-para-gopro.jpg",
     ],
   },
-   {
- /*   nombre: "🌊Mango Flotante para Cámara de Acción📷",
+ /*   {
+   nombre: "🌊Mango Flotante para Cámara de Acción📷",
     precio: "24.99",
     precioAntes: "49.99",
     categoria: "Accesorios",
