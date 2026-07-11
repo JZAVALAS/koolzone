@@ -76,7 +76,6 @@ var PRODUCTOS = [
     precio: "149.99",
     precioAntes: "179.99",
     categoria: "Cámara y Foto",
-    
     imagenes: [
       "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
       "fotos/productos/57.2.bateria-gopro-hero-9-10-11-12.jpg",
