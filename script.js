@@ -13,8 +13,8 @@ let categoriaActiva = "Todos";
 var PRODUCTOS = [
    {
     nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
-    precio: "59.99",
-    precioAntes: "44.99",
+    precio: "44.99",
+    precioAntes: "59.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/66.Soporte-universal-para-casco.jpg",
