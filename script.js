@@ -12,6 +12,18 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
    {
+    nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
+    precio: "59.99",
+    precioAntes: "44.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/66.Soporte-universal-para-casco.jpg",
+      "fotos/productos/66.2.Soporte-universal-para-casco.jpg",
+      "fotos/productos/66.3.Soporte-universal-para-casco.jpg",
+      "fotos/productos/66.4.Soporte-universal-para-casco.jpg",
+    ],
+  },
+   {
     nombre: "🏃‍♂️Soporte Giratorio 360° de Muñeca para Celular📱",
     precio: "39.99",
     precioAntes: "59.99",
