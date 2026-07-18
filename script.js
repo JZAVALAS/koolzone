@@ -395,7 +395,7 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "📱Selfie Stick con Estabilizador Q31",
+/*    nombre: "📱Selfie Stick con Estabilizador Q31",
     precio: "129.99",
     precioAntes: "149.99",
     categoria: "Video y Audio",
@@ -408,7 +408,7 @@ var PRODUCTOS = [
       "fotos/productos/32.6.Selfie-Stick-con-Estabilizador-Q31.jpg",
       "fotos/productos/32.7.Selfie-Stick-con-Estabilizador-Q31.jpg",
     ],
-  },
+  }, */
   {
     nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
     precio: "149.99",
