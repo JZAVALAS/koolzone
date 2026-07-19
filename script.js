@@ -47,7 +47,7 @@ var PRODUCTOS = [
       "fotos/productos/61.4.parasol-de-tulipan-55mm.jpg",
     ],
   },
-   {
+/*{
     nombre: "📸Mini Softbox Octogonal PULUZ para Flash de Mano⚡",
     precio: "44.99",
     precioAntes: "69.99",
@@ -59,7 +59,7 @@ var PRODUCTOS = [
       "fotos/productos/60.4.difusor-oxagonal-de-flash.jpg",
       "fotos/productos/60.5.difusor-oxagonal-de-flash.jpg",
     ],
-  },
+  }, */
    {
     nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
     precio: "59.99",
