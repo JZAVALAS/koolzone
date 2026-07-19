@@ -394,8 +394,8 @@ var PRODUCTOS = [
       "fotos/productos/33.4.Flash-Godox-TT600S.jpg",
     ],
   },
-  {
-/*    nombre: "📱Selfie Stick con Estabilizador Q31",
+/*  {
+    nombre: "📱Selfie Stick con Estabilizador Q31",
     precio: "129.99",
     precioAntes: "149.99",
     categoria: "Video y Audio",
