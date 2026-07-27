@@ -1,4 +1,4 @@
-/**
+0/**
  * KOOLZONE PAITA - E-commerce Script
  * Optimizado para rendimiento, UX y CRO.
  */
@@ -11,7 +11,72 @@ let categoriaActiva = "Todos";
 
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
-   {
+  {
+    nombre: "🎥Mini Cámara de Acción Magnética HD de Bolsillo + Kit de Accesorios✨",
+    precio: "99.99",
+    precioAntes: "119.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/71.Camara-de-mano-POV-ligera.jpg",
+      "fotos/productos/71.2.Camara-de-mano-POV-ligera.jpg",
+      "fotos/productos/71.3.Camara-de-mano-POV-ligera.jpg",
+      "fotos/productos/71.4.Camara-de-mano-POV-ligera.jpg",
+      "fotos/productos/71.5.Camara-de-mano-POV-ligera.jpg",
+    ]
+  },
+  {
+    nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios💡✨",
+    precio: "159.99",
+    precioAntes: "189.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/70.Brazo-magico-ajustable-de-57cm.jpg",
+      "fotos/productos/70.2.Brazo-magico-ajustable-de-57cm.jpg",
+      "fotos/productos/70.3.Brazo-magico-ajustable-de-57cm.jpg",
+      "fotos/productos/70.4.Brazo-magico-ajustable-de-57cm.jpg",
+    ],
+  },
+  {
+    nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
+    precio: "159.99",
+    precioAntes: "189.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/69.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.2.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.3.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.4.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.5.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.6.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+      "fotos/productos/69.7.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+    ],
+  },
+  {
+    nombre: "📸Soporte Pinza Cangrejo + Brazo Mágico Articulado 360° Multiuniversal💡",
+    precio: "79.99",
+    precioAntes: "99.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/68.Pinza de cangrejo de brazo mágico multifunción.jpg",
+      "fotos/productos/68.2.Pinza de cangrejo de brazo mágico multifunción.jpg",
+      "fotos/productos/68.3.Pinza de cangrejo de brazo mágico multifunción.jpg",
+      "fotos/productos/68.4.Pinza de cangrejo de brazo mágico multifunción.jpg",
+      "fotos/productos/68.5.Pinza de cangrejo de brazo mágico multifunción.jpg",
+    ],
+  },
+  {
+    nombre: "🎒Soporte de Correa de Mochila 360° para GoPro y Cámaras de Acción📸",
+    precio: "39.99",
+    precioAntes: "49.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/67.Soporte de sujeción antideslizante con pinza.jpg",
+      "fotos/productos/67.2.Soporte de sujeción antideslizante con pinza.jpg",
+      "fotos/productos/67.3.Soporte de sujeción antideslizante con pinza.jpg",
+      "fotos/productos/67.4.Soporte de sujeción antideslizante con pinza.jpg",
+    ],
+  },
+  {
     nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
     precio: "44.99",
     precioAntes: "59.99",
@@ -23,19 +88,7 @@ var PRODUCTOS = [
       "fotos/productos/66.4.Soporte-universal-para-casco.jpg",
     ],
   },
-   {
-    nombre: "🏃‍♂️Soporte Giratorio 360° de Muñeca para Celular📱",
-    precio: "39.99",
-    precioAntes: "59.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/65.soporte-giratorio-de-pulsera.jpg",
-      "fotos/productos/65.2.soporte-giratorio-de-pulsera.jpg",
-      "fotos/productos/65.3.soporte-giratorio-de-pulsera.jpg",
-      "fotos/productos/65.4.soporte-giratorio-de-pulsera.jpg",
-      ],
-  },
-   {
+  {
     nombre: "📸Parasol Tipo Tulipán para Lente de Cámara",
     precio: "24.99",
     precioAntes: "59.99",
@@ -47,7 +100,7 @@ var PRODUCTOS = [
       "fotos/productos/61.4.parasol-de-tulipan-55mm.jpg",
     ],
   },
-/*{
+   {
     nombre: "📸Mini Softbox Octogonal PULUZ para Flash de Mano⚡",
     precio: "44.99",
     precioAntes: "69.99",
@@ -59,7 +112,7 @@ var PRODUCTOS = [
       "fotos/productos/60.4.difusor-oxagonal-de-flash.jpg",
       "fotos/productos/60.5.difusor-oxagonal-de-flash.jpg",
     ],
-  }, */
+  },
    {
     nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
     precio: "59.99",
@@ -72,8 +125,8 @@ var PRODUCTOS = [
       "fotos/productos/59.4.soporte-magnetico-para-gopro.jpg",
     ],
   },
- /*   {
-   nombre: "🌊Mango Flotante para Cámara de Acción📷",
+/*   {
+    nombre: "🌊Mango Flotante para Cámara de Acción📷",
     precio: "24.99",
     precioAntes: "49.99",
     categoria: "Accesorios",
@@ -277,7 +330,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
-    precio: "499.99",
+    precio: "529.99",
     precioAntes: "559.99",
     categoria: "Video y Audio",
     masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
@@ -394,7 +447,7 @@ var PRODUCTOS = [
       "fotos/productos/33.4.Flash-Godox-TT600S.jpg",
     ],
   },
-/*  {
+  {
     nombre: "📱Selfie Stick con Estabilizador Q31",
     precio: "129.99",
     precioAntes: "149.99",
@@ -408,7 +461,7 @@ var PRODUCTOS = [
       "fotos/productos/32.6.Selfie-Stick-con-Estabilizador-Q31.jpg",
       "fotos/productos/32.7.Selfie-Stick-con-Estabilizador-Q31.jpg",
     ],
-  }, */
+  },
   {
     nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
     precio: "149.99",
