@@ -13,8 +13,8 @@ let categoriaActiva = "Todos";
 var PRODUCTOS = [
   {
     nombre: "🎥Mini Cámara de Acción Magnética HD de Bolsillo + Kit de Accesorios✨",
-    precio: "99.99",
-    precioAntes: "119.99",
+    precio: "149.99",
+    precioAntes: "179.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/71.Camara-de-mano-POV-ligera.jpg",
