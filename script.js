@@ -38,7 +38,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
-    precio: "159.99",
+    precio: "169.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
     imagenes: [
