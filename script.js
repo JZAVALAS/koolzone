@@ -330,8 +330,8 @@ var PRODUCTOS = [
   // },
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
-    precio: "529.99",
-    precioAntes: "559.99",
+    precio: "479.99",
+    precioAntes: "499.99",
     categoria: "Video y Audio",
     masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
