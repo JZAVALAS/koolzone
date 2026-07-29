@@ -26,7 +26,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios💡✨",
-    precio: "159.99",
+    precio: "169.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
     imagenes: [
