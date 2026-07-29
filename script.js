@@ -437,8 +437,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸 Flash Godox TT600S",
-    precio: "339.99",
-    precioAntes: "369.99",
+    precio: "299.99",
+    precioAntes: "339.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/33.Flash-Godox-TT600S.jpg",
