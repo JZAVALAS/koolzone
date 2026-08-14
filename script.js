@@ -127,8 +127,8 @@ var PRODUCTOS = [
   },
 {
     nombre: "🌊Mango Flotante para Cámara de Acción📷",
-    precio: "24.99",
-    precioAntes: "49.99",
+    precio: "39.99",
+    precioAntes: "69.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/58.Mango-flotante-para-GoPro.jpg",
