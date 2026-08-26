@@ -622,13 +622,13 @@ var PRODUCTOS = [
       "fotos/productos/16.4.BOLSA-PROTECTORA-PARA-LENTES.jpg",
     ],
   },
-  {
-    nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
-    precio: "119.99",
-    precioAntes: "149.99",
-    categoria: "Accesorios",
-    imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
-  },
+  // {
+  //   nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
+  //   precio: "119.99",
+  //   precioAntes: "149.99",
+  //   categoria: "Accesorios",
+  //   imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
+  // },
 {
     nombre: "📸Correa Profesional para Cámara DSLR",
     precio: "69.99",
