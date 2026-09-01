@@ -12,9 +12,31 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🛡️🎥 Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
+    precio: "79.99",
+    precioAntes: "69.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/74.Protectores-para--insta-360-X4-X5.jpg",
+    ]
+  },
+  {
+    nombre: "🔥Estabilizador Gimbal 3 Ejes con AI Tracking",
+    precio: "399.99",
+    precioAntes: "349.99",
+    categoria: "Cámara y Foto",
+    imagenes: [
+      "fotos/productos/73.Estabiizado-con-3-ejes.jpg",
+      "fotos/productos/73.2.Estabiizado-con-3-ejes.jpg",
+      "fotos/productos/73.3.Estabiizado-con-3-ejes.jpg",
+      "fotos/productos/73.4.Estabiizado-con-3-ejes.jpg",
+      "fotos/productos/73.5.Estabiizado-con-3-ejes.jpg",
+    ]
+  },
+  {
     nombre: "🎥Mini Cámara de Acción Magnética HD de Bolsillo + Kit de Accesorios✨",
-    precio: "149.99",
-    precioAntes: "179.99",
+    precio: "99.99",
+    precioAntes: "119.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/71.Camara-de-mano-POV-ligera.jpg",
@@ -26,7 +48,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios💡✨",
-    precio: "169.99",
+    precio: "159.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
     imagenes: [
@@ -38,7 +60,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
-    precio: "169.99",
+    precio: "159.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
     imagenes: [
@@ -125,21 +147,21 @@ var PRODUCTOS = [
       "fotos/productos/59.4.soporte-magnetico-para-gopro.jpg",
     ],
   },
-{
+/*   {
     nombre: "🌊Mango Flotante para Cámara de Acción📷",
-    precio: "39.99",
-    precioAntes: "69.99",
+    precio: "24.99",
+    precioAntes: "49.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/58.Mango-flotante-para-GoPro.jpg",
       "fotos/productos/58.2.Mango-flotante-para-GoPro.jpg",
       "fotos/productos/58.3.Mango-flotante-para-GoPro.jpg",
     ],
-  },
+  },*/
    {
     nombre: "🔋Pack Baterías TELESIN p/ GoPro 9/10/11/12",
-    precio: "129.99",
-    precioAntes: "159.99",
+    precio: "149.99",
+    precioAntes: "179.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
@@ -304,18 +326,18 @@ var PRODUCTOS = [
       "fotos/productos/44.4.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
     ],
   },
-  {
-    nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
-    precio: "54.99",
-    precioAntes: "69.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/43.Soporte-para-Manillar-360°-para-GoPro.jpg",
-      "fotos/productos/43.2.Soporte-para-Manillar-360°-para-GoPro.jpg",
-      "fotos/productos/43.3.Soporte-para-Manillar-360°-para-GoPro.jpg",
-      "fotos/productos/43.4.Soporte-para-Manillar-360°-para-GoPro.jpg",
-    ],
-  },
+  // {
+  //   nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
+  //   precio: "54.99",
+  //   precioAntes: "69.99",
+  //   categoria: "Accesorios",
+  //   imagenes: [
+  //     "fotos/productos/43.Soporte-para-Manillar-360°-para-GoPro.jpg",
+  //     "fotos/productos/43.2.Soporte-para-Manillar-360°-para-GoPro.jpg",
+  //     "fotos/productos/43.3.Soporte-para-Manillar-360°-para-GoPro.jpg",
+  //     "fotos/productos/43.4.Soporte-para-Manillar-360°-para-GoPro.jpg",
+  //   ],
+  // },
   // {
   //   nombre: "🔋Cargador Triple para GoPro + Caja de Almacenamiento",
   //   precio: "69.99",
@@ -330,8 +352,8 @@ var PRODUCTOS = [
   // },
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
-    precio: "479.99",
-    precioAntes: "499.99",
+    precio: "529.99",
+    precioAntes: "559.99",
     categoria: "Video y Audio",
     masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
@@ -437,8 +459,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸 Flash Godox TT600S",
-    precio: "299.99",
-    precioAntes: "339.99",
+    precio: "339.99",
+    precioAntes: "369.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/33.Flash-Godox-TT600S.jpg",
@@ -622,13 +644,13 @@ var PRODUCTOS = [
       "fotos/productos/16.4.BOLSA-PROTECTORA-PARA-LENTES.jpg",
     ],
   },
-  // {
-  //   nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
-  //   precio: "119.99",
-  //   precioAntes: "149.99",
-  //   categoria: "Accesorios",
-  //   imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
-  // },
+  {
+    nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
+    precio: "119.99",
+    precioAntes: "149.99",
+    categoria: "Accesorios",
+    imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
+  },
 {
     nombre: "📸Correa Profesional para Cámara DSLR",
     precio: "69.99",
