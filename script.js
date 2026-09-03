@@ -13,7 +13,7 @@ let categoriaActiva = "Todos";
 var PRODUCTOS = [
   {
     nombre: "🛡️🎥 Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
-    precio: "79.99",
+    precio: "69.99",
     precioAntes: "69.99",
     categoria: "Cámara y Foto",
     imagenes: [
