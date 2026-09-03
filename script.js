@@ -22,7 +22,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "🔥Estabilizador Gimbal 3 Ejes con AI Tracking",
-    precio: "399.99",
+    precio: "349.99",
     precioAntes: "349.99",
     categoria: "Cámara y Foto",
     imagenes: [
