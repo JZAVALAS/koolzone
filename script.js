@@ -12,8 +12,19 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🎙️ DJI Mic Mini 2 - Micrófono Inalámbrico Ultra Compacto (1TX + 1RX + Estuche de Carga)",
+    precio: "349.99",
+    precioAntes: "279.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/75.dji-mic-mini-2.jpg",
+      "fotos/productos/75.2.dji-mic-mini-2.jpg",
+      "fotos/productos/75.3.dji-mic-mini-2.jpg",
+    ]
+  },
+  {
     nombre: "🛡️🎥 Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
-    precio: "69.99",
+    precio: "79.99",
     precioAntes: "69.99",
     categoria: "Cámara y Foto",
     imagenes: [
@@ -22,7 +33,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "🔥Estabilizador Gimbal 3 Ejes con AI Tracking",
-    precio: "349.99",
+    precio: "399.99",
     precioAntes: "349.99",
     categoria: "Cámara y Foto",
     imagenes: [
@@ -48,7 +59,7 @@ var PRODUCTOS = [
   },
   {
     nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios💡✨",
-    precio: "169.99",
+    precio: "159.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
     imagenes: [
