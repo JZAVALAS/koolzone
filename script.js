@@ -13,8 +13,8 @@ let categoriaActiva = "Todos";
 var PRODUCTOS = [
   {
     nombre: "🎥Asa Superior Universal para Jaula de Cámara (Top Handle Rig)",
-    precio: "109.99",
-    precioAntes: "89.99",
+    precio: "89.99",
+    precioAntes: "109.99",
     categoria: "Video y Audio",
     imagenes: [
       "fotos/productos/76.Asa-para-camara-o-jaula.jpg",
@@ -27,8 +27,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "🎙️DJI Mic Mini 2 - Micrófono Inalámbrico Ultra Compacto (1TX + 1RX + Estuche de Carga)",
-    precio: "349.99",
-    precioAntes: "279.99",
+    precio: "279.99",
+    precioAntes: "349.99",
     categoria: "Video y Audio",
     imagenes: [
       "fotos/productos/75.dji-mic-mini-2.jpg",
@@ -38,8 +38,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
-    precio: "79.99",
-    precioAntes: "69.99",
+    precio: "69.99",
+    precioAntes: "79.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/74.Protectores-para--insta-360-X4-X5.jpg",
@@ -47,8 +47,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "🔥Estabilizador Gimbal 3 Ejes con AI Tracking",
-    precio: "399.99",
-    precioAntes: "349.99",
+    precio: "349.99",
+    precioAntes: "399.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/73.Estabiizado-con-3-ejes.jpg",
