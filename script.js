@@ -1,4 +1,4 @@
-0/**
+/**
  * KOOLZONE PAITA - E-commerce Script
  * Optimizado para rendimiento, UX y CRO.
  */
@@ -12,7 +12,21 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
-    nombre: "🎙️ DJI Mic Mini 2 - Micrófono Inalámbrico Ultra Compacto (1TX + 1RX + Estuche de Carga)",
+    nombre: "🎥Asa Superior Universal para Jaula de Cámara (Top Handle Rig)",
+    precio: "109.99",
+    precioAntes: "89.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/76.Asa-para-camara-o-jaula.jpg",
+      "fotos/productos/76.2.Asa-para-camara-o-jaula.jpg",
+      "fotos/productos/76.3.Asa-para-camara-o-jaula.jpg",
+      "fotos/productos/76.4.Asa-para-camara-o-jaula.jpg",
+      "fotos/productos/76.5.Asa-para-camara-o-jaula.jpg",
+      "fotos/productos/76.6.Asa-para-camara-o-jaula.jpg",
+    ]
+  },
+  {
+    nombre: "🎙️DJI Mic Mini 2 - Micrófono Inalámbrico Ultra Compacto (1TX + 1RX + Estuche de Carga)",
     precio: "349.99",
     precioAntes: "279.99",
     categoria: "Video y Audio",
@@ -23,7 +37,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🛡️🎥 Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
+    nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
     precio: "79.99",
     precioAntes: "69.99",
     categoria: "Cámara y Foto",
