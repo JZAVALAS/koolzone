@@ -12,6 +12,19 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "💾Carcasa Transparente para Disco Duro / SSD 2.5'' - USB 3.0 a SATA III (5 Gbps)",
+    precio: "49.99",
+    precioAntes: "59.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/77.carcasa-para-disco-duro-externo.jpg",
+      "fotos/productos/77.2.carcasa-para-disco-duro-externo.jpg",
+      "fotos/productos/77.3.carcasa-para-disco-duro-externo.jpg",
+      "fotos/productos/77.4.carcasa-para-disco-duro-externo.jpg",
+      "fotos/productos/77.5.carcasa-para-disco-duro-externo.jpg",
+    ]
+  },
+  {
     nombre: "🎥Asa Superior Universal para Jaula de Cámara (Top Handle Rig)",
     precio: "89.99",
     precioAntes: "109.99",
@@ -185,8 +198,8 @@ var PRODUCTOS = [
   },*/
    {
     nombre: "🔋Pack Baterías TELESIN p/ GoPro 9/10/11/12",
-    precio: "149.99",
-    precioAntes: "179.99",
+    precio: "129.99",
+    precioAntes: "159.99",
     categoria: "Cámara y Foto",
     imagenes: [
       "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
