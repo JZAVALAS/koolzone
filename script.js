@@ -12,6 +12,17 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🛡️Kit Completo de Protección y Accesorios All-In-One para Insta360 X3",
+    precio: "149.99",
+    precioAntes: "189.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/79.Accesorios-para-insta360-X3.jpg",
+      "fotos/productos/79.2.Accesorios-para-insta360-X3.jpg",
+      "fotos/productos/79.3.Accesorios-para-insta360-X3.jpg",
+    ]
+  },
+  {
     nombre: "🎬Brazo Mágico Articulado de 11'' con Súper Abrazadera (Super Clamp)",
     precio: "119.99",
     precioAntes: "149.99",
