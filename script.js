@@ -12,6 +12,16 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "Kit de Buceo y Fotografía Subacuática Completo para GoPro Hero 13/12/11/10/9",
+    precio: "99.99",
+    precioAntes: "119.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/80.Case-protector-GPH-9-10-11-12-13.jpg",
+      "fotos/productos/80.2.Case-protector-GPH-9-10-11-12-13.jpg",
+    ]
+  },
+  {
     nombre: "🛡️Kit Completo de Protección y Accesorios All-In-One para Insta360 X3",
     precio: "149.99",
     precioAntes: "189.99",
