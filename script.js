@@ -12,6 +12,19 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🎬Brazo Mágico Articulado de 11'' con Súper Abrazadera (Super Clamp)",
+    precio: "119.99",
+    precioAntes: "149.99",
+    categoria: "Computación",
+    imagenes: [
+      "fotos/productos/78.Brazo-magico-de-11pulgadas.jpg",
+      "fotos/productos/78.2.Brazo-magico-de-11pulgadas.jpg",
+      "fotos/productos/78.3.Brazo-magico-de-11pulgadas.jpg",
+      "fotos/productos/78.4.Brazo-magico-de-11pulgadas.jpg",
+      "fotos/productos/78.5.Brazo-magico-de-11pulgadas.jpg",
+    ]
+  },
+  {
     nombre: "💾Carcasa Transparente para Disco Duro / SSD 2.5'' - USB 3.0 a SATA III (5 Gbps)",
     precio: "39.99",
     precioAntes: "49.99",
