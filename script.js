@@ -13,8 +13,8 @@ let categoriaActiva = "Todos";
 var PRODUCTOS = [
   {
     nombre: "💾Carcasa Transparente para Disco Duro / SSD 2.5'' - USB 3.0 a SATA III (5 Gbps)",
-    precio: "49.99",
-    precioAntes: "59.99",
+    precio: "39.99",
+    precioAntes: "49.99",
     categoria: "Computación",
     imagenes: [
       "fotos/productos/77.carcasa-para-disco-duro-externo.jpg",
