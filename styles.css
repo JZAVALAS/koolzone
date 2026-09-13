@@ -615,3 +615,107 @@ body {
     transform: translateX(6px); 
   }
 }
+
+/* =========================================
+   SECCIÓN DE CONFIANZA (CARRUSEL DE ENVÍOS)
+========================================= */
+.trust-section {
+  margin-bottom: 35px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.trust-header {
+  margin-bottom: 15px;
+}
+
+.trust-title {
+  font-size: 18px;
+  color: var(--text-main);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.trust-subtitle {
+  font-size: 13px;
+  color: var(--neon-cyan);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.trust-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 15px 0;
+  display: flex;
+}
+
+/* Efecto de difuminado en los bordes para disimular la entrada/salida de fotos */
+.trust-carousel::before,
+.trust-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.trust-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-card) 0%, transparent 100%);
+}
+
+.trust-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-card) 0%, transparent 100%);
+}
+
+.trust-track {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  /* La animación dura 20s, puedes bajar el número para que vaya más rápido */
+  animation: scrollInfinito 20s linear infinite; 
+}
+
+.trust-track:hover {
+  animation-play-state: paused; /* Se pausa cuando el usuario pone el dedo/mouse encima */
+}
+
+.trust-img {
+  height: 160px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes scrollInfinito {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Desplaza exactamente la mitad del contenedor (el grupo 1) */
+    transform: translateX(calc(-50% - 7.5px));
+  }
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+  .trust-img {
+    height: 120px;
+    width: 170px;
+  }
+  .trust-title {
+    font-size: 16px;
+  }
+}
