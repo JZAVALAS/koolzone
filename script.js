@@ -12,6 +12,17 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh) - Carga Directa USB Tipo C",
+    precio: "79.99",
+    precioAntes: "89.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/82.Pilas-AA-recargables-PUJIMAX.jpg",
+      "fotos/productos/82.3.Pilas-AA-recargables-PUJIMAX.jpg",
+      "fotos/productos/82.4.Pilas-AA-recargables-PUJIMAX.jpg",
+    ]
+  },
+  {
     nombre: "Kit de Buceo y Fotografía Subacuática Completo para GoPro Hero 13/12/11/10/9",
     precio: "99.99",
     precioAntes: "119.99",
