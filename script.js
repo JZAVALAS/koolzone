@@ -12,6 +12,17 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Remoto Bluetooth y Rosca 1/4''",
+    precio: "79.99",
+    precioAntes: "89.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/83.Palo-selfie-F16.jpg",
+      "fotos/productos/83.2.Palo-selfie-F16.jpg",
+      "fotos/productos/83.3.Palo-selfie-F16.jpg",
+    ]
+  },
+  {
     nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh) - Carga Directa USB Tipo C",
     precio: "79.99",
     precioAntes: "89.99",
