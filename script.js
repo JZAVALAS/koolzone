@@ -24,8 +24,8 @@ var PRODUCTOS = [
   },
   {
     nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Remoto Bluetooth y Rosca 1/4''",
-    precio: "79.99",
-    precioAntes: "89.99",
+    precio: "89.99",
+    precioAntes: "99.99",
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/83.Palo-selfie-F16.jpg",
