@@ -12,6 +12,17 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "📱Mini Palo Selfie Pocket con Trípode y Control Remoto Bluetooth (16'' / 360°)",
+    precio: "79.99",
+    precioAntes: "89.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/84.Mini-SelfieStick-P15MINI.jpg",
+      "fotos/productos/84.2.Mini-SelfieStick-P15MINI.jpg",
+      "fotos/productos/84.3.Mini-SelfieStick-P15MINI.jpg",
+    ]
+  },
+  {
     nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Remoto Bluetooth y Rosca 1/4''",
     precio: "79.99",
     precioAntes: "89.99",
@@ -29,8 +40,8 @@ var PRODUCTOS = [
     categoria: "Accesorios",
     imagenes: [
       "fotos/productos/82.Pilas-AA-recargables-PUJIMAX.jpg",
+      "fotos/productos/82.2.Pilas-AA-recargables-PUJIMAX.jpg",
       "fotos/productos/82.3.Pilas-AA-recargables-PUJIMAX.jpg",
-      "fotos/productos/82.4.Pilas-AA-recargables-PUJIMAX.jpg",
     ]
   },
   {
