@@ -12,7 +12,7 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
-    nombre: "🔌Adaptador Transparente USB a Tipo-C / Tipo-C a USB - 120W Carga Rápida",
+    nombre: "🔌Adaptador Transparente USB a Tipo-C / Tipo-C a USB - Carga Rápida",
     precio: "29.99",
     precioAntes: "39.99",
     categoria: "Accesorios",
@@ -24,7 +24,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "📱Mini Palo Selfie Pocket con Trípode y Control Remoto Bluetooth (16'' / 360°)",
+    nombre: "📱Mini Palo Selfie con Trípode y Control Bluetooth (16'' / 360°)",
     precio: "69.99",
     precioAntes: "99.99",
     categoria: "Accesorios",
@@ -35,7 +35,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Remoto Bluetooth y Rosca 1/4''",
+    nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Bluetooth y Rosca 1/4''",
     precio: "89.99",
     precioAntes: "99.99",
     categoria: "Accesorios",
@@ -46,7 +46,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh) - Carga Directa USB Tipo C",
+    nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh)",
     precio: "79.99",
     precioAntes: "89.99",
     categoria: "Accesorios",
@@ -57,7 +57,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "Kit de Buceo y Fotografía Subacuática Completo para GoPro Hero 13/12/11/10/9",
+    nombre: "Funda Impermeable para Gopro 9/10/11/12/13 + Mango flotante + Filtros",
     precio: "99.99",
     precioAntes: "119.99",
     categoria: "Cámaras de Acción",
@@ -67,7 +67,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🛡️Kit Completo de Protección y Accesorios All-In-One para Insta360 X3",
+    nombre: "🛡️Kit Completo de Protección y Accesorios para Insta360 X3",
     precio: "149.99",
     precioAntes: "189.99",
     categoria: "Cámaras de Acción",
@@ -118,7 +118,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🎙️DJI Mic Mini 2 - Micrófono Inalámbrico Ultra Compacto (1TX + 1RX + Estuche de Carga)",
+    nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
     precio: "279.99",
     precioAntes: "349.99",
     categoria: "Video y Audio",
@@ -138,7 +138,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🔥Estabilizador Gimbal 3 Ejes con AI Tracking",
+    nombre: "🔥Estabilizador Gimbal 3 Ejes con con seguimiento de rostro",
     precio: "349.99",
     precioAntes: "399.99",
     categoria: "Cámara y Foto",
@@ -151,7 +151,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "🎥Mini Cámara de Acción Magnética HD de Bolsillo + Kit de Accesorios✨",
+    nombre: "🎥Mini Cámara de Acción Magnética de Bolsillo + Kit de Accesorios✨",
     precio: "99.99",
     precioAntes: "119.99",
     categoria: "Cámaras de Acción",
@@ -164,7 +164,7 @@ var PRODUCTOS = [
     ]
   },
   {
-    nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios💡✨",
+    nombre: "📸Brazo Mágico Articulado 360° Profesional para Cámaras y Accesorios✨",
     precio: "159.99",
     precioAntes: "189.99",
     categoria: "Accesorios",
@@ -215,18 +215,18 @@ var PRODUCTOS = [
       "fotos/productos/67.4.Soporte de sujeción antideslizante con pinza.jpg",
     ],
   },
-  {
-    nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
-    precio: "44.99",
-    precioAntes: "59.99",
-    categoria: "Cámaras de Acción",
-    imagenes: [
-      "fotos/productos/66.Soporte-universal-para-casco.jpg",
-      "fotos/productos/66.2.Soporte-universal-para-casco.jpg",
-      "fotos/productos/66.3.Soporte-universal-para-casco.jpg",
-      "fotos/productos/66.4.Soporte-universal-para-casco.jpg",
-    ],
-  },
+  // {
+  //   nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
+  //   precio: "44.99",
+  //   precioAntes: "59.99",
+  //   categoria: "Cámaras de Acción",
+  //   imagenes: [
+  //     "fotos/productos/66.Soporte-universal-para-casco.jpg",
+  //     "fotos/productos/66.2.Soporte-universal-para-casco.jpg",
+  //     "fotos/productos/66.3.Soporte-universal-para-casco.jpg",
+  //     "fotos/productos/66.4.Soporte-universal-para-casco.jpg",
+  //   ],
+  // },
   {
     nombre: "📸Parasol Tipo Tulipán para Lente de Cámara",
     precio: "24.99",
@@ -276,7 +276,7 @@ var PRODUCTOS = [
     ],
   },*/
    {
-    nombre: "🔋Pack Baterías TELESIN p/ GoPro 9/10/11/12",
+    nombre: "🔋Batería para GoPro Hero 9/10/11/12, TELESIN",
     precio: "129.99",
     precioAntes: "159.99",
     categoria: "Cámaras de Acción",
@@ -301,7 +301,7 @@ var PRODUCTOS = [
     ],
   },
    {
-    nombre: "🏍️SOPORTE DE CELULAR IMPERMEABLE REFORZADO PARA MOTO, BICI Y SCOOTER⛈️📱",
+    nombre: "🏍️Soporte de celular impermeable reforzado para moto, bici y scooter⛈️📱",
     precio: "49.99",
     precioAntes: "59.99",
     categoria: "Accesorios",
@@ -314,7 +314,7 @@ var PRODUCTOS = [
     ],
   },
    {
-    nombre: "🚗SOPORTE MAGNÉTICO PREMIUM PARA AUTO CON VENTOSA DE VACÍO ULTRA FUERTE📱⚡",
+    nombre: "🚗Soporte magnético para auto con ventosa de vacio ultra fuerte📱⚡",
     precio: "39.99",
     precioAntes: "59.99",
     categoria: "Accesorios",
@@ -325,7 +325,7 @@ var PRODUCTOS = [
     ],
   },
    {
-    nombre: "🐕REPELENTE Y ENTRENADOR ULTRASÓNICO PARA PERROS - PREMIUM⚡",
+    nombre: "🐕Repelente premiun ultrasónico para perros⚡",
     precio: "49.99",
     precioAntes: "69.99",
     categoria: "Accesorios",
@@ -337,7 +337,7 @@ var PRODUCTOS = [
     ],
   },
    {
-    nombre: "🛡️KIT DE PROTECTORES DE VIDRIO TEMPLADO PARA GOPRO 9/10/11/12/13🎬",
+    nombre: "🛡️Kit de protectores de vidrio templado para GOPRO 9/10/11/12/13🎬",
     precio: "24.99",
     precioAntes: "39.99",
     categoria: "Cámaras de Acción",
@@ -358,8 +358,8 @@ var PRODUCTOS = [
     ],
   }, */
    {
-    nombre: "⚡ MINI CARGADOR PORTÁTIL TIPO C - 5000mAh PREMIUM 🔋",
-    precio: "49.99",
+    nombre: "⚡Mini cargador portátil tipo C - 5000mAh🔋",
+    precio: "59.99",
     precioAntes: "79.99",
     categoria: "Accesorios",
     imagenes: [
@@ -370,7 +370,7 @@ var PRODUCTOS = [
     ],
   },
    {
-    nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
+    nombre: "📲Soporte magnético para celular (ideal para Gym y entrenamientos)🏋️‍♂️🔥",
     precio: "39.99",
     precioAntes: "59.99",
     categoria: "Accesorios",
@@ -394,7 +394,7 @@ var PRODUCTOS = [
     ],
   }, */
    {
-    nombre: "📸🔧 ADAPTADOR ZAPATA FRÍA/CALIENTE CON ROSCA 1/4”🔧📸",
+    nombre: "📸🔧Adaptador Zapata Fría/Caliente Con Rosca 1/4”🔧📸",
     precio: "29.99",
     precioAntes: "34.99",
     categoria: "Accesorios",
@@ -430,7 +430,7 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "⚡Baterías TELESIN para GoPro Hero 8 / 7 / 6 / 5 - ¡Nueva!",
+    nombre: "🔋Batería para GoPro Hero 9/10/11/12, TELESIN",
     precio: "99.99",
     precioAntes: "119.99",
     categoria: "Cámaras de Acción",
@@ -479,7 +479,7 @@ var PRODUCTOS = [
   },
   {
     nombre:
-      "⚙️🔥MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
+      "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
     precio: "129.99",
     precioAntes: "149.99",
     categoria: "Accesorios",
@@ -520,7 +520,7 @@ var PRODUCTOS = [
     ],
   }, */
   {
-    nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
+    nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5/6/7",
     precio: "9.99",
     precioAntes: "29.99",
     categoria: "Cámaras de Acción",
@@ -559,7 +559,7 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "✨ LUZ DE ANILLO PORTÁTIL PARA CELULAR",
+    nombre: "✨Jaula led portátil para celular",
     precio: "49.99",
     precioAntes: "59.99",
     categoria: "Video y Audio",
@@ -703,7 +703,7 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "📸Carcasa Impermeable para GoPro Hero 8",
+    nombre: "📸Funda Impermeable para GoPro Hero 8",
     precio: "69.99",
     precioAntes: "79.99",
     categoria: "Cámaras de Acción",
@@ -780,7 +780,7 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre: "📸Correa de Mano para Cámara",
+    nombre: "📸Correa de Mano para Cámara DSRL",
     precio: "49.99",
     precioAntes: "79.99",
     categoria: "Cámara y Foto",
