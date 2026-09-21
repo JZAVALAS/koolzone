@@ -12,14 +12,15 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
-    nombre: "📱Mini Palo Selfie Pocket con Trípode y Control Remoto Bluetooth (16'' / 360°)",
-    precio: "79.99",
-    precioAntes: "89.99",
+    nombre: "🔌 Adaptador Transparente USB a Tipo-C / Tipo-C a USB - 120W Carga Rápida",
+    precio: "29.99",
+    precioAntes: "39.99",
     categoria: "Accesorios",
     imagenes: [
-      "fotos/productos/84.Mini-SelfieStick-P15MINI.jpg",
-      "fotos/productos/84.2.Mini-SelfieStick-P15MINI.jpg",
-      "fotos/productos/84.3.Mini-SelfieStick-P15MINI.jpg",
+      "fotos/productos/85.Adaptador-transparente-de-C-a-USB.jpg",
+      "fotos/productos/85.2.Adaptador-transparente-de-C-a-USB.jpg",
+      "fotos/productos/85.3.Adaptador-transparente-de-C-a-USB.jpg",
+      "fotos/productos/85.4.Adaptador-transparente-de-C-a-USB.jpg",
     ]
   },
   {
