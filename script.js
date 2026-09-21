@@ -60,7 +60,7 @@ var PRODUCTOS = [
     nombre: "Kit de Buceo y Fotografía Subacuática Completo para GoPro Hero 13/12/11/10/9",
     precio: "99.99",
     precioAntes: "119.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/80.Case-protector-GPH-9-10-11-12-13.jpg",
       "fotos/productos/80.2.Case-protector-GPH-9-10-11-12-13.jpg",
@@ -70,7 +70,7 @@ var PRODUCTOS = [
     nombre: "🛡️Kit Completo de Protección y Accesorios All-In-One para Insta360 X3",
     precio: "149.99",
     precioAntes: "189.99",
-    categoria: "Video y Audio",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/79.Accesorios-para-insta360-X3.jpg",
       "fotos/productos/79.2.Accesorios-para-insta360-X3.jpg",
@@ -132,7 +132,7 @@ var PRODUCTOS = [
     nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
     precio: "69.99",
     precioAntes: "79.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/74.Protectores-para--insta-360-X4-X5.jpg",
     ]
@@ -154,7 +154,7 @@ var PRODUCTOS = [
     nombre: "🎥Mini Cámara de Acción Magnética HD de Bolsillo + Kit de Accesorios✨",
     precio: "99.99",
     precioAntes: "119.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/71.Camara-de-mano-POV-ligera.jpg",
       "fotos/productos/71.2.Camara-de-mano-POV-ligera.jpg",
@@ -194,7 +194,7 @@ var PRODUCTOS = [
     nombre: "📸Soporte Pinza Cangrejo + Brazo Mágico Articulado 360° Multiuniversal💡",
     precio: "79.99",
     precioAntes: "99.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/68.Pinza de cangrejo de brazo mágico multifunción.jpg",
       "fotos/productos/68.2.Pinza de cangrejo de brazo mágico multifunción.jpg",
@@ -207,7 +207,7 @@ var PRODUCTOS = [
     nombre: "🎒Soporte de Correa de Mochila 360° para GoPro y Cámaras de Acción📸",
     precio: "39.99",
     precioAntes: "49.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/67.Soporte de sujeción antideslizante con pinza.jpg",
       "fotos/productos/67.2.Soporte de sujeción antideslizante con pinza.jpg",
@@ -219,7 +219,7 @@ var PRODUCTOS = [
     nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
     precio: "44.99",
     precioAntes: "59.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/66.Soporte-universal-para-casco.jpg",
       "fotos/productos/66.2.Soporte-universal-para-casco.jpg",
@@ -256,7 +256,7 @@ var PRODUCTOS = [
     nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
     precio: "59.99",
     precioAntes: "89.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/59.soporte-magnetico-para-gopro.jpg",
       "fotos/productos/59.2.soporte-magnetico-para-gopro.jpg",
@@ -279,7 +279,7 @@ var PRODUCTOS = [
     nombre: "🔋Pack Baterías TELESIN p/ GoPro 9/10/11/12",
     precio: "129.99",
     precioAntes: "159.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/57.bateria-gopro-hero-9-10-11-12.jpg",
       "fotos/productos/57.2.bateria-gopro-hero-9-10-11-12.jpg",
@@ -340,7 +340,7 @@ var PRODUCTOS = [
     nombre: "🛡️KIT DE PROTECTORES DE VIDRIO TEMPLADO PARA GOPRO 9/10/11/12/13🎬",
     precio: "24.99",
     precioAntes: "39.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/51.protector-de-pantallas-para-GoPro.jpg",
     ],
@@ -398,7 +398,6 @@ var PRODUCTOS = [
     precio: "29.99",
     precioAntes: "34.99",
     categoria: "Accesorios",
-    masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
       "fotos/productos/4.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
       "fotos/productos/4.2.ADAPTADOR-ZAPATA-FRIA-CALIENTE.jpg",
@@ -411,8 +410,7 @@ var PRODUCTOS = [
     nombre: "🌊📸Funda Impermeable para GoPro Hero 9/10/11/12/13🔥",
     precio: "79.99",
     precioAntes: "89.99",
-    categoria: "Accesorios",
-    masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/46.funda-impermeable-GPH-9-10-11-12-13.jpg",
       "fotos/productos/46.2.funda-impermeable-GPH-9-10-11-12-13.jpg",
@@ -435,7 +433,7 @@ var PRODUCTOS = [
     nombre: "⚡Baterías TELESIN para GoPro Hero 8 / 7 / 6 / 5 - ¡Nueva!",
     precio: "99.99",
     precioAntes: "119.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/44.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
       "fotos/productos/44.2.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
@@ -481,7 +479,7 @@ var PRODUCTOS = [
   },
   {
     nombre:
-      "⚙️🔥 MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
+      "⚙️🔥MINI AMOLADORA ROTATIVA JANGKLIFE – KIT COMPLETO PARA DIY 🔥⚙️",
     precio: "129.99",
     precioAntes: "149.99",
     categoria: "Accesorios",
@@ -525,7 +523,7 @@ var PRODUCTOS = [
     nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5 / 6 / 7",
     precio: "9.99",
     precioAntes: "29.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/37.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
       "fotos/productos/37.2.Protectores-de-Pantalla-y-Lente-para-GoPro-Hero-5-6-7.jpg",
@@ -617,7 +615,7 @@ var PRODUCTOS = [
     nombre: "📷Protector de Pantalla para GoPro Hero 8",
     precio: "9.99",
     precioAntes: "19.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/30.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
       "fotos/productos/30.2.Protector-de-Pantalla-para-GoPro-Hero-8.jpg",
@@ -708,7 +706,7 @@ var PRODUCTOS = [
     nombre: "📸Carcasa Impermeable para GoPro Hero 8",
     precio: "69.99",
     precioAntes: "79.99",
-    categoria: "Cámara y Foto",
+    categoria: "Cámaras de Acción",
     imagenes: [
       "fotos/productos/21.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
       "fotos/productos/21.2.Carcasa-Impermeable-para-GoPro-Hero-8.jpg",
@@ -765,7 +763,7 @@ var PRODUCTOS = [
     nombre: "📸Kit de Accesorios 10 en 1 para Cámara de Acción",
     precio: "119.99",
     precioAntes: "149.99",
-    categoria: "Accesorios",
+    categoria: "Cámaras de Acción",
     imagenes: ["fotos/productos/15.KIT-DE-10-ACCESORIOS.jpg"],
   },
 {
