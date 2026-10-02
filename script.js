@@ -826,18 +826,18 @@ var PRODUCTOS = [
     categoria: "Computación",
     imagenes: ["fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.jpg"],
   },
-  {
-    nombre: "📸✨Mini trípode portátil - Estabilidad en cualquier lugar✨📸",
-    precio: "14.99",
-    precioAntes: "19.99",
-    categoria: "Cámara y Foto",
-    imagenes: [
-      "fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
-      "fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
-      "fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
-      "fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
-    ],
-  },
+  // {
+  //   nombre: "📸✨Mini tripode portátil - Estabilidad en cualquier lugar✨📸",
+  //   precio: "14.99",
+  //   precioAntes: "19.99",
+  //   categoria: "Cámara y Foto",
+  //   imagenes: [
+  //     "fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
+  //     "fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
+  //     "fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
+  //     "fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
+  //   ],
+  // },
   {
     nombre: "📸🔌Adaptador de montaje con 3 zapatas frías🔌📸",
     precio: "19.99",
