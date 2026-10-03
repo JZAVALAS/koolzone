@@ -6,7 +6,7 @@
 // ==========================================
 // 1. CONFIGURACIÓN Y BASE DE DATOS
 // ==========================================
-const WA_NUMBER = "51964774354";
+const WA_NUMBER = "51946236372";
 let categoriaActiva = "Todos";
 
 // He conservado tu base de datos tal cual la proveíste.
