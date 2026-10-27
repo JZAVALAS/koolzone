@@ -12,6 +12,18 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🔋Batería TELESIN Stamina 1950mAh para GoPro HERO 13 Black",
+    precio: "178.70",
+    precioAntes: "199.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/87.Bateri-para-GPH13.jpg",
+      "fotos/productos/87.2.Bateri-para-GPH13.jpg",
+      "fotos/productos/87.3.Bateri-para-GPH13.jpg",
+      "fotos/productos/87.4.Bateri-para-GPH13.jpg",
+    ]
+  },
+  {
     nombre: "🔌Adaptador Transparente USB a Tipo-C / Tipo-C a USB - Carga Rápida",
     precio: "29.99",
     precioAntes: "39.99",
