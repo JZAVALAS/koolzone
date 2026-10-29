@@ -12,6 +12,18 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🎙️Adaptador Tipo-C para Receptor DJI Mic Mini",
+    precio: "95.70",
+    precioAntes: "108.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/88.Adaptador-tipo-C-para-receptor-DJI.jpg",
+      "fotos/productos/88.2.Adaptador-tipo-C-para-receptor-DJI.jpg",
+      "fotos/productos/88.3.Adaptador-tipo-C-para-receptor-DJI.jpg",
+      "fotos/productos/88.4.Adaptador-tipo-C-para-receptor-DJI.jpg",
+    ]
+  },
+  {
     nombre: "🔋Batería TELESIN Stamina 1950mAh para GoPro HERO 13 Black",
     precio: "178.70",
     precioAntes: "199.99",
