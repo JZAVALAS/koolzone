@@ -12,6 +12,18 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "💡📸Luz LED RGB de Video W140 (2500K-9000K)🌈",
+    precio: "119.99",
+    precioAntes: "149.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/89.Luz-LED-RGB-de-Video-W140-(2500K-9000K).jpg",
+      "fotos/productos/89.2.Luz-LED-RGB-de-Video-W140-(2500K-9000K).jpg",
+      "fotos/productos/89.3.Luz-LED-RGB-de-Video-W140-(2500K-9000K).jpg",
+      "fotos/productos/89.4.Luz-LED-RGB-de-Video-W140-(2500K-9000K).jpg",
+    ]
+  },
+  {
     nombre: "🎙️Adaptador Tipo-C para Receptor DJI Mic Mini",
     precio: "95.70",
     precioAntes: "108.99",
@@ -141,17 +153,17 @@ var PRODUCTOS = [
       "fotos/productos/76.6.Asa-para-camara-o-jaula.jpg",
     ]
   },
-  // {
-  //   nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
-  //   precio: "279.99",
-  //   precioAntes: "349.99",
-  //   categoria: "Video y Audio",
-  //   imagenes: [
-  //     "fotos/productos/75.dji-mic-mini-2.jpg",
-  //     "fotos/productos/75.2.dji-mic-mini-2.jpg",
-  //     "fotos/productos/75.3.dji-mic-mini-2.jpg",
-  //   ]
-  // },
+  {
+    nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
+    precio: "279.99",
+    precioAntes: "349.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/75.dji-mic-mini-2.jpg",
+      "fotos/productos/75.2.dji-mic-mini-2.jpg",
+      "fotos/productos/75.3.dji-mic-mini-2.jpg",
+    ]
+  },
   {
     nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
     precio: "69.99",
@@ -491,8 +503,8 @@ var PRODUCTOS = [
   // },
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
-    precio: "479.99",
-    precioAntes: "519.99",
+    precio: "529.99",
+    precioAntes: "559.99",
     categoria: "Video y Audio",
     masVendido: true, // ◄── AGREGA ESTA LÍNEA en tus 3 productos elegidos
     imagenes: [
@@ -502,7 +514,8 @@ var PRODUCTOS = [
     ],
   },
   {
-    nombre:"⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
+    nombre:
+      "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
     precio: "129.99",
     precioAntes: "149.99",
     categoria: "Accesorios",
