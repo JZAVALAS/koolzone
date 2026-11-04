@@ -12,6 +12,18 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🎙️DJI Mic Mini (1TX + 1RX) - solo para celular 📱✨",
+    precio: "289.99",
+    precioAntes: "329.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/90.dji-mic-mini-(1Tx-+-1Rx).jpg",
+      "fotos/productos/90.2.dji-mic-mini-(1Tx-+-1Rx).jpg",
+      "fotos/productos/90.3.dji-mic-mini-(1Tx-+-1Rx).jpg",
+      "fotos/productos/90.4.dji-mic-mini-(1Tx-+-1Rx).jpg",
+    ]
+  },
+  {
     nombre: "💡📸Luz LED RGB de Video W140 (2500K-9000K)🌈",
     precio: "119.99",
     precioAntes: "149.99",
