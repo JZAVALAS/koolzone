@@ -12,6 +12,21 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🔋Cargador 3 Ranuras para GoPro 9/10/11/12/13⚡📸",
+    precio: "179.99",
+    precioAntes: "219.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/91.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.2.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.3.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.4.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.5.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.6.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+      "fotos/productos/91.7.Estuche-de-carga-GOPRO-9-a-la-13.jpg",
+    ]
+  },
+  {
     nombre: "🎙️DJI Mic Mini (1TX + 1RX) - solo para celular 📱✨",
     precio: "289.99",
     precioAntes: "329.99",
