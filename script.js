@@ -12,6 +12,19 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🔦Lámpara LED de Trabajo 18V + Batería 6.0Ah y Cargador💡🛠️",
+    precio: "149.99",
+    precioAntes: "199.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/92.luz-de-emergencia-de-mano-web.jpg",
+      "fotos/productos/92.2.luz-de-emergencia-de-mano-web.jpg",
+      "fotos/productos/92.3.luz-de-emergencia-de-mano-web.jpg",
+      "fotos/productos/92.4.luz-de-emergencia-de-mano-web.jpg",
+      "fotos/productos/92.5.luz-de-emergencia-de-mano-web.jpg",
+    ]
+  },
+  {
     nombre: "🔋Cargador 3 Ranuras para GoPro 9/10/11/12/13⚡📸",
     precio: "179.99",
     precioAntes: "219.99",
