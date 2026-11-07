@@ -193,17 +193,17 @@ var PRODUCTOS = [
       "fotos/productos/76.6.Asa-para-camara-o-jaula.jpg",
     ]
   },
-  {
-    nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
-    precio: "279.99",
-    precioAntes: "349.99",
-    categoria: "Video y Audio",
-    imagenes: [
-      "fotos/productos/75.dji-mic-mini-2.jpg",
-      "fotos/productos/75.2.dji-mic-mini-2.jpg",
-      "fotos/productos/75.3.dji-mic-mini-2.jpg",
-    ]
-  },
+  // {
+  //   nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
+  //   precio: "279.99",
+  //   precioAntes: "349.99",
+  //   categoria: "Video y Audio",
+  //   imagenes: [
+  //     "fotos/productos/75.dji-mic-mini-2.jpg",
+  //     "fotos/productos/75.2.dji-mic-mini-2.jpg",
+  //     "fotos/productos/75.3.dji-mic-mini-2.jpg",
+  //   ]
+  // },
   {
     nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
     precio: "69.99",
