@@ -553,21 +553,21 @@ var PRODUCTOS = [
       "fotos/productos/41.3.DJI-Mic-Mini.jpg",
     ],
   },
-  {
-    nombre:
-      "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
-    precio: "129.99",
-    precioAntes: "149.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/40.Mini-amoladora.jpg",
-      "fotos/productos/40.2.Mini-amoladora.jpg",
-      "fotos/productos/40.3.Mini-amoladora.jpg",
-      "fotos/productos/40.4.Mini-amoladora.jpg",
-      "fotos/productos/40.5.Mini-amoladora.jpg",
-      "fotos/productos/40.6.Mini-amoladora.jpg",
-    ],
-  },
+  // {
+  //   nombre:
+  //     "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
+  //   precio: "129.99",
+  //   precioAntes: "149.99",
+  //   categoria: "Accesorios",
+  //   imagenes: [
+  //     "fotos/productos/40.Mini-amoladora.jpg",
+  //     "fotos/productos/40.2.Mini-amoladora.jpg",
+  //     "fotos/productos/40.3.Mini-amoladora.jpg",
+  //     "fotos/productos/40.4.Mini-amoladora.jpg",
+  //     "fotos/productos/40.5.Mini-amoladora.jpg",
+  //     "fotos/productos/40.6.Mini-amoladora.jpg",
+  //   ],
+  // },
   // {
   //   nombre: "🎬Proyector 4K HY320 con Android y WiFi",
   //   precio: "279.99",
