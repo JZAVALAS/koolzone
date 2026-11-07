@@ -110,17 +110,17 @@ var PRODUCTOS = [
       "fotos/productos/84.3.Mini-SelfieStick-P15MINI.jpg",
     ]
   },
-  {
-    nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Bluetooth y Rosca 1/4''",
-    precio: "89.99",
-    precioAntes: "99.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/83.Palo-selfie-F16.jpg",
-      "fotos/productos/83.2.Palo-selfie-F16.jpg",
-      "fotos/productos/83.3.Palo-selfie-F16.jpg",
-    ]
-  },
+  // {
+  //   nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Bluetooth y Rosca 1/4''",
+  //   precio: "89.99",
+  //   precioAntes: "99.99",
+  //   categoria: "Accesorios",
+  //   imagenes: [
+  //     "fotos/productos/83.Palo-selfie-F16.jpg",
+  //     "fotos/productos/83.2.Palo-selfie-F16.jpg",
+  //     "fotos/productos/83.3.Palo-selfie-F16.jpg",
+  //   ]
+  // },
   {
     nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh)",
     precio: "79.99",
