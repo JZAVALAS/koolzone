@@ -400,18 +400,18 @@ var PRODUCTOS = [
       "fotos/productos/54.3.Soporte-magnetico-para-celular.jpg",
     ],
   },
-   {
-    nombre: "🐕Repelente premiun ultrasónico para perros⚡",
-    precio: "49.99",
-    precioAntes: "69.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/52.repelente-para-perros.jpg",
-      "fotos/productos/52.2.repelente-para-perros.jpg",
-      "fotos/productos/52.3.repelente-para-perros.jpg",
-      "fotos/productos/52.4.repelente-para-perros.jpg",
-    ],
-  },
+  //  {
+  //   nombre: "🐕Repelente premiun ultrasónico para perros⚡",
+  //   precio: "49.99",
+  //   precioAntes: "69.99",
+  //   categoria: "Accesorios",
+  //   imagenes: [
+  //     "fotos/productos/52.repelente-para-perros.jpg",
+  //     "fotos/productos/52.2.repelente-para-perros.jpg",
+  //     "fotos/productos/52.3.repelente-para-perros.jpg",
+  //     "fotos/productos/52.4.repelente-para-perros.jpg",
+  //   ],
+  // },
    {
     nombre: "🛡️Kit de protectores de vidrio templado para GOPRO 9/10/11/12/13🎬",
     precio: "24.99",
