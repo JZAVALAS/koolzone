@@ -12,6 +12,30 @@ let categoriaActiva = "Todos";
 // He conservado tu base de datos tal cual la proveíste.
 var PRODUCTOS = [
   {
+    nombre: "🎥 Jaula Rig Estabilizadora de Aluminio para Celular 🎬📱",
+    precio: "249.99",
+    precioAntes: "299.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/96.Jaula-para-celular.jpg",
+      "fotos/productos/96.2.Jaula-para-celular.jpg",
+      "fotos/productos/96.3.Jaula-para-celular.jpg",
+      "fotos/productos/96.4.Jaula-para-celular.jpg",
+      "fotos/productos/96.5.Jaula-para-celular.jpg",
+    ]
+  },
+  {
+    nombre: "🎙️Set DJI Mic Mini Doble Tipo-C (2TX + 1RX)📱✨",
+    precio: "349.99",
+    precioAntes: "399.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/95.Dji-mic-mini-2microfonos-receptor-para-celular.jpg",
+      "fotos/productos/95.2.Dji-mic-mini-2microfonos-receptor-para-celular.jpg",
+      "fotos/productos/95.3.Dji-mic-mini-2microfonos-receptor-para-celular.jpg",
+    ]
+  },
+  {
     nombre: "🔦Lámpara LED de Trabajo 18V + Batería 6.0Ah y Cargador💡🛠️",
     precio: "149.99",
     precioAntes: "199.99",
@@ -110,17 +134,17 @@ var PRODUCTOS = [
       "fotos/productos/84.3.Mini-SelfieStick-P15MINI.jpg",
     ]
   },
-  // {
-  //   nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Bluetooth y Rosca 1/4''",
-  //   precio: "89.99",
-  //   precioAntes: "99.99",
-  //   categoria: "Accesorios",
-  //   imagenes: [
-  //     "fotos/productos/83.Palo-selfie-F16.jpg",
-  //     "fotos/productos/83.2.Palo-selfie-F16.jpg",
-  //     "fotos/productos/83.3.Palo-selfie-F16.jpg",
-  //   ]
-  // },
+  {
+    nombre: "📱Trípode Palo Selfie F16 Extensible hasta 1.70m con Control Bluetooth y Rosca 1/4''",
+    precio: "89.99",
+    precioAntes: "99.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/83.Palo-selfie-F16.jpg",
+      "fotos/productos/83.2.Palo-selfie-F16.jpg",
+      "fotos/productos/83.3.Palo-selfie-F16.jpg",
+    ]
+  },
   {
     nombre: "🔋Pack de 4 Baterías Recargables de Litio AA PUJIMAX 1.5V (2500mAh)",
     precio: "79.99",
@@ -193,17 +217,17 @@ var PRODUCTOS = [
       "fotos/productos/76.6.Asa-para-camara-o-jaula.jpg",
     ]
   },
-  // {
-  //   nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
-  //   precio: "279.99",
-  //   precioAntes: "349.99",
-  //   categoria: "Video y Audio",
-  //   imagenes: [
-  //     "fotos/productos/75.dji-mic-mini-2.jpg",
-  //     "fotos/productos/75.2.dji-mic-mini-2.jpg",
-  //     "fotos/productos/75.3.dji-mic-mini-2.jpg",
-  //   ]
-  // },
+  {
+    nombre: "🎙️DJI Mic Mini 2 - Receptor tipo C (1TX + 1RX + Estuche de Carga)",
+    precio: "279.99",
+    precioAntes: "349.99",
+    categoria: "Video y Audio",
+    imagenes: [
+      "fotos/productos/75.dji-mic-mini-2.jpg",
+      "fotos/productos/75.2.dji-mic-mini-2.jpg",
+      "fotos/productos/75.3.dji-mic-mini-2.jpg",
+    ]
+  },
   {
     nombre: "🛡️🎥Kit de Protección para Insta360 X4/X5 (Lentes + Pantalla)",
     precio: "69.99",
@@ -251,21 +275,21 @@ var PRODUCTOS = [
       "fotos/productos/70.4.Brazo-magico-ajustable-de-57cm.jpg",
     ],
   },
-  {
-    nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
-    precio: "159.99",
-    precioAntes: "189.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/69.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.2.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.3.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.4.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.5.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.6.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-      "fotos/productos/69.7.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-    ],
-  },
+  // {
+  //   nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
+  //   precio: "159.99",
+  //   precioAntes: "189.99",
+  //   categoria: "Accesorios",
+  //   imagenes: [
+  //     "fotos/productos/69.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.2.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.3.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.4.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.5.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.6.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //     "fotos/productos/69.7.Mini-Lámpara-LED-Portátil-de-40W.jpg",
+  //   ],
+  // },
   {
     nombre: "📸Soporte Pinza Cangrejo + Brazo Mágico Articulado 360° Multiuniversal💡",
     precio: "79.99",
@@ -400,18 +424,18 @@ var PRODUCTOS = [
       "fotos/productos/54.3.Soporte-magnetico-para-celular.jpg",
     ],
   },
-  //  {
-  //   nombre: "🐕Repelente premiun ultrasónico para perros⚡",
-  //   precio: "49.99",
-  //   precioAntes: "69.99",
-  //   categoria: "Accesorios",
-  //   imagenes: [
-  //     "fotos/productos/52.repelente-para-perros.jpg",
-  //     "fotos/productos/52.2.repelente-para-perros.jpg",
-  //     "fotos/productos/52.3.repelente-para-perros.jpg",
-  //     "fotos/productos/52.4.repelente-para-perros.jpg",
-  //   ],
-  // },
+   {
+    nombre: "🐕Repelente premiun ultrasónico para perros⚡",
+    precio: "49.99",
+    precioAntes: "69.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/52.repelente-para-perros.jpg",
+      "fotos/productos/52.2.repelente-para-perros.jpg",
+      "fotos/productos/52.3.repelente-para-perros.jpg",
+      "fotos/productos/52.4.repelente-para-perros.jpg",
+    ],
+  },
    {
     nombre: "🛡️Kit de protectores de vidrio templado para GOPRO 9/10/11/12/13🎬",
     precio: "24.99",
@@ -553,21 +577,21 @@ var PRODUCTOS = [
       "fotos/productos/41.3.DJI-Mic-Mini.jpg",
     ],
   },
-  // {
-  //   nombre:
-  //     "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
-  //   precio: "129.99",
-  //   precioAntes: "149.99",
-  //   categoria: "Accesorios",
-  //   imagenes: [
-  //     "fotos/productos/40.Mini-amoladora.jpg",
-  //     "fotos/productos/40.2.Mini-amoladora.jpg",
-  //     "fotos/productos/40.3.Mini-amoladora.jpg",
-  //     "fotos/productos/40.4.Mini-amoladora.jpg",
-  //     "fotos/productos/40.5.Mini-amoladora.jpg",
-  //     "fotos/productos/40.6.Mini-amoladora.jpg",
-  //   ],
-  // },
+  {
+    nombre:
+      "⚙️🔥Mini Amoladora Rotativa Jangklife – Kit Completo Para Diy🔥⚙️",
+    precio: "129.99",
+    precioAntes: "149.99",
+    categoria: "Accesorios",
+    imagenes: [
+      "fotos/productos/40.Mini-amoladora.jpg",
+      "fotos/productos/40.2.Mini-amoladora.jpg",
+      "fotos/productos/40.3.Mini-amoladora.jpg",
+      "fotos/productos/40.4.Mini-amoladora.jpg",
+      "fotos/productos/40.5.Mini-amoladora.jpg",
+      "fotos/productos/40.6.Mini-amoladora.jpg",
+    ],
+  },
   // {
   //   nombre: "🎬Proyector 4K HY320 con Android y WiFi",
   //   precio: "279.99",
