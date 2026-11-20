@@ -275,21 +275,6 @@ var PRODUCTOS = [
       "fotos/productos/70.4.Brazo-magico-ajustable-de-57cm.jpg",
     ],
   },
-  // {
-  //   nombre: "💡Mini Luz LED de Video Bicolor Recargable para Cámara y Celular📸✨",
-  //   precio: "159.99",
-  //   precioAntes: "189.99",
-  //   categoria: "Accesorios",
-  //   imagenes: [
-  //     "fotos/productos/69.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.2.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.3.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.4.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.5.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.6.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //     "fotos/productos/69.7.Mini-Lámpara-LED-Portátil-de-40W.jpg",
-  //   ],
-  // },
   {
     nombre: "📸Soporte Pinza Cangrejo + Brazo Mágico Articulado 360° Multiuniversal💡",
     precio: "79.99",
@@ -315,18 +300,6 @@ var PRODUCTOS = [
       "fotos/productos/67.4.Soporte de sujeción antideslizante con pinza.jpg",
     ],
   },
-  // {
-  //   nombre: "🏍️Soporte de Barbilla 5 en 1 para Casco de Moto📸",
-  //   precio: "44.99",
-  //   precioAntes: "59.99",
-  //   categoria: "Cámaras de Acción",
-  //   imagenes: [
-  //     "fotos/productos/66.Soporte-universal-para-casco.jpg",
-  //     "fotos/productos/66.2.Soporte-universal-para-casco.jpg",
-  //     "fotos/productos/66.3.Soporte-universal-para-casco.jpg",
-  //     "fotos/productos/66.4.Soporte-universal-para-casco.jpg",
-  //   ],
-  // },
   {
     nombre: "📸Parasol Tipo Tulipán para Lente de Cámara",
     precio: "24.99",
@@ -339,19 +312,6 @@ var PRODUCTOS = [
       "fotos/productos/61.4.parasol-de-tulipan-55mm.jpg",
     ],
   },
-  //  {
-  //   nombre: "📸Mini Softbox Octogonal PULUZ para Flash de Mano⚡",
-  //   precio: "44.99",
-  //   precioAntes: "69.99",
-  //   categoria: "Cámara y Foto",
-  //   imagenes: [
-  //     "fotos/productos/60.difusor-oxagonal-de-flash.jpg",
-  //     "fotos/productos/60.2.difusor-oxagonal-de-flash.jpg",
-  //     "fotos/productos/60.3.difusor-oxagonal-de-flash.jpg",
-  //     "fotos/productos/60.4.difusor-oxagonal-de-flash.jpg",
-  //     "fotos/productos/60.5.difusor-oxagonal-de-flash.jpg",
-  //   ],
-  // },
    {
     nombre: "🧲Soporte Magnético de Pecho para Cámara de Acción📷",
     precio: "59.99",
@@ -364,17 +324,6 @@ var PRODUCTOS = [
       "fotos/productos/59.4.soporte-magnetico-para-gopro.jpg",
     ],
   },
-/*   {
-    nombre: "🌊Mango Flotante para Cámara de Acción📷",
-    precio: "24.99",
-    precioAntes: "49.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/58.Mango-flotante-para-GoPro.jpg",
-      "fotos/productos/58.2.Mango-flotante-para-GoPro.jpg",
-      "fotos/productos/58.3.Mango-flotante-para-GoPro.jpg",
-    ],
-  },*/
    {
     nombre: "🔋Batería para GoPro Hero 9/10/11/12, TELESIN",
     precio: "129.99",
@@ -445,7 +394,7 @@ var PRODUCTOS = [
       "fotos/productos/51.protector-de-pantallas-para-GoPro.jpg",
     ],
   },
-/*   {
+   {
     nombre: "📸PINZA CANGREJO CON BRAZO MÁGICO MULTIFUNCIÓN PULUZ🎬",
     precio: "59.99",
     precioAntes: "79.99",
@@ -456,7 +405,7 @@ var PRODUCTOS = [
       "fotos/productos/50.3.pinza-de-cangrejo.jpg",
       "fotos/productos/50.4.pinza-de-cangrejo.jpg",
     ],
-  }, */
+  }, 
    {
     nombre: "⚡Mini cargador portátil tipo C - 5000mAh🔋",
     precio: "59.99",
@@ -481,18 +430,6 @@ var PRODUCTOS = [
       "fotos/productos/48.4.soporte-magenitco.jpg",
     ],
   },
-/*   {
-    nombre: "📲SOPORTE MAGNÉTICO PARA CELULAR (IDEAL PARA EL GYM Y ENTRENAMIENTOS)🏋️‍♂️🔥",
-    precio: "39.99",
-    precioAntes: "59.99",
-    categoria: "Accesorios",
-    imagenes: [
-      "fotos/productos/47.soporte-magenitco.jpg",
-      "fotos/productos/47.2.soporte-magenitco.jpg",
-      "fotos/productos/47.3.soporte-magenitco.jpg",
-      "fotos/productos/47.4.soporte-magenitco.jpg",
-    ],
-  }, */
    {
     nombre: "📸🔧Adaptador Zapata Fría/Caliente Con Rosca 1/4”🔧📸",
     precio: "29.99",
@@ -541,30 +478,6 @@ var PRODUCTOS = [
       "fotos/productos/44.4.Batería-TELESIN-de-1170mAh-para-GoPro-5-6-7-8.jpg",
     ],
   },
-  // {
-  //   nombre: "📸Soporte para Manillar 360° para GoPro, DJI, Insta360 y más",
-  //   precio: "54.99",
-  //   precioAntes: "69.99",
-  //   categoria: "Accesorios",
-  //   imagenes: [
-  //     "fotos/productos/43.Soporte-para-Manillar-360°-para-GoPro.jpg",
-  //     "fotos/productos/43.2.Soporte-para-Manillar-360°-para-GoPro.jpg",
-  //     "fotos/productos/43.3.Soporte-para-Manillar-360°-para-GoPro.jpg",
-  //     "fotos/productos/43.4.Soporte-para-Manillar-360°-para-GoPro.jpg",
-  //   ],
-  // },
-  // {
-  //   nombre: "🔋Cargador Triple para GoPro + Caja de Almacenamiento",
-  //   precio: "69.99",
-  //   precioAntes: "89.99",
-  //   categoria: "Cámara y Foto",
-  //   imagenes: [
-  //     "fotos/productos/42.Cargador-Triple-para-GoPro.jpg",
-  //     "fotos/productos/42.2.Cargador-Triple-para-GoPro.jpg",
-  //     "fotos/productos/42.3.Cargador-Triple-para-GoPro.jpg",
-  //     "fotos/productos/42.4.Cargador-Triple-para-GoPro.jpg",
-  //   ],
-  // },
   {
     nombre: "🎤 DJI Mic Mini – Micrófono Inalámbrico Profesional",
     precio: "529.99",
@@ -592,33 +505,6 @@ var PRODUCTOS = [
       "fotos/productos/40.6.Mini-amoladora.jpg",
     ],
   },
-  // {
-  //   nombre: "🎬Proyector 4K HY320 con Android y WiFi",
-  //   precio: "279.99",
-  //   precioAntes: "299.99",
-  //   categoria: "Video y Audio",
-  //   imagenes: [
-  //     "fotos/productos/39.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.2.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.3.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.4.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.5.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.6.Proyector-4K-HY320.jpg",
-  //     "fotos/productos/39.7.Proyector-4K-HY320.jpg",
-  //   ],
-  // },
-/*  {
-    nombre: "🎥 Soporte de Cabeza para GoPro – Toma POV Real",
-    precio: "79.99",
-    precioAntes: "99.99",
-    categoria: "Cámara y Foto",
-    imagenes: [
-      "fotos/productos/38.Soporte-de-Cabeza-para-GoPro.jpg",
-      "fotos/productos/38.2.Soporte-de-Cabeza-para-GoPro.jpg",
-      "fotos/productos/38.3.Soporte-de-Cabeza-para-GoPro.jpg",
-      "fotos/productos/38.4.Soporte-de-Cabeza-para-GoPro.jpg",
-    ],
-  }, */
   {
     nombre: "📷Protectores de Pantalla y Lente para GoPro Hero 5/6/7",
     precio: "9.99",
@@ -658,20 +544,6 @@ var PRODUCTOS = [
       "fotos/productos/35.6.Soporte-Plegable-para-Laptop.jpg",
     ],
   },
-  // {
-  //   nombre: "✨Jaula led portátil para celular",
-  //   precio: "49.99",
-  //   precioAntes: "59.99",
-  //   categoria: "Video y Audio",
-  //   imagenes: [
-  //     "fotos/productos/34.Luz-de-anillo-portatil.jpg",
-  //     "fotos/productos/34.2.Luz-de-anillo-portatil.jpg",
-  //     "fotos/productos/34.3.Luz-de-anillo-portatil.jpg",
-  //     "fotos/productos/34.4.Luz-de-anillo-portatil.jpg",
-  //     "fotos/productos/34.5.Luz-de-anillo-portatil.jpg",
-  //     "fotos/productos/34.6.Luz-de-anillo-portatil.jpg",
-  //   ],
-  // },
   {
     nombre: "📸 Flash Godox TT600S",
     precio: "339.99",
@@ -684,33 +556,6 @@ var PRODUCTOS = [
       "fotos/productos/33.4.Flash-Godox-TT600S.jpg",
     ],
   },
-  // {
-  //   nombre: "📱Selfie Stick con Estabilizador Q31",
-  //   precio: "129.99",
-  //   precioAntes: "149.99",
-  //   categoria: "Video y Audio",
-  //   imagenes: [
-  //     "fotos/productos/32.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.2.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.3.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.4.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.5.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.6.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //     "fotos/productos/32.7.Selfie-Stick-con-Estabilizador-Q31.jpg",
-  //   ],
-  // },
-  // {
-  //   nombre: "🔋Cargador de Pilas AA con Baterías Recargables",
-  //   precio: "149.99",
-  //   precioAntes: "179.99",
-  //   categoria: "Almacenamiento",
-  //   imagenes: [
-  //     "fotos/productos/31.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
-  //     "fotos/productos/31.2.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
-  //     "fotos/productos/31.3.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
-  //     "fotos/productos/31.4.Cargador-de-Pilas-AA-con-Baterías-Recargables.jpg",
-  //   ],
-  // },
   {
     nombre: "📷Protector de Pantalla para GoPro Hero 8",
     precio: "9.99",
@@ -779,17 +624,6 @@ var PRODUCTOS = [
       "fotos/productos/24.3.Soporte-Giratorio-para-Celular.jpg",
     ],
   },
-//  {
-//     nombre: "🎥📸Soporte Metálico en L para Cámara de Acción",
-//     precio: "49.99",
-//     precioAntes: "69.99",
-//     categoria: "Accesorios",
-//     imagenes: [
-//       "fotos/productos/23.Soporte-Metálico-en-L.jpg",
-//       "fotos/productos/23.2.Soporte-Metálico-en-L.jpg",
-//       "fotos/productos/23.3.Soporte-Metálico-en-L.jpg",
-//     ],
-//   },
   {
     nombre: "💾Adaptador USB-C OTG + Lector MicroSD (2 en 1)",
     precio: "24.99",
@@ -926,18 +760,6 @@ var PRODUCTOS = [
     categoria: "Computación",
     imagenes: ["fotos/productos/2.MEMORIA-RAM-CRUCIAL-4GB.jpg"],
   },
-  // {
-  //   nombre: "📸✨Mini tripode portátil - Estabilidad en cualquier lugar✨📸",
-  //   precio: "14.99",
-  //   precioAntes: "19.99",
-  //   categoria: "Cámara y Foto",
-  //   imagenes: [
-  //     "fotos/productos/3.MINITRIPODE-PORTATIL.jpg",
-  //     "fotos/productos/3.2.MINITRIPODE-PORTATIL.jpg",
-  //     "fotos/productos/3.3.MINITRIPODE-PORTATIL.jpg",
-  //     "fotos/productos/3.4.MINITRIPODE-PORTATIL.jpg",
-  //   ],
-  // },
   {
     nombre: "📸🔌Adaptador de montaje con 3 zapatas frías🔌📸",
     precio: "19.99",
@@ -1002,7 +824,6 @@ const SVG_SHARE = `<svg fill="none" stroke="currentColor" stroke-width="2" viewB
 // ==========================================
 // 2. RENDERIZADO DE PRODUCTOS (GRID)
 // ==========================================
-// 👇 REEMPLAZA LAS PRIMERAS LÍNEAS DE TU FUNCIÓN POR ESTAS 👇
 function renderProductos(lista = null, contenedor = "productosGrid") {
   const grid = document.getElementById(contenedor);
   if (!grid) return;
